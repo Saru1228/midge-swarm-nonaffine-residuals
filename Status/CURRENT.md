@@ -18,8 +18,9 @@ exploratory experiments is complete. The `4146-4154` submission-hardening route
 for the `mypaper2` manuscript after review `mypaper2/00_review/008.md` closed
 at package-freeze level. The optional post-freeze `4155` high-B calibration has
 completed, `4156` integrated that result into the manuscript and refroze the
-submission package, and `4157` has now linked the manuscript to the public
-GitHub reproducibility repository.
+submission package, `4157` linked the manuscript to the public GitHub
+reproducibility repository, and `4158` implemented the review-010
+pre-submission figure/text polish.
 
 Latest reproducibility repository release:
 
@@ -28,14 +29,50 @@ Latest reproducibility repository release:
 - Local release checkout:
   `C:\Users\Saru\Desktop\TUAT\ResearchSampleCode\midge-swarm-nonaffine-residuals`
 - Release commit:
-  current `v4157-availability` tag target
+  current `v4158-review010-polish` tag target
 - Release tag:
-  `v4157-availability`
+  `v4158-review010-polish`
 - Contents:
   selected manuscript-facing scripts, final `4156` manuscript package,
   completed `4155` high-B omnibus output, `4157` manuscript availability
-  integration, curated upstream summaries/tables, supplement drafts, final
-  PDF/LaTeX source, and `tools/verify_release.py`.
+  integration, `4158` review-010 figure/text polish, curated upstream
+  summaries/tables, supplement drafts, final PDF/LaTeX source, and
+  `tools/verify_release.py`.
+
+Latest 2026-09-04 4158 status:
+
+- Review `mypaper2/00_review/010.md` was implemented as a final
+  pre-submission polish node rather than as a new mechanism experiment.
+- Figure 2 was redesigned to foreground the all-observation T1 survival claim,
+  the frozen two-scale support matrix, the completed `B=1000` omnibus null
+  histogram, and the detrending survivor-count boundary.
+- Figure 3 was cleaned so the active phenotype figure no longer carries the
+  unused radius-correlation profile.
+- The manuscript title now uses the shorter JRSI-facing form:
+  `Local Affine Subtraction Reveals Persistent Tangential Non-Affine Activity
+  in Laboratory Midge Swarms`.
+- The Methods text now explicitly states that the `0.35` per-scale tail rule is
+  a frozen screening component rather than a conventional single-observation
+  significance threshold.
+- The omnibus result is reported in the main text as `0/1000` null replicates
+  reaching the observed `14/19` both-scale count, with plus-one empirical
+  `p≈0.001`.
+- The evidence-to-inference table now uses publication-facing columns:
+  `Test`, `Evidence`, `Supported inference`, and `Interpretive boundary`.
+- The supplement now contains the key reproducibility details for pseudo-event
+  construction, non-event controls, cross-scale sharing, deterministic seeds,
+  detrending variants, state matching, and recent-history matching.
+- `mypaper2/Latex/main_final.tex` was recompiled twice after the review-010
+  polish. The updated PDF is `11` pages, with `0` LaTeX errors, `0` undefined
+  control sequences, `0` citation warnings, `0` reference warnings, `0` rerun
+  warnings, and `0` overfull boxes. Only `16` underfull-box layout warnings
+  remain.
+- The curated GitHub reproducibility repository was updated and pushed with tag
+  `v4158-review010-polish`. Its lightweight `python tools/verify_release.py`
+  check passed after the update.
+- `4158` is a manuscript/figure/reproducibility-polish node. It does not add a
+  new scientific mechanism claim. The scientific claim boundary from `4156`
+  remains unchanged.
 
 Latest 2026-09-04 4157 status:
 
@@ -833,9 +870,8 @@ The 413x route should keep four boundaries explicit:
 
 ## 7. Current recommended next step
 
-If no new direction is specified, continue from the completed 4157 manuscript
-availability integration in
-this order:
+If no new direction is specified, continue from the completed 4158 review-010
+pre-submission polish in this order:
 
 1. manually inspect `mypaper2/Latex/main_final.pdf` for figure placement,
    column breaks, table readability, and last-page balance;
@@ -851,6 +887,7 @@ this order:
 
 The latest detailed snapshot is:
 
+- `Status/history/2026-09-04_4158_review010_pre_submission_polish.md`
 - `Status/history/2026-09-04_4157_repository_availability_manuscript_polish.md`
 - `Status/history/2026-09-02_4156_highB_manuscript_integration_and_refreeze.md`
 
@@ -939,11 +976,18 @@ The latest 414x outputs are:
 - `Output/4157/decision.json`
 - `Output/4157/compile_log_audit.csv`
 - `Output/4157/code_data_availability_statement.md`
+- `Experiment/run_4158_review010_pre_submission_polish.py`
+- `Output/4158/4158_figure_summary.md`
+- `Output/4158/decision.json`
+- `Output/4158/compile_log_audit.csv`
+- `Output/4158/figures/Fig2_final.pdf`
+- `Output/4158/figures/Fig3_final.pdf`
+- `idea/4158_review010_pre_submission_polish_result.md`
 - `mypaper2/Latex/06_data_code_availability.tex`
 - GitHub release checkout:
   `C:\Users\Saru\Desktop\TUAT\ResearchSampleCode\midge-swarm-nonaffine-residuals`
 - GitHub release tag:
-  `v4157-availability`
+  `v4158-review010-polish`
 
 The previous 414x detailed snapshot is:
 
@@ -986,10 +1030,10 @@ diagnostic empirical paper:
 - observation identity is the grouping and replication unit, with 19 separate
   recordings rather than 19 independent biological populations.
 
-After the 4157 availability integration, the remaining pre-submission additions
-are now narrower:
+After the 4158 review-010 polish, the remaining pre-submission additions are
+now narrower:
 
-1. review the integrated 10-page draft for prose length, figure placement,
+1. review the integrated 11-page draft for prose length, figure placement,
    table readability, and final-page balance;
 2. optionally create a DOI archive for the GitHub release;
 3. apply journal-specific formatting once a target venue is chosen;

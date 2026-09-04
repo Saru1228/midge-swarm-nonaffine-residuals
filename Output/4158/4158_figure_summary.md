@@ -56,6 +56,12 @@ change screening gates, or open a new mechanism route.
 
 `pass_4158_review010_pre_submission_polish_compiled`
 
+## Repository Release
+
+- Repository: https://github.com/Saru1228/midge-swarm-nonaffine-residuals
+- Release tag: `v4158-review010-polish`
+- Release verification: `python tools/verify_release.py` passed
+
 ## Remaining Boundary
 
 This is still a bounded diagnostic paper. The current manuscript supports a
