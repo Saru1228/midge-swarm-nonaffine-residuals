@@ -33,6 +33,19 @@ minimum pairs per observation = 100
 null = within-observation history-theta shuffle with pair recomputation
 ```
 
+For a history window `h`, the recent path vector was
+
+```text
+Delta X_h(t) = [C(t)-C(t-h), R(t)-R(t-h)]
+```
+
+The history feature `h500_theta_h` is the angle of this vector in the `C-R`
+plane for `h = 0.50 s`. Frame pairs were selected within each observation when
+their current-state Euclidean distance was at most `0.50`, their recent-history
+angle differed by at least `90` degrees, and their time stamps were at least
+`1.0 s` apart. Up to five nearest contrasted-history matches were retained per
+anchor frame, and at most 10000 pairs were retained per observation.
+
 ## Result
 
 ```text

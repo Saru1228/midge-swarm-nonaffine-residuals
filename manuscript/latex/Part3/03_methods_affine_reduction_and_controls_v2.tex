@@ -1,12 +1,13 @@
 \subsection{Local Affine Reduction and Event-Conditioned Controls}
 
-For each focal individual and frame, the local neighborhood was selected by
-Euclidean nearest-neighbor distance. The focal individual was excluded, and a
-neighbor was retained only if it was present at both the reference frame and
-the finite-lag frame. Focal samples with fewer than four retained neighbors
-were discarded. The default lag was 0.10 s. The initial survival analysis used
-two neighborhood sizes, $k=8$ and $k=10$, and later focal-activity analyses
-used the frozen $k=8$ representation.
+For each focal individual and frame, candidate neighbors were first restricted
+to individuals present at both the reference frame and the finite-lag frame.
+These candidates were then ranked by Euclidean distance at the reference
+frame. The focal individual was excluded, the nearest $k$ retained candidates
+defined the local neighborhood, and focal samples with fewer than four
+retained neighbors were discarded. The default lag was 0.10 s. The initial
+survival analysis used two neighborhood sizes, $k=8$ and $k=10$, and later
+focal-activity analyses used the frozen $k=8$ representation.
 
 The local affine deformation was fitted by equal-weight least squares to
 finite-lag relative neighbor displacements. Thus, although the raw trajectory
@@ -30,13 +31,18 @@ from true transition times. Forty non-event replicates were used. A T1
 survival call at a given neighborhood scale required all three frozen screens:
 the local event-control excess
 \texttt{local\_event\_minus\_non\_event\_direction\_z} had to exceed 0.03
-robust-z units, the empirical non-event tail probability
+robust-z units, the empirical non-event tail fraction
 \texttt{p\_non\_event\_direction\_ge\_event} had to be no greater than 0.35,
 and the local/global-affine retention ratio
 \texttt{local\_to\_b3\_direction\_ratio} had to be at least 0.30.
 Here, B3 denotes the upstream global-affine residual baseline, so this ratio
 required the local residual to remain non-negligible relative to that
-global-affine reference.
+global-affine reference. The 0.35 tail criterion was a frozen screening
+component rather than a conventional single-observation significance test. It
+defined a consistent residual-support call from direction, empirical tail
+rank, and retention relative to the global-affine residual. Statistical
+calibration of the resulting all-observation both-scale count was performed
+separately with the full-pipeline pseudo-event omnibus null.
 The main all-observation count used a two-scale consistency requirement:
 survival was counted as both-scale support only when the same observation
 passed this per-scale screen at both original neighborhood sizes, $k=8$ and
@@ -51,8 +57,10 @@ non-event controls per replicate-observation. For computational tractability,
 the run was split into deterministic chunks and merged after completion; this
 changed only execution, not the frozen pseudo-event design or survival gate.
 Second, a detrending challenge reran the survival and timing summaries under
-the frozen centered one-second detrending, a past-only one-second detrending,
-and a no-rolling-detrending robust-z variant. Third, local affine conditioning
+three fixed variants: robust-z standardization followed by centered one-second
+rolling-mean subtraction and a second robust-z standardization; the same
+procedure with a trailing, past-only one-second rolling mean; and a no-rolling
+variant using robust-z standardization only. Third, local affine conditioning
 quality control sampled frames across all observations and both original
 neighborhood scales, recording valid-fit fractions, rank sufficiency,
 condition numbers, and whether the largest T1 samples were concentrated in

@@ -14,7 +14,7 @@ python tools/verify_release.py
 Expected key outputs:
 
 ```text
-availability_gate_result = pass_4157_repository_availability_integrated_and_compiled
+review010_gate_result = pass_4158_review010_pre_submission_polish_compiled
 gate_result = pass_4156_highB_integrated_submission_package_refrozen
 B = 1000
 observed N_both = 14
@@ -32,7 +32,7 @@ pdflatex -interaction=nonstopmode main_final.tex
 pdflatex -interaction=nonstopmode main_final.tex
 ```
 
-The node-4157 manuscript produced a 10-page PDF with the public repository
+The node-4158 manuscript produced an 11-page PDF with the public repository
 availability section included before the references.
 
 ## Level 2: Reaudit the Completed High-B Run
@@ -114,5 +114,5 @@ For code and derived outputs, cite the release tag used by the manuscript:
 
 ```text
 https://github.com/Saru1228/midge-swarm-nonaffine-residuals
-release tag: v4157-availability
+release tag: v4158-review010-polish
 ```

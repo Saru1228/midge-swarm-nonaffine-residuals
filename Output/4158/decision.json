@@ -1,0 +1,30 @@
+{
+  "node": "4158_review010_pre_submission_polish",
+  "date": "2026-09-04",
+  "gate_result": "pass_4158_review010_pre_submission_polish_compiled",
+  "source_review": "mypaper2/00_review/010.md",
+  "source_release_node": "4157_repository_availability_manuscript_polish",
+  "planned_repository_release_tag": "v4158-review010-polish",
+  "primary_metrics": {
+    "pdf_pages": 11,
+    "latex_errors": 0,
+    "undefined_control_sequence": 0,
+    "citation_warnings": 0,
+    "reference_warnings": 0,
+    "rerun_warnings": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 16,
+    "final_pdf_bytes": 414914
+  },
+  "manuscript_changes": [
+    "replaced the long working title with a shorter JRSI-facing title",
+    "redesigned Figure 2 around survival evidence, B=1000 omnibus calibration, and detrending sensitivity",
+    "cleaned Figure 3 by removing the unused radius-correlation profile",
+    "clarified that the 0.35 per-scale tail rule is a frozen screening component rather than a conventional single-observation significance threshold",
+    "rounded the main-text omnibus statement to plus-one empirical p approximately 0.001 while preserving 0/1000 null-replicate wording",
+    "rewrote Table I columns as Test, Evidence, Supported inference, and Interpretive boundary",
+    "added reproducibility details to the supplement and synchronized title/abstract discussion drafts"
+  ],
+  "boundary": "No new mechanism experiment was opened. The manuscript remains a calibrated diagnostic-residual paper with explicit observation-level and preprocessing boundaries.",
+  "next": "freeze or publish a matching v4158 reproducibility release; then manually inspect PDF layout and proceed to journal-specific formatting"
+}

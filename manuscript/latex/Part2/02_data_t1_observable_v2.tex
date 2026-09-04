@@ -61,8 +61,11 @@ equal-weight least squares,
 \mathbf{J}\mathbf{r}_{ij}(t)
 \right\|^2 .
 \end{equation}
-Because the fit uses focal-centered relative coordinates, local translation is
-already removed. The finite-lag non-affine residual velocity is
+Here, $\hat{\mathbf{J}}_i(t)$ is an affine map of finite-lag relative
+displacements, not a constitutive deformation tensor or an inferred
+force-gradient. Because the fit uses focal-centered relative coordinates,
+local translation is already removed. The finite-lag non-affine residual
+velocity is
 \begin{equation}
 \mathbf{u}^{NA}_{ij}(t)=
 \frac{
@@ -74,7 +77,9 @@ already removed. The finite-lag non-affine residual velocity is
 where $\Delta t_{\ell}$ is the elapsed time corresponding to lag $\ell$.
 
 Let $\hat{\boldsymbol{\rho}}_i(t)$ denote the unit vector from the swarm center
-to focal individual $i$. The tangential residual is
+to focal individual $i$. Focal samples with non-finite or numerically zero
+swarm-centered radius were excluded before this projection. The tangential
+residual is
 \begin{equation}
 \mathbf{u}^{NA}_{ij,\mathrm{tan}}(t)=
 \mathbf{u}^{NA}_{ij}(t)

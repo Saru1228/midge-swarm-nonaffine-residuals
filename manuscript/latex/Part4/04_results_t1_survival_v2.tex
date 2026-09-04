@@ -3,11 +3,11 @@
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/Fig2_final.pdf}
-\caption{T1 survival across observations. The all-observation panel retains
-both survivor and failure observations. T1 survived local affine subtraction
-in most observations and remained robust to nearby scale/lag choices inside
-the survivor class, but the observation-class panel shows that the result was
-not universal.}
+\caption{T1 survival and full-pipeline calibration. The all-observation panel
+retains both survivor and failure observations, the support matrix shows the
+frozen two-scale decision structure, the omnibus-null panel shows the
+distribution of both-scale support across $B=1000$ pseudo-event replicates,
+and the detrending panel gives the main preprocessing boundary.}
 \label{fig:t1_survival}
 \end{figure*}
 
@@ -21,19 +21,19 @@ decision was not limited to a single original neighborhood-scale setting.
 The all-observation support was also checked against a completed
 full-pipeline pseudo-event calibration. In the observed data,
 $N_{\mathrm{both}}=14$; across $B=1000$ null replicates, the null
-distribution had mean 4.38, q95 7, maximum 12, and a plus-one tail
-probability of 0.000999 for reaching or exceeding 14. No both-scale null
-replicate reached the observed count. The any-scale count was less specific
-but still above the upper tail of its null distribution
-($p_{\mathrm{any}}=0.02198$).
+distribution had mean 4.38 and q95 7, and no null replicate reached the
+observed count of 14 (maximum 12; plus-one empirical
+$p_{\mathrm{emp}}\approx0.001$). The any-scale count was supportive but less
+specific, and is treated as secondary.
 
 The detrending challenge preserved majority-level support but exposed an
 important boundary. The frozen centered one-second detrending reproduced the
 main $14/19$ both-scale result. A past-only one-second detrending reduced the
 stricter both-scale count to $11/19$, while the no-rolling-detrending robust-z
 variant gave $13/19$. Thus, the T1 survival result was not erased by the
-challenge, but the exact $14/19$ count is strongest under the frozen centered
-detrending definition.
+challenge. The residual remained detectable at majority level under both
+alternative preprocessing schemes, while the precise $14/19$ both-scale count
+was specific to the frozen centered-detrending pipeline.
 
 Local affine conditioning quality control did not indicate that the result was
 driven by unstable local affine fits. Across all 38 observation-scale

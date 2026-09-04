@@ -31,6 +31,26 @@ Pseudo-event centers were sampled within the same observation while avoiding
 true transition windows. Non-event controls were sampled within the same
 observation and avoided true and pseudo-event windows.
 
+For each observation and replicate, the number of pseudo-events matched the
+number of true transition events in that observation. The low-to-high and
+high-to-low event-type labels were also copied from the true event template, so
+event-type counts were preserved. Candidate centers were sampled from the
+recording interval after removing the pre/post margin used by the event window.
+True transition centers were excluded with a `0.80 s` exclusion half-width.
+Pseudo-events were sampled sequentially without mutual overlap whenever enough
+admissible time remained; if the sequential exclusion became infeasible in a
+short or dense recording, the sampler fell back to the true-event exclusion
+only, and finally to uniform sampling within the admissible recording interval.
+The same pseudo-event realization was used for `k=8` and `k=10` so that
+cross-scale dependence was preserved.
+
+For the non-event controls, each replicate-observation generated 40 control
+sets. Each control set preserved the same number and type order as the event
+template, and control centers avoided both the true transition centers and the
+pseudo-event centers. Controls were generated independently for each
+replicate-observation. The random seed was deterministic by replicate:
+`BASE_SEED + replicate * 1000003`.
+
 The survival gate was unchanged:
 
 ```text
@@ -39,11 +59,32 @@ p_non_event_direction_ge_event <= 0.35
 local_to_b3_direction_ratio >= 0.30
 ```
 
+The `0.35` criterion is an empirical non-event tail fraction used as a frozen
+screening component. It is not a conventional single-observation significance
+threshold. The all-observation inference is the separately calibrated omnibus
+count `N_both`.
+
 The main statistic was the number of observations that passed the survival
 gate at both original neighborhood scales:
 
 ```text
 N_both = sum_ob I(pass_k8 and pass_k10)
+```
+
+Algorithm sketch:
+
+```text
+for b in 1..B:
+    for observation in 1..19:
+        construct pseudo-event centers under the frozen admissibility rules
+        preserve the true event count and low/high event-type sequence
+        generate 40 same-observation non-event control sets
+        compute the frozen event-control metrics at k=8
+        compute the frozen event-control metrics at k=10
+        apply the frozen per-scale screening rule
+        record whether the observation passes both scales
+
+    N_both[b] = number of observations passing both k=8 and k=10
 ```
 
 ## Completed Calibration Result

@@ -25,6 +25,11 @@ past_1s: subtract a one-second past-only rolling mean, then robust-z.
 none_z: skip rolling detrending and use robust-z standardization only.
 ```
 
+In the first two variants, the input trace was robust-z standardized, the
+one-second rolling mean was subtracted, and the residual trace was robust-z
+standardized again. In the `none_z` variant, no rolling subtraction was applied;
+the trace was robust-z standardized only.
+
 ## Survival Result
 
 | variant | observations | both-scale support | any-scale support | interpretation |

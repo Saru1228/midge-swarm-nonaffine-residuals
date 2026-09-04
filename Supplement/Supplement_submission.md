@@ -11,19 +11,32 @@ and pseudo-event windows.
 
 The survival gate was identical to the main analysis: the local event-control
 excess had to exceed `0.03` robust-z units, the empirical non-event tail
-probability had to be no greater than `0.35`, and the local/global-affine
+fraction had to be no greater than `0.35`, and the local/global-affine
 retention ratio had to be at least `0.30`. The primary omnibus statistic was
 the number of observations passing the gate at both original neighborhood
-scales.
+scales. The `0.35` threshold was a frozen screening component, not a
+conventional single-observation significance threshold.
+
+For each observation and replicate, the pseudo-event count and low-to-high /
+high-to-low event-type sequence matched the true event template. Candidate
+centers were sampled within the same recording after excluding the event-window
+margin and true transition centers with a `0.80 s` exclusion half-width.
+Pseudo-events were sampled sequentially without mutual overlap when feasible;
+if this became infeasible, the sampler fell back to true-event exclusion only,
+and finally to uniform admissible sampling. The same pseudo-event realization
+was used for `k=8` and `k=10`. Each replicate-observation generated 40
+same-observation non-event control sets that avoided true and pseudo-event
+centers. The high-replicate run used deterministic per-replicate seeds and was
+merged from 20 chunks of 50 replicates.
 
 The completed calibration used `B=1000` null replicates and 40 non-event
 controls per observation per replicate. The observed both-scale count was
 `14/19`, whereas the null distribution had mean `4.38`, median `4`, q95 `7`,
 q99 `9`, and maximum `12`. No both-scale null replicate reached the observed
-count, giving a plus-one tail probability of `0.000999000999000999`. The
-observed any-scale count was `15/19`; the corresponding null distribution had
-mean `10.223`, median `10`, q95 `14`, q99 `15`, and maximum `17`, with
-plus-one tail probability `0.02197802197802198`.
+count; the plus-one empirical value was `1/(1000+1)`, reported in the main
+text as approximately `0.001`. The observed any-scale count was `15/19`; the
+corresponding null distribution had mean `10.223`, median `10`, q95 `14`, q99
+`15`, and maximum `17`, with plus-one empirical p-value `0.022`.
 
 This result is reported as high-replicate pipeline-level calibration. It does
 not constitute evidence for a completed biological mechanism.
@@ -105,6 +118,12 @@ effect exceeded the shifted-event null in `0.275` of tested comparisons. The
 total acceptable event fraction was `0.9796057104010877`, with median best
 match distance `0.17630717293908968`.
 
+Matching used Euclidean distance in robust-standardized `(C, dC/dt, R)` space.
+Candidate controls were ranked by distance, up to five nearest matches were
+retained, and an event was accepted only when the best match distance was at
+most `0.75`. Controls were not removed after use, so a non-event frame could in
+principle match more than one true event.
+
 These results show that the tested compact-state moment closure and
 state-matched event-locality route did not provide stable reductions of T1.
 They do not rule out richer state variables, delayed models, network features,
@@ -117,6 +136,12 @@ different recent paths showed different T1. Current state was matched within
 observation using `(C, dC/dt, R)`. The primary history feature was the recent
 path direction over `0.50 s`; paired frames required a history-angle contrast
 of at least `90` degrees and temporal separation of at least `1.0 s`.
+
+For a history window `h`, the recent path vector was
+`Delta X_h(t) = [C(t)-C(t-h), R(t)-R(t-h)]`; the history angle was the angle of
+this vector in the `C-R` plane. The primary setting used `h=0.50 s`, current
+state distance threshold `0.50`, up to five nearest contrasted-history pairs
+per anchor, and at most 10000 pairs per observation.
 
 All `19/19` observations had sufficient matched pairs. The median number of
 selected pairs per sufficient observation was `4723`, the median paired-frame

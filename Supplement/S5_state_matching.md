@@ -46,6 +46,15 @@ The event-locality test matched true transition frames to same-observation
 non-event frames in `(C, dC/dt, R)` space and asked whether true transition
 timestamps showed additional near-pre T1 activity.
 
+Matching used Euclidean distance in robust-standardized `(C, dC/dt, R)` space.
+Candidate non-event controls were excluded if they occurred within `0.75 s` of
+a true transition, ranked by state distance, and retained up to the five nearest
+matches. An event was accepted only when its best match distance was at most
+`0.75`. Controls were not removed after use, so the same non-event frame could
+in principle match multiple true events. Distance ties were not given a special
+random rule; they followed the deterministic numerical ordering returned by
+the implementation.
+
 ```text
 median observation event-minus-control near-pre effect = -0.03288737643286521
 same-direction observation fraction = 0.42105263157894735

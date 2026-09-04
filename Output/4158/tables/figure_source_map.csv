@@ -1,0 +1,16 @@
+role,path,exists,size_bytes
+input,Output/4133/observation_master_table.csv,True,23974
+input,Output/4081c/full_geometry_ladder_rows.csv,True,46569
+input,Output/4155/N_both_distribution.csv,True,170
+input,Output/4155/p_omnibus.json,True,589
+input,Output/4142/survival_variant_summary.csv,True,592
+input,Output/4085/aggregate_profiles.csv,True,22768
+input,Output/4131/decision.json,True,2527
+output,Output/4158/figures/Fig2_final.png,True,254638
+output,Output/4158/figures/Fig2_final.pdf,True,23585
+output,mypaper2/Latex/figures/Fig2_final.png,True,254638
+output,mypaper2/Latex/figures/Fig2_final.pdf,True,23585
+output,Output/4158/figures/Fig3_final.png,True,316101
+output,Output/4158/figures/Fig3_final.pdf,True,17164
+output,mypaper2/Latex/figures/Fig3_final.png,True,316101
+output,mypaper2/Latex/figures/Fig3_final.pdf,True,17164
