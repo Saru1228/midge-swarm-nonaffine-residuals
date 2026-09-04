@@ -1,0 +1,54 @@
+{
+  "node": "4130_definition_and_evidence_registry",
+  "date": "2026-08-27",
+  "node_type": "synthesis_registry",
+  "upstream_node": "4125_state_path_history_synthesis",
+  "data_scope": "all_19_observations",
+  "primary_goal": "convert_408x_412x_evidence_into_paper_ready_phenomenon_boundary_architecture",
+  "source_counts": {
+    "nodes_checked": 24,
+    "nodes_with_decision_json": 23,
+    "nodes_with_summary_md": 24,
+    "summary_only_nodes": 1
+  },
+  "registry_counts": {
+    "definitions": 10,
+    "evidence_rows": 24,
+    "claim_strength_rows": 8,
+    "metadata_audit_rows": 4
+  },
+  "quality_checks": {
+    "missing_required_terms": [],
+    "invalid_evidence_claim_classes": [],
+    "invalid_claim_strengths": [],
+    "missing_core_sources": [],
+    "has_unverified_metadata": true,
+    "definition_registry_ok": true,
+    "source_registry_ok": true
+  },
+  "gate_result": "pass_4130_registry_ready_with_metadata_boundary",
+  "interpretation": "The evidence registry, definition dictionary, claim strength registry, and metadata audit are ready for 4131/4132. Metadata-dependent heterogeneity claims must remain descriptive until independently verified.",
+  "does_not_prove": [
+    "new mechanism",
+    "causal explanation",
+    "metadata regime",
+    "universal history dependence",
+    "publication-ready figures"
+  ],
+  "next": [
+    "4131_robust_positive_phenomenon_atlas",
+    "4132_negative_mechanism_boundary_atlas"
+  ],
+  "artifacts": [
+    "Output/4130/definition_dictionary.csv",
+    "Output/4130/evidence_registry.csv",
+    "Output/4130/evidence_registry.json",
+    "Output/4130/claim_strength_registry.csv",
+    "Output/4130/metadata_source_audit.csv",
+    "Output/4130/source_map.csv",
+    "Output/4130/claim_dependency_graph.md",
+    "Output/4130/route_timeline.md",
+    "Output/4130/decision.json",
+    "Output/4130/4130_summary.md"
+  ]
+}

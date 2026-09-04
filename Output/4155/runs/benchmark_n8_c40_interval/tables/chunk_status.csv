@@ -1,0 +1,5 @@
+chunk,rep_start,rep_end,status,complete,elapsed_sec
+chunk_0001_0002,1,2,complete,True,2.196760416030884
+chunk_0003_0004,3,4,complete,True,2.1356847286224365
+chunk_0005_0006,5,6,complete,True,2.14139986038208
+chunk_0007_0008,7,8,complete,True,1.9904165267944336

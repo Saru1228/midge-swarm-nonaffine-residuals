@@ -1,0 +1,7 @@
+audit_item,status,evidence
+all_required_sections_present,pass,"README plus S1-S8 markdown files exist under Supplement/."
+source_paths_listed,pass,"Each supplement section lists source outputs for traceability."
+bounded_claims_preserved,pass,"High-B boundary, detrending sensitivity, state-matching failures, and history boundary are explicitly qualified."
+smoke_language_absent,pass,"Text scan found no smoke wording in Supplement/."
+old_4134_figure_language_absent,pass,"Text scan found no 4134 figure references in Supplement/."
+pdf_compilation_deferred,pass,"No PDF compilation was run at 4152."

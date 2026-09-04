@@ -1,0 +1,52 @@
+\subsection{Low-Dimensional State Sufficiency}
+
+After local T1 survival was established, we tested whether compact state
+variables were sufficient to account for first- or second-moment structure in
+the local tangential non-affine residual. The grouped validation unit was the
+observation: models were trained on all but one observation and evaluated on
+the held-out observation. The baseline was a radius-only binned model. The
+state model added $C(t)$ and $\dot{C}(t)$ to the radius covariate. Performance
+was measured by incremental
+\begin{equation}
+R^2_{\mathrm{inc}}
+=
+1-
+\frac{\mathrm{MSE}_{\mathrm{state}}}{\mathrm{MSE}_{\mathrm{radius}}}.
+\end{equation}
+A within-observation circular shift of $C$ and $\dot{C}$ provided a temporal
+state-null comparison.
+
+The radius variable depended on the unit of analysis. In the vector-level
+moment test, the radius covariate was the focal individual's swarm-centered
+radius. In the state-matched event-locality and history tests described below,
+the radius coordinate was the swarm-level robust-z $R_{\mathrm{rms}}(t)$.
+
+\subsection{State-Matched Event-Locality}
+
+We next asked whether true transition timestamps carried information beyond
+continuous compact state. For each true event, near-pre T1 activity over
+$[-0.25,0.00]$ s was compared with same-observation non-event frames matched
+in robust standardized $(C,\dot{C},R)$ space. Up to five matched controls were
+used for each event. Candidate controls were required to be at least 0.75 s
+from true transition times, and the best match distance had to be no greater
+than 0.75 for the event to be accepted. A shifted-event null with 80
+within-observation replicates was used to test whether true event timings
+exceeded a temporal reference.
+This endpoint-inclusive state-matched window follows the 4100 implementation
+and is distinct from the half-open phase-bin convention used for event-aligned
+profiles, where the transition frame was assigned to the near-post bin.
+
+\subsection{Recent-History and Observation Heterogeneity}
+
+Finally, we tested whether recent state-path direction supplied information
+not contained in the current state. Frames were paired within the same
+observation when their current $(C,\dot{C},R)$ states were close but their
+recent paths through the $C$--$R$ plane were contrasting. The primary history
+window was 0.50 s, the current-state distance threshold was 0.50, the
+history-angle contrast threshold was 90 degrees, and paired frames were
+required to be at least 1.0 s apart. The observed history-conditioned
+separation was compared with within-observation shuffled-history controls.
+
+All cross-observation summaries preserved observation identity. Observation
+heterogeneity was treated as part of the empirical result, while metadata
+associations were used descriptively only.

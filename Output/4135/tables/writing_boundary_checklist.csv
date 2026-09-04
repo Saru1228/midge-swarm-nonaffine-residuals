@@ -1,0 +1,8 @@
+check_id,required_wording,avoid_wording,reason
+W1,most observations,all observations / universal,T1 survival has explicit failures and boundary cases.
+W2,tested reduction did not provide a stable explanation,mechanism does not exist,Negative mechanism results are definition-bound tests.
+W3,state-matched near-pre aggregate route,transitions have no special dynamics,4100 tested one event-local formulation only.
+W4,observation-specific history separation,universal memory or hysteresis,Direction/order consistency fails across observations.
+W5,descriptive metadata association,recording condition explains failure,Metadata verification is incomplete and n=19 is small.
+W6,propagation remains not confirmatorily tested,no propagation exists,The propagation route was not entered after the 4100 gate.
+W7,bounded collective observable,individual-level causal force,T1 is a focal-neighborhood aggregate residual.

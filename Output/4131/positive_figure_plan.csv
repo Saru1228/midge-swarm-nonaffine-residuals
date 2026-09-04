@@ -1,0 +1,5 @@
+figure_id,file,role,content,source_tables,allowed_caption_claim
+Fig4131A,Output/4131/figures/4131_observation_coverage_matrix.png,main,"observation-by-observation coverage for T1 survival, robustness, spatial, phase, and history-positive flags",Output/4131/observation_positive_coverage_matrix.csv,positive evidence is common but bounded at the observation level
+Fig4131B,Output/4131/figures/4131_positive_support_bars.png,main,support fractions for each positive phenomenon row,Output/4131/positive_phenomenon_atlas.csv,strongest positive evidence is T1 survival and scale/lag robustness within survivor observations
+Fig4131C,Output/4131/figures/4131_spatial_phase_positive_summary.png,main,spatial variable gate fractions and phase gate fractions,Output/4084/variable_spatial_taxonomy.csv;Output/4085/variable_phase_summary.csv,diffuse all-tangential activity is more stable than edge/core phase localization
+Fig4131D,Output/4131/figures/4131_history_secondary_positive.png,supplement,observation-level history real-minus-null effects and sign split,Output/4121/observation_level_effects.csv,history separation is visible but observation-specific

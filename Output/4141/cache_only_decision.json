@@ -1,0 +1,15 @@
+{
+  "node": "4141_full_pipeline_omnibus_survival_null",
+  "date": "2026-09-01",
+  "status": "cache_only_complete",
+  "observations": [
+    16,
+    17,
+    18,
+    19
+  ],
+  "message": "Local T1 caches were built or verified. No omnibus null inference was run.",
+  "next": [
+    "run all-observation smoke with --smoke --n-null 100 after all caches exist"
+  ]
+}

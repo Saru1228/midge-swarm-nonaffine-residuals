@@ -1,0 +1,37 @@
+{
+  "node": "4085_event_phase_profile_of_t1_signal",
+  "date": "2026-08-25",
+  "result": "boundary_edge_core_no_stable_phase_but_diffuse_t1_has_phase_profile",
+  "target_variable": "shell_edge_minus_core",
+  "n_observations": 14,
+  "majority_gate_count": 8,
+  "target_majority_phases": [],
+  "secondary_majority_phase_candidates": [
+    {
+      "variable": "all_tangential",
+      "phase": "near_pre",
+      "phase_gate_count": 8
+    }
+  ],
+  "target_near_transition_gate_total": 2,
+  "target_phase_class_counts": {
+    "no_clear_phase_gate": 11,
+    "post_transition_response_candidate": 1,
+    "broad_state_or_offcenter_profile_candidate": 1,
+    "pre_transition_buildup_candidate": 1
+  },
+  "interpretation": "The edge/core target `shell_edge_minus_core` has no stable phase-localized profile, but secondary T1 variables do: all_tangential:near_pre (8/14). This routes interpretation toward signed/state decomposition before any phase-space claim.",
+  "phase_space_side_branch": "4085b_phase_space_projection_of_t1_edge_core_signal",
+  "next": [
+    "4086_signed_direction_and_state_decomposition"
+  ],
+  "artifacts": [
+    "Output/4085/aggregate_profiles.csv",
+    "Output/4085/phase_profile_rows.csv",
+    "Output/4085/ob_phase_classification.csv",
+    "Output/4085/variable_phase_summary.csv",
+    "Output/4085/figures/4085_target_profiles.png",
+    "Output/4085/figures/4085_target_phase_heatmap.png",
+    "Output/4085/figures/4085_variable_phase_gate_counts.png"
+  ]
+}

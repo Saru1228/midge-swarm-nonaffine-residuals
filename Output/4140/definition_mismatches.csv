@@ -1,0 +1,4 @@
+item,expected_or_paper,actual_or_code,severity,action
+condition-number QC,reviewer-defensible affine-fit conditioning audit,no condition-number threshold is used in current T1; rank screen exists only,planned_boundary,Run 4143; do not alter T1 definition.
+full-pipeline omnibus null,calibrated P_null(N_both>=14),not yet run; existing 4081c non-event replicates are not an omnibus null,planned_boundary,"Run 4141 smoke, then full B>=1000 if feasible."
+detrending challenge,no-detrend / causal / centered comparison,not yet run; current T1 uses centered rolling mean,planned_boundary,Run 4142 after 4140 freeze.

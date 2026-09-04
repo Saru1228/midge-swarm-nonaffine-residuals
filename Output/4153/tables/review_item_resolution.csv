@@ -1,0 +1,5 @@
+review_group,status,resolution
+claim_language,cleared,"Review-only claim hits occur in unsupported-stronger-claim or explicit boundary contexts; no manuscript change required."
+causal_language,cleared,"Review-only causal terms occur in negated, bounded, or limitation contexts; no manuscript change required."
+references,cleared,"No missing cited bibitems and no review-only unused bibitems were reported."
+terminology,cleared,"No terminology review items were reported for active manuscript or supplement scans."

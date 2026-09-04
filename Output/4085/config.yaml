@@ -1,0 +1,13 @@
+node: 4085_event_phase_profile_of_t1_signal
+date: 2026-08-25
+node_type: mechanism
+input_node: 4084_spatial_taxonomy_of_t1_local_nonaffine_signal
+observations: 2,5,7,9,10,11,12,13,14,15,16,17,18,19
+variables: shell_edge_minus_core,all_tangential,shell_core_tangential,shell_middle_tangential,shell_edge_tangential,shell_radius_corr_tangential,density_dense_tangential,density_sparse_minus_dense
+target_variable: shell_edge_minus_core
+relative_time_min_sec: -0.5
+relative_time_max_sec: 0.5
+relative_time_step_sec: 0.05
+n_non_event_replicates: 40
+phase_gap_gate_z: 0.12
+phase_p_gate: 0.25

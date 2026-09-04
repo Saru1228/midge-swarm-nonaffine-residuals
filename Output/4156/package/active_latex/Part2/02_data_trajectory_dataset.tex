@@ -1,0 +1,29 @@
+\subsection{Trajectory Dataset}
+
+We analyzed the published three-dimensional trajectories of 19 laboratory
+\textit{Chironomus riparius} swarms sampled at 100 Hz
+\cite{sinhuber2019_dataset}. Each observation contains time-resolved
+individual identifiers, positions, velocities, and accelerations. The original
+experimental setup, imaging system, and reconstruction procedure are described
+in the dataset paper.
+
+The observations differ in duration, number of tracked individuals, track
+length, and recording context. In this paper, these differences are treated as
+part of the empirical domain of the result. They are not removed by pooling,
+and they are not used as causal explanations unless independently verified.
+The 19 observations are separate experimental recordings of the same
+laboratory swarm system rather than 19 independent biological populations. We
+therefore used observation identity as the replication and grouping unit
+throughout the cross-observation analyses.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/Fig1_final.pdf}
+\caption{Data and T1 measurement definition. Panel A shows a representative
+raw three-dimensional snapshot from one observation. Panels B and C define the
+affine subtraction and the frozen T1 measurement target used in this study.
+Panel D shows the event-aligned all-tangential profile used to illustrate the
+measurement pipeline. The figure defines the observable and does not represent
+a fitted physical mechanism.}
+\label{fig:data_t1_definition}
+\end{figure*}

@@ -1,0 +1,60 @@
+{
+  "node_id": "4010_empirical_residual_cumulant_audit",
+  "series": "4xxx / Boltzmann-inspired cumulant branch",
+  "node_type": "cumulant / factorization audit",
+  "parent_node": "4004_boltzmann_molecule_cumulant_reframe",
+  "question": "Do local affine-residual velocity correlations survive a one-fish conditional factorized baseline?",
+  "competing_interpretations": [
+    "H_cumulant: transition-linked residual signal includes multi-fish pair correlations",
+    "H_one_fish: transition-linked pair statistics are explained by shell-conditioned one-fish residual distributions",
+    "H_shift_null: shifted event times show comparable cumulant changes"
+  ],
+  "input_artifacts": [
+    "data/raw/Ob*.txt",
+    "Output/3045/tables/transition_events.csv",
+    "idea/4004_boltzmann_molecule_cumulant_reframe.md"
+  ],
+  "method": [
+    "fit per-frame affine baseline and compute affine residual velocity",
+    "build undirected kNN graph with k=6",
+    "condition one-fish residual distributions on 3 radial shells within each frame",
+    "compute observed pair statistic, one-fish conditional expectation, and empirical cumulant",
+    "compare transition events against 160 shifted-event null replicates"
+  ],
+  "outputs": [
+    "Output/4010/tables/empirical_cumulant_direction_null_comparison.csv",
+    "Output/4010/tables/egrt_decision_summary.csv",
+    "Output/4010/4010_summary.md"
+  ],
+  "provenance": {
+    "script": "Experiment/run_4010_empirical_residual_cumulant_audit.py",
+    "config": {
+      "data_dir": "data/raw",
+      "max_ob": null,
+      "knn_k": 6,
+      "n_shells": 3,
+      "smooth_window_sec": 1.0,
+      "event_window_sec": 0.35,
+      "prepost_window_sec": 0.2,
+      "n_null": 160,
+      "direction_gap_gate_z": 0.1,
+      "null_p_gate": 0.1,
+      "min_ob_gate": 12,
+      "min_cumulant_survivors": 2
+    },
+    "decision": {
+      "node_id": "4010_empirical_residual_cumulant_audit",
+      "node_type": "cumulant / factorization audit",
+      "n_surviving_variables": 0,
+      "n_empirical_cumulant_survivors": 0,
+      "n_observed_pair_survivors": 0,
+      "n_one_fish_baseline_survivors": 0,
+      "empirical_cumulant_surviving_variables": "",
+      "observed_pair_surviving_variables": "",
+      "one_fish_baseline_surviving_variables": "",
+      "eg_rt_decision": "weak_empirical_residual_cumulant_signal",
+      "recommended_next_node": "pause 4010 cumulant route",
+      "boundary_reading": "No observed or empirical-cumulant pair variable survives shifted-event null gates."
+    }
+  }
+}

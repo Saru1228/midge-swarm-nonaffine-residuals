@@ -1,0 +1,44 @@
+[
+  {
+    "variant": "centered_1s",
+    "n_observations": 19,
+    "n_both": 14,
+    "n_any": 15,
+    "n_k8": 14,
+    "n_k10": 15,
+    "both_fraction": 0.7368421052631579,
+    "any_fraction": 0.7894736842105263,
+    "delta_both_vs_4081c": 0,
+    "delta_any_vs_4081c": 0,
+    "both_observations": "2,5,7,9,10,11,12,13,14,15,16,17,18,19",
+    "any_observations": "2,4,5,7,9,10,11,12,13,14,15,16,17,18,19"
+  },
+  {
+    "variant": "past_1s",
+    "n_observations": 19,
+    "n_both": 11,
+    "n_any": 16,
+    "n_k8": 12,
+    "n_k10": 15,
+    "both_fraction": 0.5789473684210527,
+    "any_fraction": 0.8421052631578947,
+    "delta_both_vs_4081c": -3,
+    "delta_any_vs_4081c": 1,
+    "both_observations": "2,7,9,10,11,12,13,14,15,16,19",
+    "any_observations": "1,2,4,7,8,9,10,11,12,13,14,15,16,17,18,19"
+  },
+  {
+    "variant": "none_z",
+    "n_observations": 19,
+    "n_both": 13,
+    "n_any": 16,
+    "n_k8": 16,
+    "n_k10": 13,
+    "both_fraction": 0.6842105263157895,
+    "any_fraction": 0.8421052631578947,
+    "delta_both_vs_4081c": -1,
+    "delta_any_vs_4081c": 1,
+    "both_observations": "2,4,9,10,11,12,13,14,15,16,17,18,19",
+    "any_observations": "2,4,5,7,8,9,10,11,12,13,14,15,16,17,18,19"
+  }
+]

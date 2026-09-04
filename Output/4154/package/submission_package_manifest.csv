@@ -1,0 +1,49 @@
+relative_path,role,notes
+mypaper2/Latex/main_final.pdf,source_final_pdf,Compiled final manuscript PDF; 10 pages
+mypaper2/Latex/main_final.tex,source_final_entrypoint,Final manuscript entrypoint copied from active main chain
+mypaper2/Latex/main_final.log,source_compile_log,Final compilation log after two pdflatex passes
+mypaper2/Latex/bibitems.tex,source_bibliography,Manual bibliography used by main_final.tex
+Supplement/Supplement_submission.md,source_submission_supplement,Sanitized submission-facing supplement draft
+Output/4154/code_data_availability_statement.md,availability_statement,Code and data availability statement for this freeze
+Output/4154/compile_log_audit.csv,compile_audit,Machine-readable final compile audit
+Output/4154/submission_package_manifest.csv,manifest,This manifest
+Output/4154/4154_summary.md,node_summary,Human-readable 4154 result summary
+Output/4154/decision.json,node_decision,Machine-readable 4154 routing decision
+Output/4154/package/main_final.pdf,package_final_pdf,Frozen copy of final compiled manuscript PDF
+Output/4154/package/main_final.tex,package_final_entrypoint,Frozen copy of final manuscript entrypoint
+Output/4154/package/main_final.log,package_compile_log,Frozen copy of final compilation log
+Output/4154/package/bibitems.tex,package_bibliography,Frozen copy of manual bibliography
+Output/4154/package/Supplement_submission.md,package_supplement,Frozen copy of submission-facing supplement draft
+Output/4154/package/code_data_availability_statement.md,package_availability_statement,Frozen copy of code/data availability statement
+Output/4154/package/4154_summary.md,package_node_summary,Frozen copy of 4154 node summary
+Output/4154/package/compile_log_audit.csv,package_compile_audit,Frozen copy of compile audit
+Output/4154/package/decision.json,package_node_decision,Frozen copy of 4154 routing decision
+Output/4154/package/final_audit_summary.md,package_4153_audit,Frozen copy of 4153 final consistency audit summary
+Output/4154/package/submission_package_manifest.csv,package_manifest,Frozen copy of this manifest
+Output/4154/package/active_latex/main_final.tex,active_latex_entrypoint,Reproducibility copy of active TeX source chain
+Output/4154/package/active_latex/00_abstract.tex,active_latex_text,Active abstract source
+Output/4154/package/active_latex/01_introduction_v2.tex,active_latex_text,Active introduction source
+Output/4154/package/active_latex/02_data_v2.tex,active_latex_wrapper,Active data wrapper
+Output/4154/package/active_latex/Part2/02_data_trajectory_dataset.tex,active_latex_text,Active trajectory dataset subsection
+Output/4154/package/active_latex/Part2/02_data_t1_observable_v2.tex,active_latex_text,Active T1 observable subsection
+Output/4154/package/active_latex/03_methods_v2.tex,active_latex_wrapper,Active methods wrapper
+Output/4154/package/active_latex/Part3/03_methods_affine_reduction_and_controls_v2.tex,active_latex_text,Active affine reduction and controls subsection
+Output/4154/package/active_latex/Part3/03_methods_reduction_boundary_tests_v2.tex,active_latex_text,Active reduction-boundary tests subsection
+Output/4154/package/active_latex/04_results_v2.tex,active_latex_wrapper,Active results wrapper
+Output/4154/package/active_latex/Part4/04_results_t1_survival_v2.tex,active_latex_text,Active T1 survival result subsection
+Output/4154/package/active_latex/Part4/04_results_scale_lag_robustness_v2.tex,active_latex_text,Active scale/lag robustness result subsection
+Output/4154/package/active_latex/Part4/04_results_diffuse_phenotype_v2.tex,active_latex_text,Active diffuse phenotype result subsection
+Output/4154/package/active_latex/Part4/04_results_failed_reductions_v2.tex,active_latex_text,Active failed-reduction result subsection
+Output/4154/package/active_latex/Part4/04_results_empirical_boundary_v2.tex,active_latex_text,Active empirical-boundary result subsection
+Output/4154/package/active_latex/05_discussion_conclusion_v2.tex,active_latex_wrapper,Active discussion/conclusion wrapper
+Output/4154/package/active_latex/Part5/05_discussion_interpretive_value_v2.tex,active_latex_text,Active interpretive-value discussion subsection
+Output/4154/package/active_latex/Part5/05_discussion_context_transfer_v2.tex,active_latex_text,Active context-transfer discussion subsection
+Output/4154/package/active_latex/Part5/05_discussion_limitations_future_v2.tex,active_latex_text,Active limitations/future-work subsection
+Output/4154/package/active_latex/Part5/05_conclusion_v2.tex,active_latex_text,Active conclusion subsection
+Output/4154/package/active_latex/bibitems.tex,active_latex_bibliography,Reproducibility copy of bibliography
+Output/4154/package/active_latex/figures/Fig1_final.pdf,active_latex_figure,Final Figure 1 PDF
+Output/4154/package/active_latex/figures/Fig2_final.pdf,active_latex_figure,Final Figure 2 PDF
+Output/4154/package/active_latex/figures/Fig3_final.pdf,active_latex_figure,Final Figure 3 PDF
+Output/4154/package/active_latex/figures/Fig4_final.pdf,active_latex_figure,Final Figure 4 PDF
+Output/4154/package/active_latex/figures/Fig5_final.pdf,active_latex_figure,Final Figure 5 PDF
+Output/4154/mypaper2_4154_submission_package.zip,archive,Frozen package archive created from Output/4154/package

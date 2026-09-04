@@ -1,0 +1,134 @@
+[
+  {
+    "variant": "centered_1s",
+    "variable": "all_tangential",
+    "phase": "early_pre",
+    "n_observations": 14,
+    "phase_gate_count": 7,
+    "phase_gate_fraction": 0.5,
+    "median_abs_event_minus_abs_null_z": 0.030572740822128845,
+    "median_event_minus_null_phase_z": -0.1079418533042393,
+    "majority_gate": false
+  },
+  {
+    "variant": "centered_1s",
+    "variable": "all_tangential",
+    "phase": "near_pre",
+    "n_observations": 14,
+    "phase_gate_count": 11,
+    "phase_gate_fraction": 0.7857142857142857,
+    "median_abs_event_minus_abs_null_z": 0.1499508146449261,
+    "median_event_minus_null_phase_z": -0.1918738917439032,
+    "majority_gate": true
+  },
+  {
+    "variant": "centered_1s",
+    "variable": "all_tangential",
+    "phase": "near_post",
+    "n_observations": 14,
+    "phase_gate_count": 13,
+    "phase_gate_fraction": 0.9285714285714286,
+    "median_abs_event_minus_abs_null_z": 0.115423454729529,
+    "median_event_minus_null_phase_z": 0.1679641514386992,
+    "majority_gate": true
+  },
+  {
+    "variant": "centered_1s",
+    "variable": "all_tangential",
+    "phase": "late_post",
+    "n_observations": 14,
+    "phase_gate_count": 6,
+    "phase_gate_fraction": 0.42857142857142855,
+    "median_abs_event_minus_abs_null_z": 0.008059658466318204,
+    "median_event_minus_null_phase_z": 0.07479483371775597,
+    "majority_gate": false
+  },
+  {
+    "variant": "past_1s",
+    "variable": "all_tangential",
+    "phase": "early_pre",
+    "n_observations": 14,
+    "phase_gate_count": 9,
+    "phase_gate_fraction": 0.6428571428571429,
+    "median_abs_event_minus_abs_null_z": 0.13024016384408538,
+    "median_event_minus_null_phase_z": -0.18671989942770584,
+    "majority_gate": true
+  },
+  {
+    "variant": "past_1s",
+    "variable": "all_tangential",
+    "phase": "near_pre",
+    "n_observations": 14,
+    "phase_gate_count": 8,
+    "phase_gate_fraction": 0.5714285714285714,
+    "median_abs_event_minus_abs_null_z": 0.12204958344448588,
+    "median_event_minus_null_phase_z": -0.17895335548163357,
+    "majority_gate": true
+  },
+  {
+    "variant": "past_1s",
+    "variable": "all_tangential",
+    "phase": "near_post",
+    "n_observations": 14,
+    "phase_gate_count": 12,
+    "phase_gate_fraction": 0.8571428571428571,
+    "median_abs_event_minus_abs_null_z": 0.11615574574253237,
+    "median_event_minus_null_phase_z": 0.18424269361515982,
+    "majority_gate": true
+  },
+  {
+    "variant": "past_1s",
+    "variable": "all_tangential",
+    "phase": "late_post",
+    "n_observations": 14,
+    "phase_gate_count": 8,
+    "phase_gate_fraction": 0.5714285714285714,
+    "median_abs_event_minus_abs_null_z": 0.03978827862608403,
+    "median_event_minus_null_phase_z": 0.09090184660812728,
+    "majority_gate": true
+  },
+  {
+    "variant": "none_z",
+    "variable": "all_tangential",
+    "phase": "early_pre",
+    "n_observations": 14,
+    "phase_gate_count": 9,
+    "phase_gate_fraction": 0.6428571428571429,
+    "median_abs_event_minus_abs_null_z": 0.06515942248248985,
+    "median_event_minus_null_phase_z": -0.15010463390994422,
+    "majority_gate": true
+  },
+  {
+    "variant": "none_z",
+    "variable": "all_tangential",
+    "phase": "near_pre",
+    "n_observations": 14,
+    "phase_gate_count": 12,
+    "phase_gate_fraction": 0.8571428571428571,
+    "median_abs_event_minus_abs_null_z": 0.16753322305260573,
+    "median_event_minus_null_phase_z": -0.21840675365542828,
+    "majority_gate": true
+  },
+  {
+    "variant": "none_z",
+    "variable": "all_tangential",
+    "phase": "near_post",
+    "n_observations": 14,
+    "phase_gate_count": 8,
+    "phase_gate_fraction": 0.5714285714285714,
+    "median_abs_event_minus_abs_null_z": 0.047233963845626274,
+    "median_event_minus_null_phase_z": 0.09427615277431349,
+    "majority_gate": true
+  },
+  {
+    "variant": "none_z",
+    "variable": "all_tangential",
+    "phase": "late_post",
+    "n_observations": 14,
+    "phase_gate_count": 6,
+    "phase_gate_fraction": 0.42857142857142855,
+    "median_abs_event_minus_abs_null_z": 0.021093399552557568,
+    "median_event_minus_null_phase_z": 0.07055301693429972,
+    "majority_gate": false
+  }
+]

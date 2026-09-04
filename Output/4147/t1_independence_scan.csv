@@ -1,0 +1,6 @@
+script,stage,n_t1_term_hits,hit_terms,t1_independence_pass_for_label_construction,notes
+Experiment/run_3032_transfer_operator_metastability.py,label_construction,0,,True,Required to be free of T1 terms.
+Experiment/run_3032b_state_meaning_residence_audit.py,label_materialization,0,,True,Required to be free of T1 terms.
+Experiment/run_3041_anisotropic_layer_residence.py,label_propagation,0,,True,May consume labels downstream; not part of spectral label fitting.
+Experiment/run_3041b_coarse_graining_closure_audit.py,label_propagation,0,,True,May consume labels downstream; not part of spectral label fitting.
+Experiment/run_3045_residual_event_trigger_search.py,event_detection_and_downstream_residual_search,0,,True,May consume labels downstream; not part of spectral label fitting.

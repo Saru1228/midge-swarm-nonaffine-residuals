@@ -1,0 +1,41 @@
+{
+  "node": "4155_parallel_highB_omnibus_null",
+  "date": "2026-09-02",
+  "run_name": "highB_n1000_c40",
+  "gate_result": "strong_pass_omnibus_null",
+  "requested_replicates": 1000,
+  "completed_replicates": 1000,
+  "chunk_size": 50,
+  "workers": 4,
+  "n_controls_per_replicate_observation": 40,
+  "complete": true,
+  "operational_smoke": false,
+  "missing_chunks": [],
+  "primary_metrics": {
+    "n_null_replicates": 1000,
+    "n_controls_per_replicate_observation": 40,
+    "smoke_only": false,
+    "observed_n_both": 14,
+    "observed_n_any": 15,
+    "p_omnibus_both_ge_14": 0.000999000999000999,
+    "p_omnibus_any_ge_15": 0.02197802197802198,
+    "n_both_null_mean": 4.38,
+    "n_both_null_median": 4.0,
+    "n_both_null_q90": 7.0,
+    "n_both_null_q95": 7.0,
+    "n_both_null_q99": 9.0,
+    "n_both_null_max": 12.0,
+    "n_any_null_mean": 10.223,
+    "n_any_null_median": 10.0,
+    "n_any_null_q90": 13.0,
+    "n_any_null_q95": 14.0,
+    "n_any_null_q99": 15.0,
+    "n_any_null_max": 17.0
+  },
+  "main_result": {
+    "gate_result": "strong_pass_omnibus_null",
+    "manuscript_consequence": "Observed 14/19 both-scale count is rare under the complete null pipeline."
+  },
+  "boundary": "",
+  "next": "optional manuscript wording update if accepted"
+}

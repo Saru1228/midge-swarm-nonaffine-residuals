@@ -1,0 +1,14 @@
+item,meaning,status,active_hits,combined_hits,example
+primary_both_scale,primary T1 both-scale count,pass,8,16,"mypaper2/Latex/00_abstract.tex:9: two-scale consistency requirement, T1 survived in 14 of 19 observations; under"
+primary_any_scale,primary T1 any-scale count,pass,2,5,"mypaper2/Latex/00_abstract.tex:10: a more permissive any-scale criterion, it survived in 15 of 19 observations."
+survivor_scale_lag,survivor-class scale/lag robustness,pass,2,3,"mypaper2/Latex/00_abstract.tex:18: preprocessing-invariant. Within the survivor class, 14 of 15 observations"
+diffuse_tangential,diffuse all-tangential support,pass,2,2,"mypaper2/Latex/00_abstract.tex:20: repeatable phenotype was diffuse tangential activity, supported in 13 of 14"
+near_pre_main,main near-pre phase-localization count,pass,1,4,"mypaper2/Latex/Part4/04_results_diffuse_phenotype_v2.tex:36: original $8/14$ phase-localization count. Thus, the near-pre profile remained a"
+past_only_both,past-only detrending both-scale count,pass,4,5,mypaper2/Latex/00_abstract.tex:16: both-scale support to 11 of 19 under past-only detrending and 13 of 19 without
+none_z_both,no-rolling detrending both-scale count,pass,4,5,mypaper2/Latex/00_abstract.tex:16: both-scale support to 11 of 19 under past-only detrending and 13 of 19 without
+omnibus_B100,limited-resolution omnibus replicate count,pass,5,10,"mypaper2/Latex/00_abstract.tex:12: the observed both-scale count ($B=100$, null maximum 11, plus-one"
+omnibus_p,limited-resolution omnibus plus-one p-value,pass,3,4,"mypaper2/Latex/00_abstract.tex:13: $p=0.0099$), and local-affine conditioning quality control found"
+affine_median_cond,median local affine condition number,pass,2,2,"mypaper2/Latex/Part4/04_results_t1_survival_v2.tex:40: 19 observations passed both $k$ values, the median condition number was 2.37,"
+affine_q95_cond,largest q95 local affine condition number,pass,1,2,"mypaper2/Latex/Part4/04_results_t1_survival_v2.tex:41: the largest q95 condition number across combinations was 6.28, and no sampled"
+event_locality_median,state-matched near-pre median effect,pass,2,3,"mypaper2/Latex/Part4/04_results_failed_reductions_v2.tex:26: event-minus-control near-pre effect was approximately $-0.033$, and the"
+history_q95,recent-history q95 boundary count,pass,1,5,"mypaper2/Latex/Part4/04_results_empirical_boundary_v2.tex:49: Recent history & 14/19 above median shuffle, 6/19 above q95 & History effects are observation-specific & A universal memory rule is proven \\"

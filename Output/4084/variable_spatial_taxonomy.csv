@@ -1,0 +1,13 @@
+variable,family,n_ob_tested,gate_count,gate_fraction,median_event_minus_non_event_abs_direction_z,median_real_abs_direction_contrast_z,signed_direction_sign_consistency,majority_gate,interpretation
+density_dense_tangential,density_level,14,14,1.0,0.3375168546058351,0.5528964486633513,0.9285714285714286,True,majority event-conditioned level/diffuse signal
+all_tangential,diffuse_baseline,14,13,0.9285714285714286,0.4710630216757824,0.6987685531455983,1.0,True,majority event-conditioned level/diffuse signal
+density_middle_tangential,density_level,14,13,0.9285714285714286,0.3274186098861893,0.5064692822488228,1.0,True,majority event-conditioned level/diffuse signal
+shell_core_tangential,radial_level,14,12,0.8571428571428571,0.40890291762007275,0.6090297744374656,1.0,True,majority event-conditioned level/diffuse signal
+shell_middle_tangential,radial_level,14,11,0.7857142857142857,0.36037010937807157,0.5179378439324751,1.0,True,majority event-conditioned level/diffuse signal
+shell_radius_corr_tangential,radial_gradient,14,11,0.7857142857142857,0.22454803811583524,0.3842699964914583,0.6363636363636364,True,majority count but signed spatial direction is inconsistent
+density_sparse_tangential,density_level,14,11,0.7857142857142857,0.15591183458734276,0.3767751264050916,1.0,True,majority event-conditioned level/diffuse signal
+shell_edge_tangential,radial_level,14,10,0.7142857142857143,0.27846514507068443,0.43794014163452677,1.0,True,majority event-conditioned level/diffuse signal
+shell_edge_minus_core,radial_contrast,14,9,0.6428571428571429,0.104997759013613,0.2543748562098141,0.7777777777777778,True,majority spatial contrast/gradient candidate
+density_knn_distance_corr_tangential,density_gradient,14,7,0.5,0.0739896266455263,0.28197447964734235,0.5714285714285714,False,minority or observation-specific signal
+density_sparse_minus_dense,density_contrast,14,6,0.42857142857142855,0.058964458005601544,0.25788468975265993,0.6666666666666666,False,minority or observation-specific signal
+shell_middle_minus_core,radial_contrast,14,5,0.35714285714285715,0.02797191836731935,0.2135516079180823,0.8,False,minority or observation-specific signal

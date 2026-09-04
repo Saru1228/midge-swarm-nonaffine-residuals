@@ -1,0 +1,61 @@
+{
+  "node": "4133_observation_heterogeneity_map",
+  "date": "2026-08-27",
+  "node_type": "observation_heterogeneity_map",
+  "upstream_nodes": [
+    "4131_robust_positive_phenomenon_atlas",
+    "4132_negative_mechanism_boundary_atlas"
+  ],
+  "data_scope": "all_19_observations",
+  "raw_data_dir": "data/raw",
+  "master_table_rows": 19,
+  "class_counts": {
+    "robust_survivor_diffuse_positive": 13,
+    "fragile_408x_boundary": 2,
+    "stable_408x_failure": 2,
+    "fragile_survivor": 1,
+    "robust_survivor_without_diffuse_gate": 1
+  },
+  "association_counts": {
+    "tested_associations": 12,
+    "moderate_or_weak_moderate_descriptive": 4
+  },
+  "metadata_status": {
+    "raw_column_0_4_metadata": "VERIFIED_FROM_RAW_COLUMNS_0_AND_4",
+    "recording_condition_daytime_dusk": "UNVERIFIED",
+    "observation_index_as_order_proxy": "UNVERIFIED"
+  },
+  "quality_checks": {
+    "all_19_master_rows": true,
+    "raw_metadata_cached": true,
+    "recording_condition_not_used_as_causal": true,
+    "ob_index_marked_proxy_only": true,
+    "figures_written": true
+  },
+  "gate_result": "pass_4133_heterogeneity_map_ready_with_metadata_boundary",
+  "interpretation": "Observation-level heterogeneity can be mapped descriptively. Robust survivor, fragile boundary, stable failure, signed-history, and metadata-annotation dimensions can be compared, but the n=19 associations are exploratory and metadata-dependent patterns remain non-causal.",
+  "does_not_prove": [
+    "metadata regime explanation",
+    "causal source of Ob6/Ob8 failure",
+    "universal subgroup law",
+    "predictive observation classifier",
+    "new mechanism"
+  ],
+  "next": [
+    "4134_figure_ready_evidence_panels"
+  ],
+  "artifacts": [
+    "Output/4133/raw_metadata_by_ob.csv",
+    "Output/4133/observation_master_table.csv",
+    "Output/4133/heterogeneity_associations.csv",
+    "Output/4133/leave_one_out_sensitivity.csv",
+    "Output/4133/observation_classes.csv",
+    "Output/4133/decision.json",
+    "Output/4133/4133_summary.md",
+    "Output/4133/figures/4133_observation_route_matrix.png",
+    "Output/4133/figures/4133_t1_effect_vs_mean_swarm_size.png",
+    "Output/4133/figures/4133_t1_effect_vs_mean_track_length.png",
+    "Output/4133/figures/4133_history_abs_vs_t1_effect.png",
+    "Output/4133/figures/4133_route_score_by_observation_class.png"
+  ]
+}

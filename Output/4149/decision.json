@@ -1,0 +1,20 @@
+{
+  "node": "4149_highB_full_pipeline_omnibus_null",
+  "date": "2026-09-02",
+  "gate_result": "boundary_4149_highB_requires_batch_or_overnight_run",
+  "completed_inference_outputs": false,
+  "primary_metrics": {
+    "requested_n_null_replicates": 1000,
+    "n_controls_per_replicate_observation": 40,
+    "elapsed_limit_sec": 1800,
+    "existing_completed_smoke_source": "Output/4141",
+    "existing_smoke_n_null_replicates": 100,
+    "existing_smoke_p_both_ge_14": 0.009900990099009901,
+    "existing_smoke_p_any_ge_15": 0.039603960396039604
+  },
+  "manuscript_consequence": "Do not replace the completed 4141 smoke omnibus result with a formal high-B p-value. Treat high-B confirmation as an optional batch/overnight robustness item.",
+  "next": [
+    "continue to 4150 final figure cleanup under the no-per-node-compilation policy",
+    "if formal p-value resolution becomes essential, rerun 4149 as a batch job with progress logging or a lower staged B such as 250/500 before B=1000"
+  ]
+}

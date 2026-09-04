@@ -1,0 +1,2 @@
+node_id,node_type,n_pretrigger_variables,n_event_or_post_variables,n_follow_variables,pretrigger_variables,event_or_post_variables,follow_variables,eg_rt_decision,recommended_next_node,boundary_reading
+4002b_edge_core_timing_audit,timing robustness,0,0,0,,,,weak_edge_core_residual_timing_signal,pause edge/core timing route,4002A edge/core signal does not survive timing-window shifted null gates.

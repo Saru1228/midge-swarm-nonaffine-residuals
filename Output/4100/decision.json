@@ -1,0 +1,54 @@
+{
+  "node": "4100_state_matched_event_locality_challenge",
+  "date": "2026-08-26",
+  "upstream_node": "4100A_spatial_unit_overlap_audit",
+  "data_scope": "all_19_observations",
+  "spatial_unit": "focal_centered_local_nonaffine_tangential_activity",
+  "activity_column": "A_swarm_tangential_z",
+  "activity_phase": "near_pre[-0.25,0.00]sec",
+  "matching_variables": [
+    "C_density_rms_z3045",
+    "dCdt_gradient_density_rms_smooth3045",
+    "R_r_rms_z3045"
+  ],
+  "nulls": [
+    "same_observation_state_matched_non_event",
+    "within_observation_shifted_event"
+  ],
+  "primary_metrics": {
+    "median_observation_delta_A_pre_z": -0.03288737643286521,
+    "same_direction_observation_fraction": 0.42105263157894735,
+    "real_beats_shifted_null_fraction": 0.275,
+    "total_acceptable_event_fraction": 0.9796057104010877,
+    "median_observation_best_match_distance": 0.17630717293908968
+  },
+  "pre_frozen_gates": {
+    "min_effect_z": 0.05,
+    "min_same_direction_fraction": 0.6,
+    "min_real_beats_null_fraction": 0.6,
+    "min_total_acceptable_fraction": 0.75,
+    "max_median_match_distance": 0.75
+  },
+  "gate_result": "fail_event_timing_not_beyond_continuous_state",
+  "interpretation": "After matching continuous compact-density state within observation, true transition timing does not show robust extra near-pre activity.",
+  "does_not_prove": [
+    "burst localization",
+    "propagation",
+    "causal trigger",
+    "individual residual velocity",
+    "prediction before transition"
+  ],
+  "next": [
+    "4105_state_matched_negative_synthesis"
+  ],
+  "artifacts": [
+    "Output/4100/event_control_matches.csv",
+    "Output/4100/matching_quality.csv",
+    "Output/4100/event_local_effects.csv",
+    "Output/4100/observation_level_effects.csv",
+    "Output/4100/shifted_event_null.csv",
+    "Output/4100/event_centered_profile.csv",
+    "Output/4100/decision.json",
+    "Output/4100/4100_summary.md"
+  ]
+}

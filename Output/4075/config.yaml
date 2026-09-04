@@ -1,0 +1,9 @@
+node: 4075_m0_review_before_4080
+date: 2026-08-25
+node_type: M0_synthesis_and_route_decision
+input_nodes:
+  - 4071_cross_dataset_baseline_audit
+  - 4074_event_free_vs_event_conditioned_audit
+no_trajectory_reprocessing: true
+decision: split_target_enter_4080_feasibility
+next_node: 4080_local_affine_feasibility

@@ -1,0 +1,33 @@
+variable,phase,n_ob_tested,phase_gate_count,phase_gate_fraction,median_abs_event_minus_abs_null_z,median_event_minus_null_phase_z,majority_gate,interpretation
+all_tangential,early_pre,14,1,0.07142857142857142,0.03809668812774265,-0.09677260891161085,False,minority or observation-specific phase
+all_tangential,near_pre,14,8,0.5714285714285714,0.12772962907304114,-0.20734998132141136,True,majority replicated phase
+all_tangential,near_post,14,5,0.35714285714285715,0.11594824371527185,0.16806722937255775,False,minority or observation-specific phase
+all_tangential,late_post,14,0,0.0,0.02448269285518275,0.048656789819943605,False,no phase gate
+density_dense_tangential,early_pre,14,3,0.21428571428571427,0.0570566254956127,-0.09142524331628815,False,minority or observation-specific phase
+density_dense_tangential,near_pre,14,5,0.35714285714285715,0.09954743827838974,-0.14235697831010619,False,minority or observation-specific phase
+density_dense_tangential,near_post,14,4,0.2857142857142857,0.0663680222856475,0.11832984367294591,False,minority or observation-specific phase
+density_dense_tangential,late_post,14,1,0.07142857142857142,-0.00434931988821965,0.035078550597645405,False,minority or observation-specific phase
+density_sparse_minus_dense,early_pre,14,2,0.14285714285714285,0.0238029172020287,0.04699316755885865,False,minority or observation-specific phase
+density_sparse_minus_dense,near_pre,14,4,0.2857142857142857,0.0441242036902107,0.03815314155173995,False,minority or observation-specific phase
+density_sparse_minus_dense,near_post,14,1,0.07142857142857142,0.03437023861458165,-0.0059279163930454,False,minority or observation-specific phase
+density_sparse_minus_dense,late_post,14,1,0.07142857142857142,-0.0120000061804896,-0.017527020325586798,False,minority or observation-specific phase
+shell_core_tangential,early_pre,14,0,0.0,0.014609304926166099,-0.0502552785134705,False,no phase gate
+shell_core_tangential,near_pre,14,4,0.2857142857142857,0.07489246305203931,-0.12590027883917887,False,minority or observation-specific phase
+shell_core_tangential,near_post,14,4,0.2857142857142857,0.09773962790857049,0.14524915602948069,False,minority or observation-specific phase
+shell_core_tangential,late_post,14,1,0.07142857142857142,0.0021120916321354004,0.014558722786029949,False,minority or observation-specific phase
+shell_edge_minus_core,early_pre,14,1,0.07142857142857142,-0.01727588879830455,-0.01081519516985675,False,minority or observation-specific phase
+shell_edge_minus_core,near_pre,14,1,0.07142857142857142,0.02306251317765745,0.029765790682474248,False,minority or observation-specific phase
+shell_edge_minus_core,near_post,14,1,0.07142857142857142,0.0471621586364491,-0.0286015305494806,False,minority or observation-specific phase
+shell_edge_minus_core,late_post,14,0,0.0,0.014712368166249799,-0.0322434242119892,False,no phase gate
+shell_edge_tangential,early_pre,14,1,0.07142857142857142,0.0101384663677128,-0.0858748333458701,False,minority or observation-specific phase
+shell_edge_tangential,near_pre,14,6,0.42857142857142855,0.08650174801692365,-0.13463372798350495,False,minority or observation-specific phase
+shell_edge_tangential,near_post,14,4,0.2857142857142857,0.08728192419690894,0.15074246978438943,False,minority or observation-specific phase
+shell_edge_tangential,late_post,14,0,0.0,0.0053976171465070005,0.0386046343654297,False,no phase gate
+shell_middle_tangential,early_pre,14,1,0.07142857142857142,0.038776347320067905,-0.09198167812877464,False,minority or observation-specific phase
+shell_middle_tangential,near_pre,14,3,0.21428571428571427,0.0520719323553059,-0.09276853061584556,False,minority or observation-specific phase
+shell_middle_tangential,near_post,14,4,0.2857142857142857,0.09197884876251515,0.1479138169576388,False,minority or observation-specific phase
+shell_middle_tangential,late_post,14,2,0.14285714285714285,0.0223375830209154,0.0568307941011479,False,minority or observation-specific phase
+shell_radius_corr_tangential,early_pre,14,1,0.07142857142857142,0.030106686216615948,-0.00018604185690325003,False,minority or observation-specific phase
+shell_radius_corr_tangential,near_pre,14,2,0.14285714285714285,0.0271225434288635,0.005753144928853751,False,minority or observation-specific phase
+shell_radius_corr_tangential,near_post,14,1,0.07142857142857142,0.008159278017712601,-0.025207646647436202,False,minority or observation-specific phase
+shell_radius_corr_tangential,late_post,14,0,0.0,0.0080868512123322,-0.023808517883191598,False,no phase gate

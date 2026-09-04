@@ -1,0 +1,10 @@
+node: 4081_global_vs_local_geometry_ladder
+date: 2026-08-25
+node_type: geometry_ladder_pilot
+source_target_config: Output/4075/target_config_for_4080.json
+observation: Ob1
+k_values: 8,10
+lag_sec: 0.1
+frame_stride: 2
+max_focals_per_frame: 24
+n_non_event_replicates: 40

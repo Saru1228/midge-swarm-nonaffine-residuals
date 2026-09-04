@@ -1,0 +1,9 @@
+risk_id,risk,severity,trigger,mitigation,status_after_m5
+R1,T1 is described as universal or causal.,high,Writing the 15/19 result without failures and boundaries.,"Always retain 'most observations', show all-19 context, and name failure/boundary observations.",guarded
+R2,"Tested C,dCdt,R failure is upgraded into a claim that stochastic dynamics are impossible.",high,Over-reading 4090/4094 negative results.,Write only that the tested first/second moment closure did not provide a stable reduction.,guarded
+R3,Event-locality failure is written as absence of transition dynamics.,high,Treating state-matched near-pre aggregate failure as a full event-dynamics test.,"Write only that true timestamps add no robust near-pre excess beyond matched C,dCdt,R state.",guarded
+R4,Propagation is written as disproven.,high,Forgetting that confirmatory propagation route was not entered.,Mark propagation as NOT_TESTED and place it in remaining open mechanism space.,guarded
+R5,History effect is written as universal memory or hysteresis.,high,Using 14/19 beats-shuffle count without the failed direction/order consistency.,Write observation-specific history separation and show sign/order heterogeneity.,guarded
+R6,Daytime/dusk or observation order is written as a causal explanation.,medium_high,Using unverified metadata annotations and n=19 associations too strongly.,Label metadata as descriptive only; do not use it as a regime explanation.,guarded
+R7,Survivor-only panels hide negative observations.,high,Showing robustness only inside the 15-observation survivor subset.,Put all-19 survival/classification before survivor-subset robustness.,guarded
+R8,Concept figure is mistaken for a tested physical model.,medium,Figure 1 affine/T1 schematic is drawn too mechanistically.,Caption Figure 1 as measurement definition and data orientation only.,guarded

@@ -1,0 +1,36 @@
+{
+  "node": "4100A_spatial_unit_overlap_audit",
+  "date": "2026-08-26",
+  "node_type": "technical_gate",
+  "upstream_node": "4094_bounded_stochastic_negative_synthesis",
+  "data_scope": "all_19_observations",
+  "spatial_unit": "focal_centered_local_nonaffine_tangential_activity",
+  "activity_definition": "A_i(t)=median_j ||u_NA_ij,tan(t)||^2",
+  "gate_result": "pass_unique_focal_activity_with_overlap_boundary",
+  "uniqueness_ok": true,
+  "coverage_ok": true,
+  "ref_available_count": 14,
+  "ref_good_count": 10,
+  "interpretation": "The all-19 run constructs unique focal-centered activity rows with adequate coverage. Underlying neighbor overlap remains nontrivial, so later spatial correlation must use the focal aggregate rather than raw neighbor residual vectors.",
+  "does_not_prove": [
+    "state-matched event-locality",
+    "burst localization",
+    "propagation",
+    "causal trigger",
+    "unique individual residual velocity rather than focal-neighborhood activity"
+  ],
+  "next": [
+    "4100_state_matched_event_locality_challenge"
+  ],
+  "artifacts": [
+    "Output/4100A/focal_activity.csv.gz",
+    "Output/4100A/focal_activity_qc.csv",
+    "Output/4100A/overlap_audit.csv",
+    "Output/4100A/swarm_activity_frame.csv",
+    "Output/4100A/upstream_reproduction.csv",
+    "Output/4100A/figures/4100A_qc_overview.png",
+    "Output/4100A/figures/4100A_aggregate_vs_4084.png",
+    "Output/4100A/figures/4100A_near_pre_reproduction.png",
+    "Output/4100A/4100A_summary.md"
+  ]
+}

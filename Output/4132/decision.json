@@ -1,0 +1,49 @@
+{
+  "node": "4132_negative_mechanism_boundary_atlas",
+  "date": "2026-08-27",
+  "node_type": "negative_boundary_atlas",
+  "upstream_nodes": [
+    "4130_definition_and_evidence_registry",
+    "4131_robust_positive_phenomenon_atlas"
+  ],
+  "data_scope": "all_19_observations_with_node_specific_subsets_where_defined",
+  "frozen_target": "T1_local_tangential_nonaffine_residual",
+  "boundary_counts": {
+    "atlas_rows": 8,
+    "not_supported_rows": 2,
+    "boundary_rows": 3,
+    "not_tested_rows": 1,
+    "supported_with_boundary_geometry_rows": 2
+  },
+  "quality_checks": {
+    "required_mechanism_classes_present": true,
+    "propagation_marked_not_tested": true,
+    "not_supported_not_used_as_nonexistence_claim": true,
+    "metadata_claims_descriptive_only": true,
+    "figures_written": true
+  },
+  "gate_result": "pass_4132_negative_boundary_atlas_ready",
+  "interpretation": "The negative evidence is suitable for writing as mechanism-boundary evidence: simple C,dCdt,R moment closure and state-matched event-local precursor routes are not supported, while propagation remains not confirmatorily tested rather than disproven.",
+  "does_not_prove": [
+    "absence of stochastic organization",
+    "absence of propagation",
+    "absence of transition dynamics",
+    "absence of history effects",
+    "metadata regime explanation"
+  ],
+  "next": [
+    "4133_observation_heterogeneity_map"
+  ],
+  "artifacts": [
+    "Output/4132/negative_boundary_atlas.csv",
+    "Output/4132/bounded_negative_claims.csv",
+    "Output/4132/forbidden_overclaims.csv",
+    "Output/4132/mechanism_space_remaining.csv",
+    "Output/4132/decision.json",
+    "Output/4132/4132_summary.md",
+    "Output/4132/figures/4132_boundary_class_counts.png",
+    "Output/4132/figures/4132_moment_closure_negative_metrics.png",
+    "Output/4132/figures/4132_event_locality_negative_metrics.png",
+    "Output/4132/figures/4132_history_boundary_metrics.png"
+  ]
+}

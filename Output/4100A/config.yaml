@@ -1,0 +1,15 @@
+node: 4100A_spatial_unit_overlap_audit
+date: 2026-08-26
+node_type: technical_gate
+upstream_node: 4094_bounded_stochastic_negative_synthesis
+observations: 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+k: 8
+lag_sec: 0.1
+frame_stride: 10
+max_focals_per_frame: 24
+near_pre_window_sec: [-0.25, 0.0]
+non_event_replicates: 20
+exclusion_sec: 0.75
+activity_unit: focal_centered_local_nonaffine_tangential_activity
+activity_definition: median_neighbor_tangential_energy
+output_note: focal_activity.csv.gz is used instead of parquet to avoid optional parquet dependencies

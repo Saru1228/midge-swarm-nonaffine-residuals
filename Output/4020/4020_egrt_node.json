@@ -1,0 +1,63 @@
+{
+  "node_id": "4020_one_fish_residual_state_redistribution_audit",
+  "series": "4xxx",
+  "node_type": "single-observation pilot screen",
+  "parent_node": "4003_residual_velocity_synthesis",
+  "question": "Are transition-linked affine-residual effects better described as one-fish state redistribution across school regions than as local pair cumulants?",
+  "competing_interpretations": [
+    "H_state_redistribution: residual speed/radial/tangential states move across core/mid/edge regions around transitions",
+    "H_concentration: residual activity becomes concentrated in fewer fish or shells",
+    "H_shift_null: shifted event times show comparable one-fish state changes",
+    "H_pair_not_needed: one-fish state redistribution is a better next language than local pair cumulants"
+  ],
+  "input_artifacts": [
+    "data/raw/Ob*.txt",
+    "Output/3045/tables/transition_events.csv",
+    "Output/4003/4003_summary.md"
+  ],
+  "method": [
+    "run pilot on Ob1",
+    "fit per-frame affine baseline and compute affine residual velocities",
+    "compute one-fish residual state distribution metrics across core/mid/edge shells",
+    "remove 1-sec smooth trend and robust-z residualize within the pilot observation",
+    "compare transition events against 64 shifted-event null replicates"
+  ],
+  "pass_gate": {
+    "pilot": "event count >= 20, real-null direction gap >= 0.15, p <= 0.15, oriented positive fraction >= 0.55",
+    "expand": "at least 2 variables pass before considering multi-ob expansion"
+  },
+  "fail_gate": "No variable passes the single-observation pilot gate.",
+  "next_if_pass": "4020b selective multi-ob expansion",
+  "next_if_fail": "4030 coarse-grained stochastic state transition pilot",
+  "outputs": [
+    "Output/4020/tables/one_fish_state_direction_null_comparison.csv",
+    "Output/4020/tables/egrt_decision_summary.csv",
+    "Output/4020/4020_summary.md"
+  ],
+  "provenance": {
+    "script": "Experiment/run_4020_one_fish_residual_state_redistribution_audit.py",
+    "config": {
+      "data_dir": "data/raw",
+      "pilot_ob": 1,
+      "smooth_window_sec": 1.0,
+      "prepost_window_sec": 0.2,
+      "n_null": 64,
+      "direction_gap_gate_z": 0.15,
+      "null_p_gate": 0.15,
+      "min_events_gate": 20,
+      "oriented_fraction_gate": 0.55,
+      "min_survivors_for_expand": 2
+    },
+    "decision": {
+      "node_id": "4020_one_fish_residual_state_redistribution_audit",
+      "node_type": "single-observation pilot screen",
+      "pilot_ob": 1,
+      "n_surviving_variables": 2,
+      "surviving_variables": "edge_minus_core_radial_abs_q75, edge_minus_core_speed_q75",
+      "surviving_families": "shell_radial_state: edge_minus_core_radial_abs_q75; shell_residual_speed: edge_minus_core_speed_q75",
+      "eg_rt_decision": "pilot_support_one_fish_residual_state_redistribution_signal",
+      "recommended_next_node": "4020b selective multi-ob expansion",
+      "boundary_reading": "Single-observation pilot found multiple state-redistribution variables above shifted-event null gates."
+    }
+  }
+}

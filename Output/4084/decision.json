@@ -1,0 +1,32 @@
+{
+  "node": "4084_spatial_taxonomy_of_t1_local_nonaffine_signal",
+  "date": "2026-08-25",
+  "result": "support_replicated_edge_core_spatial_contrast_with_boundaries",
+  "n_observations": 14,
+  "majority_gate_count": 8,
+  "diffuse_baseline_gate_count": 13,
+  "localized_observation_count": 12,
+  "majority_spatial_candidates": [
+    "shell_edge_minus_core"
+  ],
+  "majority_level_candidates": [
+    "density_dense_tangential",
+    "density_middle_tangential",
+    "shell_core_tangential",
+    "shell_middle_tangential",
+    "density_sparse_tangential",
+    "shell_edge_tangential"
+  ],
+  "interpretation": "`shell_edge_minus_core` provides a majority-replicated direct spatial contrast/gradient. This supports an edge/core spatial contrast with boundaries, not a full universal spatial taxonomy. Continue by asking when this spatially structured signal appears around the transition.",
+  "next": [
+    "4085_event_phase_profile_of_t1_signal"
+  ],
+  "artifacts": [
+    "Output/4084/spatial_taxonomy_condition_rows.csv",
+    "Output/4084/ob_spatial_taxonomy.csv",
+    "Output/4084/variable_spatial_taxonomy.csv",
+    "Output/4084/figures/4084_spatial_gap_heatmap.png",
+    "Output/4084/figures/4084_variable_gate_counts.png",
+    "Output/4084/figures/4084_ob_spatial_classes.png"
+  ]
+}

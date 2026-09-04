@@ -1,0 +1,29 @@
+node: 4100_state_matched_event_locality_challenge
+date: 2026-08-26
+activity_source: Output/4100A/swarm_activity_frame.csv
+event_source: Output/3045/tables/transition_events.csv
+state_source: Output/3045/processed/frame_residual_signals.csv
+activity_column: A_swarm_tangential_z
+near_pre_window_sec: [-0.25, 0.0]
+profile_window_sec: [-0.5, 0.5]
+profile_step_sec: 0.1
+state_variables:
+  C: density_rms_z3045
+  dCdt: gradient(density_rms_smooth3045,t)
+  R: r_rms_z3045
+matching:
+  same_observation: true
+  standardized_state_space: within_observation_robust_z
+  n_matches: 5
+  max_match_distance: 0.75
+  exclusion_sec: 0.75
+  min_window_frames: 2
+shifted_event_null:
+  n_shift_reps: 80
+  seed: 410020261526
+gates:
+  min_effect_z: 0.05
+  min_same_direction_fraction: 0.6
+  min_real_beats_null_fraction: 0.6
+  min_total_acceptable_fraction: 0.75
+  max_median_match_distance: 0.75

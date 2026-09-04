@@ -1,0 +1,39 @@
+{
+  "node": "4082_scale_robustness_on_surviving_observation_class",
+  "date": "2026-08-25",
+  "result": "support_scale_timing_robust_t1_survival_with_boundary_cases",
+  "n_observations": 15,
+  "observation_class_input": "4081c T1 survivors",
+  "scale_k": [
+    6,
+    8,
+    10,
+    12
+  ],
+  "scale_lag_sec": 0.1,
+  "timing_k": 8,
+  "timing_lag_sec": [
+    0.05,
+    0.1,
+    0.15
+  ],
+  "robust_scale_and_timing_count": 14,
+  "fragile_or_boundary_count": 1,
+  "median_scale_pass_fraction": 1.0,
+  "median_timing_pass_fraction": 1.0,
+  "class_counts": {
+    "robust_scale_and_timing": 14,
+    "fragile_or_boundary": 1
+  },
+  "interpretation": "T1 survival is tested as a robustness property over nearby k and lag values, not as a new metric search.",
+  "next": [
+    "4082b_early_failure_condition_or_artifact_audit"
+  ],
+  "artifacts": [
+    "Output/4082/scale_timing_condition_rows.csv",
+    "Output/4082/ob_scale_timing_robustness.csv",
+    "Output/4082/figures/4082_scale_gap_heatmap.png",
+    "Output/4082/figures/4082_timing_gap_heatmap.png",
+    "Output/4082/figures/4082_ob_robustness_fractions.png"
+  ]
+}

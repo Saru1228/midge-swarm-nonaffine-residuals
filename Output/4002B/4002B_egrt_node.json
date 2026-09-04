@@ -1,0 +1,67 @@
+{
+  "node_id": "4002b_edge_core_timing_audit",
+  "series": "4xxx",
+  "node_type": "timing robustness",
+  "parent_node": "4002a_residual_spatial_structure_audit",
+  "question": "Does edge/core residual redistribution precede compact-density transitions or mainly align with event/post windows?",
+  "competing_interpretations": [
+    "H_pretrigger: edge/core residual redistribution appears before transition",
+    "H_event_coupled: edge/core redistribution appears at or after transition",
+    "H_shift_null: shifted event times show comparable timing changes"
+  ],
+  "input_artifacts": [
+    "Output/4002A/processed/frame_residual_spatial_metrics.csv",
+    "Output/4002A/tables/residual_structure_direction_null_comparison.csv",
+    "Output/3045/tables/transition_events.csv"
+  ],
+  "method": [
+    "select 4002A edge/core direction survivors",
+    "orient variables by their 4002A direction contrast",
+    "compare baseline, pre, event, post, and follow windows",
+    "compare with 160 circularly shifted event-time nulls"
+  ],
+  "selected_variables": [
+    {
+      "variable": "edge_minus_core_resid_speed",
+      "family": "edge_core",
+      "real_median_direction_contrast_z": -0.2193103798605448,
+      "orientation": -1.0
+    },
+    {
+      "variable": "edge_minus_core_resid_tangential",
+      "family": "edge_core",
+      "real_median_direction_contrast_z": -0.2007685307644882,
+      "orientation": -1.0
+    }
+  ],
+  "outputs": [
+    "Output/4002B/tables/edge_core_timing_null_comparison.csv",
+    "Output/4002B/tables/egrt_decision_summary.csv",
+    "Output/4002B/4002B_summary.md"
+  ],
+  "provenance": {
+    "script": "Experiment/run_4002b_edge_core_timing_audit.py",
+    "config": {
+      "n_null": 160,
+      "timing_gap_gate_z": 0.1,
+      "null_p_gate": 0.1,
+      "min_ob_gate": 12,
+      "pre_to_post_ratio_gate": 0.5,
+      "min_pretrigger_variables": 1,
+      "min_event_or_post_variables": 1
+    },
+    "decision": {
+      "node_id": "4002b_edge_core_timing_audit",
+      "node_type": "timing robustness",
+      "n_pretrigger_variables": 0,
+      "n_event_or_post_variables": 0,
+      "n_follow_variables": 0,
+      "pretrigger_variables": "",
+      "event_or_post_variables": "",
+      "follow_variables": "",
+      "eg_rt_decision": "weak_edge_core_residual_timing_signal",
+      "recommended_next_node": "pause edge/core timing route",
+      "boundary_reading": "4002A edge/core signal does not survive timing-window shifted null gates."
+    }
+  }
+}

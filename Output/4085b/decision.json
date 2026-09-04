@@ -1,0 +1,18 @@
+{
+  "node": "4085b_phase_space_projection_of_t1_edge_core_signal",
+  "date": "2026-08-26",
+  "result": "diagnostic_phase_space_supports_signed_diffuse_near_pre_separation",
+  "interpretation": "The phase-space projection visually supports 4086's signed diffuse near-pre separation, but it remains a diagnostic projection rather than attractor evidence.",
+  "attractor_claim": "not_supported_or_tested",
+  "next": [
+    "4087_failure_boundary_sensitivity_or_4088_bounded_synthesis"
+  ],
+  "artifacts": [
+    "Output/4085b/phase_space_event_samples.csv",
+    "Output/4085b/phase_space_trajectory_by_event_type.csv",
+    "Output/4085b/phase_space_metrics.csv",
+    "Output/4085b/figures/4085b_all_tangential_vs_edge_core_phase_space.png",
+    "Output/4085b/figures/4085b_compactness_vs_all_tangential.png",
+    "Output/4085b/figures/4085b_3d_phase_space_projection.png"
+  ]
+}

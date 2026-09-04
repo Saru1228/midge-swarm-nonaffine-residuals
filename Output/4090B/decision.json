@@ -1,0 +1,25 @@
+{
+  "node": "4090B_residual_vector_and_continuous_state_feasibility_check",
+  "date": "2026-08-26",
+  "node_type": "technical_gate",
+  "upstream_node": "4090A_observation_regime_boundary_audit",
+  "gate_result": "B1_vector_available_with_unit_boundary_and_C_available",
+  "interpretation": "Vector-level residual samples are recomputable from 4081 equations, and C,dC are traceable from 3045. 4090 can proceed, but must label the vector unit as focal-neighborhood neighbor residual unless a unique focal-individual residual definition is implemented.",
+  "next": [
+    "4090_continuous_moment_classification_with_vector_unit_note"
+  ],
+  "does_not_prove": [
+    "first-vs-second moment dominance",
+    "state-dependent stochastic mechanism",
+    "batch artifact",
+    "unique individual focal residual vector without additional definition"
+  ],
+  "artifacts": [
+    "Output/4090B/technical_feasibility_table.csv",
+    "Output/4090B/continuous_state_coverage.csv",
+    "Output/4090B/residual_vector_sample.csv",
+    "Output/4090B/figures/4090B_continuous_state_trace.png",
+    "Output/4090B/figures/4090B_vector_sample_tangential_norm.png",
+    "Output/4090B/4090B_summary.md"
+  ]
+}

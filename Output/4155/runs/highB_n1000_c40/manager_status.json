@@ -1,0 +1,13 @@
+{
+  "node": "4155_parallel_highB_omnibus_null",
+  "run_name": "highB_n1000_c40",
+  "status": "complete",
+  "updated_at": "2026-09-02T16:52:40",
+  "total_null": 1000,
+  "chunk_size": 50,
+  "workers": 4,
+  "chunks_complete_total": 20,
+  "merge_return_code": 0,
+  "decision": "strong_pass_omnibus_null",
+  "completed_replicates": 1000
+}

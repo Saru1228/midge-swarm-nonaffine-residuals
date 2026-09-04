@@ -1,0 +1,28 @@
+{
+  "node": "4155_parallel_highB_omnibus_null",
+  "date": "2026-09-02",
+  "run_name": "highB_n1000_c40",
+  "mode": "parallel_chunked_highB",
+  "total_null": 1000,
+  "completed_replicates": 1000,
+  "chunk_size": 50,
+  "workers": 4,
+  "n_controls_per_replicate_observation": 40,
+  "cache_source": "Output/4141/cache",
+  "rng_design": "deterministic per-replicate seed BASE_SEED + replicate * 1000003",
+  "pipeline": {
+    "k_values": [
+      8,
+      10
+    ],
+    "lag_sec": 0.1,
+    "frame_stride": 2,
+    "max_focals_per_frame": 24,
+    "prepost_sec": 0.2,
+    "exclusion_sec": 0.8
+  },
+  "observed": {
+    "n_both": 14,
+    "n_any": 15
+  }
+}

@@ -1,0 +1,16 @@
+ob,n_events,scale_pass_count,scale_total,scale_pass_fraction,timing_pass_count,timing_total,timing_pass_fraction,median_scale_gap,median_timing_gap,robustness_class,interpretation
+2,43,4,4,1.0,3,3,1.0,0.34660574313497483,0.22644368709633572,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+4,58,2,4,0.5,0,3,0.0,0.09033291071007082,-0.061284505287517915,fragile_or_boundary,T1 survival is weak under nearby robustness checks.
+5,93,4,4,1.0,3,3,1.0,0.18283655095688695,0.18232129577966483,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+7,33,4,4,1.0,3,3,1.0,0.17230700726278259,0.46112423420440163,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+9,36,4,4,1.0,3,3,1.0,0.7066655999359976,0.44126214820372717,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+10,36,4,4,1.0,2,3,0.6666666666666666,0.3004379983829556,0.22768316198453337,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+11,119,4,4,1.0,3,3,1.0,0.6260491408148227,0.621711517744752,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+12,91,4,4,1.0,3,3,1.0,0.27886026265829594,0.2811573543880678,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+13,102,4,4,1.0,3,3,1.0,0.5139960471860061,0.4305002936378525,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+14,47,4,4,1.0,3,3,1.0,0.3056450380872321,0.4712728216652979,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+15,96,4,4,1.0,3,3,1.0,0.7202768406842892,0.8207223335844589,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+16,84,4,4,1.0,3,3,1.0,0.5756906198717191,0.3145248796347224,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+17,122,3,4,0.75,3,3,1.0,0.14374209174539315,0.20286096738325157,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+18,103,4,4,1.0,3,3,1.0,0.1834176378327358,0.2254023875555628,robust_scale_and_timing,T1 survives most nearby scale and timing checks.
+19,143,4,4,1.0,3,3,1.0,0.6419981611482871,0.55581729413876,robust_scale_and_timing,T1 survives most nearby scale and timing checks.

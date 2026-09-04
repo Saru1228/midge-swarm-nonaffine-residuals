@@ -1,0 +1,75 @@
+{
+  "node": "4140_manuscript_freeze_reproducibility_audit",
+  "date": "2026-09-01",
+  "purpose": "Freeze manuscript definitions and map claims to code/output artifacts before submission-hardening tests.",
+  "analysis_scope": "all_19_observations",
+  "primary_metrics": {
+    "n_observations": 19,
+    "n_both_observed": 14,
+    "n_any_observed": 15,
+    "n_stop_mismatches": 0,
+    "n_boundary_items": 3
+  },
+  "main_result": {
+    "gate_result": "pass_with_pre_submission_boundary_items",
+    "both_scale_observations": [
+      2,
+      5,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "any_scale_observations": [
+      2,
+      4,
+      5,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "non_survivor_observations": [
+      1,
+      3,
+      6,
+      8
+    ]
+  },
+  "does_not_prove": [
+    "full-pipeline global significance of 14/19",
+    "detrending invariance",
+    "well-conditioned local affine fits across all focal samples",
+    "mechanism, prediction, or universality"
+  ],
+  "next": [
+    "4141_full_pipeline_omnibus_survival_null_smoke",
+    "4142_detrending_challenge",
+    "4143_affine_fit_qc"
+  ],
+  "artifacts": [
+    "Output/4140/frozen_analysis_contract.yaml",
+    "Output/4140/reproducibility_registry.csv",
+    "Output/4140/spectral_set_provenance.md",
+    "Output/4140/code_source_map.csv",
+    "Output/4140/definition_mismatches.csv",
+    "Output/4140/decision.json",
+    "Output/4140/4140_summary.md"
+  ]
+}

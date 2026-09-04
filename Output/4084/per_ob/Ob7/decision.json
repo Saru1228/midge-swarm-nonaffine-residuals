@@ -1,0 +1,22 @@
+{
+  "node": "4084_spatial_taxonomy_of_t1_local_nonaffine_signal",
+  "ob": 7,
+  "result": "no_clear_t1_spatial_signal_in_this_node",
+  "classification": {
+    "ob": 7,
+    "n_events": 33,
+    "diffuse_baseline_gate": false,
+    "n_spatial_contrast_gates": 3,
+    "best_spatial_variable": "shell_edge_minus_core",
+    "best_spatial_family": "radial_contrast",
+    "best_spatial_gap_z": 0.4216272056202435,
+    "best_level_variable": "density_sparse_tangential",
+    "best_level_family": "density_level",
+    "best_level_gap_z": 0.7294438262001486,
+    "ob_spatial_class": "no_clear_t1_spatial_signal_in_this_node",
+    "interpretation": "The 4084 processing did not reproduce an event-conditioned diffuse or localized signal."
+  },
+  "next": [
+    "aggregate_4084"
+  ]
+}

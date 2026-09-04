@@ -1,0 +1,3 @@
+partition_id,spectral_set,eigen_rank,eigenvalue_real,implied_timescale_sec,n_cells,stationary_mass_sum,eigenvector_value_min,eigenvector_value_max,pooled_retention,retention_lift,exit_probability,candidate_variables,lag_sec,n_bins_per_variable
+eig2,low,2,0.8564307275942583,0.6452368748089752,32,0.5002769754017483,-0.2444674802795844,-0.0101640360079863,0.8753033237219835,0.3750263483202336,0.1246966762780165,"r_rms, density_rms, anisotropy",0.1,4
+eig2,high,2,0.8564307275942583,0.6452368748089752,28,0.49972302459824897,-0.0043684335432121,0.2240891940003826,0.8751650955023956,0.3754420709041455,0.1248349044976043,"r_rms, density_rms, anisotropy",0.1,4

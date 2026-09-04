@@ -1,0 +1,26 @@
+node: 4070_bounded_result_and_negative_mechanism_map
+date: 2026-08-25
+node_type: synthesis
+input_nodes:
+  - 4001
+  - 4002A
+  - 4002B
+  - 4010
+  - 4020
+  - 4020B
+  - 4030
+  - 4051
+  - 4052
+  - 4053
+  - 4053b
+  - 4060
+  - 4066
+no_trajectory_reprocessing: true
+output_policy:
+  - mechanism_map.csv
+  - mechanism_map.json
+  - surviving_claims.md
+  - excluded_or_bounded_claims.md
+  - open_explanation_space.md
+  - decision.json
+  - 4070_summary.md

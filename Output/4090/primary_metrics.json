@@ -1,0 +1,24 @@
+[
+  {
+    "target_family": "first_moment",
+    "target": "signed_tan_projection",
+    "median_incremental_r2": -0.0006327793192029141,
+    "positive_ob_fraction": 0.21052631578947367,
+    "median_shift_incremental_r2": -0.00022115704575798034,
+    "median_real_minus_shift": -0.0003082888383936222,
+    "real_gt_shift_fraction": 0.42105263157894735,
+    "pass_gate": false,
+    "interpretation": "no stable grouped OOS support"
+  },
+  {
+    "target_family": "second_moment",
+    "target": "log_tan_energy",
+    "median_incremental_r2": -0.0006213902693890105,
+    "positive_ob_fraction": 0.15789473684210525,
+    "median_shift_incremental_r2": -0.00012663631115694685,
+    "median_real_minus_shift": -0.0006586480320149857,
+    "real_gt_shift_fraction": 0.3684210526315789,
+    "pass_gate": false,
+    "interpretation": "no stable grouped OOS support"
+  }
+]

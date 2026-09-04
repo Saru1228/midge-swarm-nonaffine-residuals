@@ -1,0 +1,15 @@
+node: 4086_signed_direction_and_state_decomposition
+date: 2026-08-26
+node_type: mechanism
+input_nodes:
+  - 4085_event_phase_profile_of_t1_signal
+  - 4084_spatial_taxonomy_of_t1_local_nonaffine_signal
+observations: 2,5,7,9,10,11,12,13,14,15,16,17,18,19
+variables: all_tangential,shell_edge_minus_core,shell_core_tangential,shell_middle_tangential,shell_edge_tangential
+phases: near_pre,near_post
+target_variable: all_tangential
+target_phase: near_pre
+relative_time_step_sec: 0.05
+n_non_event_replicates: 40
+event_type_gap_gate_z: 0.12
+event_type_p_gate: 0.25

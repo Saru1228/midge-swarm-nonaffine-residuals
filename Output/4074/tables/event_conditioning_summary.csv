@@ -1,0 +1,7 @@
+variable,taxonomy_class,family,is_4071_stable_core,n_ob_valid,direction_gt_non_event_count,median_direction_real_minus_non_event_z,median_p_non_event_direction_ge_real,activity_gt_non_event_count,median_activity_real_minus_non_event_z,median_p_non_event_activity_ge_real,metric_event_conditioned_gate,metric_event_free_activity_gate
+resid_velocity_cov_trace,V_covariance_anisotropy,residual_intensity,True,3,2,0.06954378463944455,0.4375,2,0.14910367183123552,0.1125,False,True
+resid_speed_rms,I_magnitude_energy,residual_intensity,True,3,3,0.06534936266094404,0.4125,2,0.12554651470124933,0.15,False,True
+resid_tangential_speed_mean,III_tangential,tangential_swirl,True,3,3,0.3428980758171306,0.1625,3,0.033484305670035686,0.425,True,False
+resid_radial_abs_mean,II_radial,radial,False,3,0,-0.20241143719197235,0.775,2,0.03204565828411754,0.4125,False,False
+edge_minus_core_resid_speed,VII_core_edge_contrast,edge_core,False,3,1,-0.011336791370123278,0.5125,2,0.16443228549762368,0.1125,False,True
+edge_minus_core_resid_tangential,VII_core_edge_contrast,edge_core,True,3,2,0.04221476130064056,0.45,1,-0.15128994482797564,0.925,False,False

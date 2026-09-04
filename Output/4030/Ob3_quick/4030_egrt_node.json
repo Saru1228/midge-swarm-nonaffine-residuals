@@ -1,0 +1,58 @@
+{
+  "node_id": "4030_coarse_grained_stochastic_state_transition_pilot",
+  "series": "4xxx",
+  "node_type": "single-observation stochastic coarse-graining pilot",
+  "parent_node": "4020B_selective_single_observation_replication",
+  "question": "Does a high/low residual-state bin modulate compact-state transition probabilities in one observation?",
+  "competing_interpretations": [
+    "H_coarse_state: residual states affect compact-state transition probabilities at a coarse stochastic level",
+    "H_metric_instability: 4020 variables differ because only coarse residual state matters",
+    "H_shift_null: circularly shifted residual bins produce comparable transition modulation"
+  ],
+  "input_artifacts": [
+    "Output\\4020B\\Ob3\\processed\\frame_one_fish_state_metrics.csv",
+    "Output/3045/processed/frame_residual_signals.csv"
+  ],
+  "method": [
+    "run pilot on Ob3",
+    "bin each residual state metric into high/low by its within-ob median",
+    "look ahead 0.2 seconds to compact high/low state",
+    "compare transition probability modulation against circularly shifted residual-bin nulls"
+  ],
+  "pass_gate": {
+    "cell_count": "minimum cell count >= 100",
+    "modulation": "absolute transition modulation >= 0.03",
+    "null_gap": "real-null modulation gap >= 0.015",
+    "null_p": "p <= 0.15"
+  },
+  "outputs": [
+    "Output/4030/Ob3_quick/tables/coarse_state_transition_modulation_comparison.csv",
+    "Output/4030/Ob3_quick/tables/egrt_decision_summary.csv",
+    "Output/4030/Ob3_quick/4030_summary.md"
+  ],
+  "provenance": {
+    "script": "Experiment/run_4030_coarse_grained_stochastic_state_transition_pilot.py",
+    "config": {
+      "pilot_ob": 3,
+      "state_frame_metrics": "Output\\4020B\\Ob3\\processed\\frame_one_fish_state_metrics.csv",
+      "output_subdir": "4030\\Ob3_quick",
+      "lag_sec": 0.2,
+      "n_null": 24,
+      "min_cell_count": 100,
+      "modulation_gate": 0.03,
+      "real_minus_null_gate": 0.015,
+      "null_p_gate": 0.15,
+      "min_survivors_for_expand": 2
+    },
+    "decision": {
+      "node_id": "4030_coarse_grained_stochastic_state_transition_pilot",
+      "node_type": "single-observation stochastic coarse-graining pilot",
+      "pilot_ob": 3,
+      "n_surviving_variables": 0,
+      "surviving_variables": "",
+      "eg_rt_decision": "weak_coarse_state_transition_modulation_pilot",
+      "recommended_next_node": "4040 4xxx synthesis and pause",
+      "boundary_reading": "No residual coarse state modulates compact-state transitions beyond shifted-bin null gates."
+    }
+  }
+}

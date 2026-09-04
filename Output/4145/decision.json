@@ -1,0 +1,37 @@
+{
+  "node": "4145_manuscript_reintegration",
+  "date": "2026-09-02",
+  "gate_result": "pass_4145_manuscript_reintegration_compiled",
+  "primary_metrics": {
+    "n_integration_checks": 7,
+    "n_integration_checks_passed": 7,
+    "pdf_pages": 10,
+    "pdf_size_bytes": 1275424,
+    "n_latex_errors": 0,
+    "n_unresolved_reference_or_citation_warnings": 0
+  },
+  "changed_active_latex_files": [
+    "mypaper2/Latex/00_abstract.tex",
+    "mypaper2/Latex/Part3/03_methods_affine_reduction_and_controls_v2.tex",
+    "mypaper2/Latex/Part4/04_results_t1_survival_v2.tex",
+    "mypaper2/Latex/Part4/04_results_diffuse_phenotype_v2.tex",
+    "mypaper2/Latex/Part4/04_results_empirical_boundary_v2.tex",
+    "mypaper2/Latex/Part5/05_discussion_limitations_future_v2.tex",
+    "mypaper2/Latex/Part5/05_conclusion_v2.tex"
+  ],
+  "changed_working_drafts": [
+    "mypaper2/03_data_methods/draft_en.md",
+    "mypaper2/04_results_local_nonaffine/draft_en.md",
+    "mypaper2/05_results_reduction_boundaries/draft_en.md",
+    "mypaper2/06_discussion_conclusion/draft_en.md"
+  ],
+  "remaining_boundaries": [
+    "4141 is smoke-level with B=100 unless high-B confirmation is run.",
+    "The exact 14/19 both-scale support is strongest under centered detrending.",
+    "4143 supports numerical conditioning only, not biological mechanism."
+  ],
+  "next": [
+    "manual prose review for length and figure/table layout",
+    "optional 4141 high-B confirmation"
+  ]
+}

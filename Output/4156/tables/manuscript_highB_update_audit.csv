@@ -1,0 +1,13 @@
+group,relative_path,old_language_hits_total,B100_exact_hits,old_both_p_hits,old_any_p_hits,limited_resolution_hits,smoke_hits,null_max_11_hits,higher_replicate_future_hits,B1000_hits,both_p_000999_hits,null_max_12_hits
+active_submission,mypaper2/Latex/00_abstract.tex,0,0,0,0,0,0,0,0,1,1,1
+active_submission,mypaper2/Latex/Part3/03_methods_affine_reduction_and_controls_v2.tex,0,0,0,0,0,0,0,0,1,0,0
+active_submission,mypaper2/Latex/Part4/04_results_t1_survival_v2.tex,0,0,0,0,0,0,0,0,1,1,1
+active_submission,mypaper2/Latex/Part4/04_results_empirical_boundary_v2.tex,0,0,0,0,0,0,0,0,1,1,0
+active_submission,mypaper2/Latex/Part5/05_discussion_limitations_future_v2.tex,0,0,0,0,0,0,0,0,1,1,0
+active_submission,mypaper2/Latex/Part5/05_conclusion_v2.tex,0,0,0,0,0,0,0,0,0,0,0
+active_submission,Supplement/Supplement_submission.md,0,0,0,0,0,0,0,0,1,0,1
+draft_context,mypaper2/03_data_methods/draft_en.md,0,0,0,0,0,0,0,0,1,0,0
+draft_context,mypaper2/04_results_local_nonaffine/draft_en.md,0,0,0,0,0,0,0,0,1,1,1
+draft_context,mypaper2/05_results_reduction_boundaries/draft_en.md,0,0,0,0,0,0,0,0,1,1,1
+draft_context,mypaper2/06_discussion_conclusion/draft_en.md,0,0,0,0,0,0,0,0,1,1,1
+draft_context,mypaper2/06_discussion_conclusion/draft_zh.md,0,0,0,0,0,0,0,0,1,1,0

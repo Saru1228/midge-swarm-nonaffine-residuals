@@ -1,0 +1,11 @@
+ob,variable,phase,low_to_high_excess_z,high_to_low_excess_z,signed_separation_z,mirror_opposite_sign,mirror_balance,low_to_high_gate,high_to_low_gate,signed_class,interpretation
+16,all_tangential,near_pre,-0.221001814950347,0.15957161220885444,-0.3805734271592014,True,0.7220375644639198,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+16,all_tangential,near_post,0.09714363887572817,-0.24526720777544414,0.34241084665117233,True,0.3960726741940513,False,True,high_to_low_dominant,Only high-to-low passes the event-type gate.
+16,shell_edge_minus_core,near_pre,0.2555851256032429,0.09307874989109782,0.1625063757121451,False,0.36417905647446963,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+16,shell_edge_minus_core,near_post,0.13554913139143063,-0.12027479357560263,0.25582392496703327,True,0.8873151184442511,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+16,shell_core_tangential,near_pre,-0.24070436830559774,-0.035210553659560676,-0.20549381464603705,False,0.14628132388049325,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+16,shell_core_tangential,near_post,0.008188790403512294,-0.05264618755089707,0.06083497795440936,True,0.15554384437801064,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.
+16,shell_middle_tangential,near_pre,-0.12219999030317427,0.21417176938059496,-0.3363717596837692,True,0.5705700179654313,False,True,high_to_low_dominant,Only high-to-low passes the event-type gate.
+16,shell_middle_tangential,near_post,0.172611814863897,-0.054681492681267346,0.22729330754516436,True,0.3167888172914655,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+16,shell_edge_tangential,near_pre,-0.24122521116655554,0.22900901406667798,-0.47023422523323355,True,0.9493577099972241,True,True,mirror_symmetric_opposite_sign,Both transition directions pass and have balanced opposite signs.
+16,shell_edge_tangential,near_post,0.15278361332739798,-0.2561505749519145,0.4089341882793125,True,0.5964601615908106,True,True,mirror_symmetric_opposite_sign,Both transition directions pass and have balanced opposite signs.

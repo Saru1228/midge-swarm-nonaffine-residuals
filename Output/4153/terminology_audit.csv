@@ -1,0 +1,9 @@
+scope,item,status,hits,example
+active_manuscript,smoke_language,pass,0,
+active_manuscript,old_figure_names,pass,0,
+active_manuscript,internal_nodes_active,pass,0,
+active_manuscript,draft_label_active,pass,0,
+active_manuscript,raw_windows_path,pass,0,
+supplement,smoke_language,pass,0,
+supplement,old_figure_names,pass,0,
+supplement,draft_label,pass,0,

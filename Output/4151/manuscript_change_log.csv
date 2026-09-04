@@ -1,0 +1,12 @@
+file,change_type,details
+mypaper2/Latex/00_abstract.tex,wording,"Replaced smoke-null wording with limited-resolution full-pipeline pseudo-event calibration."
+mypaper2/Latex/Part3/03_methods_affine_reduction_and_controls_v2.tex,wording,"Replaced interactive smoke-level wording with pipeline-level calibration and final formal p-value boundary."
+mypaper2/Latex/Part4/04_results_t1_survival_v2.tex,wording,"Replaced full-pipeline smoke null wording with limited-resolution full-pipeline pseudo-event calibration."
+mypaper2/Latex/Part4/04_results_empirical_boundary_v2.tex,table,"Updated evidence-to-claim table to describe B=100 as limited-resolution pseudo-event calibration."
+mypaper2/Latex/Part5/05_discussion_limitations_future_v2.tex,wording,"Reframed B=100 as limited-resolution calibration and kept higher-replicate omnibus as future statistical hardening."
+mypaper2/Latex/Part5/05_conclusion_v2.tex,wording,"Rewrote conclusion sentence to remove smoke-null phrase and keep bounded interpretation."
+mypaper2/Latex/Part2/02_data_trajectory_dataset.tex,figure,"Updated Figure 1 includegraphics to figures/Fig1_final.pdf and synchronized caption."
+mypaper2/Latex/Part4/04_results_t1_survival_v2.tex,figure,"Updated Figure 2 includegraphics to figures/Fig2_final.pdf."
+mypaper2/Latex/Part4/04_results_diffuse_phenotype_v2.tex,figure,"Updated Figure 3 includegraphics to figures/Fig3_final.pdf."
+mypaper2/Latex/Part4/04_results_failed_reductions_v2.tex,figure,"Updated Figure 4 includegraphics to figures/Fig4_final.pdf."
+mypaper2/Latex/Part4/04_results_empirical_boundary_v2.tex,figure,"Updated Figure 5 includegraphics to figures/Fig5_final.pdf."

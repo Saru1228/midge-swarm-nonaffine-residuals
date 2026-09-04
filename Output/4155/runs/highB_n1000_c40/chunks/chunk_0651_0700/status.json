@@ -1,0 +1,13 @@
+{
+  "node": "4155_parallel_highB_omnibus_null",
+  "run_name": "highB_n1000_c40",
+  "status": "complete",
+  "started_at": "2026-09-02T16:46:07",
+  "finished_at": "2026-09-02T16:48:26",
+  "rep_start": 651,
+  "rep_end": 700,
+  "n_replicates": 50,
+  "elapsed_sec": 139.3499755859375,
+  "aggregate_csv": "Output/4155/runs/highB_n1000_c40/chunks/chunk_0651_0700/omnibus_replicates.csv",
+  "observation_csv": "Output/4155/runs/highB_n1000_c40/chunks/chunk_0651_0700/observation_replicate_passes.csv"
+}

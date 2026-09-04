@@ -1,0 +1,13 @@
+{
+  "node": "4148_notation_and_equation_consistency_audit",
+  "date": "2026-09-02",
+  "gate_result": "pass_4148_active_notation_consistent",
+  "primary_metrics": {
+    "n_active_tex_files": 21,
+    "n_registry_terms": 9,
+    "n_checks": 11,
+    "n_stop_failures": 0,
+    "n_fix_required": 0
+  },
+  "next": "4150_final_figure_cleanup"
+}

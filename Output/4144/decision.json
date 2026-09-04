@@ -1,0 +1,21 @@
+{
+  "node": "4144_definition_notation_figure_cleanup",
+  "date": "2026-09-02",
+  "gate_result": "pass_4144_ready_for_4145_with_detrending_and_smoke_null_boundaries",
+  "primary_metrics": {
+    "n_claim_boundary_updates": 6,
+    "n_review007_gap_items": 3,
+    "n_review007_gap_items_resolved_or_bounded": 3,
+    "n_final_figure_packages_ready": 5,
+    "n_final_figure_packages_total": 5,
+    "all_final_figure_packages_ready": true
+  },
+  "manuscript_boundaries": [
+    "Use 4141 as smoke-level omnibus-null calibration unless B>=1000 is run.",
+    "State that the exact 14/19 both-scale count is tied to centered detrending.",
+    "Use 4143 as numerical affine-fit QC rather than a mechanism claim."
+  ],
+  "next": [
+    "4145_manuscript_reintegration"
+  ]
+}

@@ -1,0 +1,5 @@
+source_id,label_column,n_rows,n_observations,n_low,n_high,n_unavailable_or_other
+3032b_frame_spectral_labels,spectral_set,334542,19,167210,167332,0
+3041b_frame_macrostate_candidates,spectral_set,334568,19,167210,167332,26
+3041b_compact_density_2,compact_density_2,334568,19,167210,167332,26
+3045_transition_events,event_type,1471,19,750,721,0

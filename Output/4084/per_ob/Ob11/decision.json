@@ -1,0 +1,22 @@
+{
+  "node": "4084_spatial_taxonomy_of_t1_local_nonaffine_signal",
+  "ob": 11,
+  "result": "localized_or_gradient_signal_candidate",
+  "classification": {
+    "ob": 11,
+    "n_events": 119,
+    "diffuse_baseline_gate": true,
+    "n_spatial_contrast_gates": 3,
+    "best_spatial_variable": "shell_middle_minus_core",
+    "best_spatial_family": "radial_contrast",
+    "best_spatial_gap_z": 0.26263017536847977,
+    "best_level_variable": "shell_core_tangential",
+    "best_level_family": "radial_level",
+    "best_level_gap_z": 0.836934308989956,
+    "ob_spatial_class": "localized_or_gradient_signal_candidate",
+    "interpretation": "At least one direct spatial contrast/gradient is event-conditioned in this observation."
+  },
+  "next": [
+    "aggregate_4084"
+  ]
+}

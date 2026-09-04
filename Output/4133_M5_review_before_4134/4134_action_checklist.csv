@@ -1,0 +1,8 @@
+step_order,4134_task,input,completion_gate
+1,Create figure_source_map.csv from the M5 figure candidate table.,Output/4133_M5_review_before_4134/main_vs_supplement_figure_candidates.csv,"Every panel has question, metric/source, sample size or scope, baseline/null, interpretation, and guard."
+2,Build Figure 1 as data and definition orientation.,Output/4130/definition_dictionary.csv; raw trajectory source; 4088/4131 examples,No new mechanism or residual target is introduced.
+3,Assemble Figure 2 around all-19 T1 survival before survivor-subset robustness.,Output/4131/observation_positive_coverage_matrix.csv; Output/4133/observation_classes.csv,Failure and fragile observations remain visible.
+4,Assemble Figure 3 around diffuse tangential activity and timing boundaries.,Output/4131/figures/4131_spatial_phase_positive_summary.png; Output/4132/negative_boundary_atlas.csv,Diffuse tangential activity is primary; edge/core and signed structure are bounded.
+5,Assemble Figure 4 as the mechanism-boundary figure.,Output/4132/figures/*.png; Output/4131/figures/4131_history_secondary_positive.png,"Negative panels are written as tested reduction failures, not nonexistence claims."
+6,Assemble Figure 5 as the observation heterogeneity figure.,Output/4133/figures/*.png; Output/4133/heterogeneity_associations.csv,Metadata associations remain descriptive and all-19 evidence remains visible.
+7,Draft figure captions and panel metadata.,M5 claim storyline review and overclaim risk register,Each caption states what it supports and what it does not prove.

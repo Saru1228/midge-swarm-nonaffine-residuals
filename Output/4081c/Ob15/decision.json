@@ -1,0 +1,20 @@
+{
+  "node": "4081c_full_observation_adjudication_before_4082",
+  "ob": 15,
+  "result": "t1_local_nonaffine_survives_both_k",
+  "classification": {
+    "ob": 15,
+    "n_events": 96,
+    "t1_gate_any": true,
+    "t1_gate_k_values": "8,10",
+    "t1_median_local_to_b3_ratio": 1.5299957823112518,
+    "t1_median_local_event_minus_non_event_z": 0.6945112791469481,
+    "t2_gate_any": true,
+    "t2_gate_count": 4,
+    "ob_route_a_class": "t1_local_nonaffine_survives_both_k",
+    "interpretation": "T1 survives local-affine residualization for both k values."
+  },
+  "next": [
+    "aggregate_4081c"
+  ]
+}

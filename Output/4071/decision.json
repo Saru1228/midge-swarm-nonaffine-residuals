@@ -1,0 +1,20 @@
+{
+  "node": "4071_cross_dataset_baseline_audit",
+  "question": "Do the frozen 4072 residual target metrics replicate across Ob1/Ob2/Ob3 under B3 + N1?",
+  "result": "pass",
+  "n_primary_metrics": 6,
+  "n_metric_passes": 4,
+  "anchor_pass": true,
+  "gate": "node pass if >=4/6 primary metrics pass and at least one residual-intensity anchor passes; boundary if >=2/6 pass",
+  "metric_gate": "per metric: valid in 3 obs, directional_consistency >= 2/3, effect_gt_null in >=2 obs, median_abs_effect >= 0.12, median_gap > 0",
+  "observations": [
+    1,
+    2,
+    3
+  ],
+  "n_null": 80,
+  "interpretation": "The frozen residual target has enough Ob1-Ob3 support to continue foundation work.",
+  "next": [
+    "4074_event_free_vs_event_conditioned_audit"
+  ]
+}

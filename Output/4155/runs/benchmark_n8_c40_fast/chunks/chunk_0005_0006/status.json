@@ -1,0 +1,13 @@
+{
+  "node": "4155_parallel_highB_omnibus_null",
+  "run_name": "benchmark_n8_c40_fast",
+  "status": "complete",
+  "started_at": "2026-09-02T16:35:53",
+  "finished_at": "2026-09-02T16:36:54",
+  "rep_start": 5,
+  "rep_end": 6,
+  "n_replicates": 2,
+  "elapsed_sec": 61.09480142593384,
+  "aggregate_csv": "Output/4155/runs/benchmark_n8_c40_fast/chunks/chunk_0005_0006/omnibus_replicates.csv",
+  "observation_csv": "Output/4155/runs/benchmark_n8_c40_fast/chunks/chunk_0005_0006/observation_replicate_passes.csv"
+}

@@ -1,0 +1,24 @@
+{
+  "node": "4075_m0_review_before_4080",
+  "question": "After 4074 split the target, should Route A enter 4080, and what exactly should 408x test?",
+  "result": "split_target_enter_4080_feasibility",
+  "inputs": {
+    "4071_result": "pass",
+    "4074_result": "boundary_mixed_event_conditioning",
+    "4071_metric_passes": 4,
+    "4074_stable_core_event_conditioned_count": 1,
+    "4074_stable_core_activity_gate_count": 2
+  },
+  "primary_route_a_target": "T1_transition_tangential_residual",
+  "secondary_route_a_target": "T2_general_residual_activity",
+  "retired_primary_targets": [
+    "T3_radial_residual",
+    "T4_core_edge_speed"
+  ],
+  "next": [
+    "4080_local_affine_feasibility"
+  ],
+  "4080_instruction": "Run feasibility only. Do not yet claim local non-affinity. Check whether local affine fits are numerically identifiable for the data and lags.",
+  "4081_instruction": "If 4080 passes, evaluate T1 and T2 separately in the geometry ladder; do not merge them into one residual target.",
+  "interpretation": "4074 is a boundary, but it is not a stop. It routes 408x toward split targets: a narrow transition-conditioned tangential target and a broader general residual-activity target."
+}

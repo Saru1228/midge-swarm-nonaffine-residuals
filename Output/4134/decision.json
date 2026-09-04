@@ -1,0 +1,67 @@
+{
+  "node": "4134_figure_ready_evidence_panels",
+  "date": "2026-08-28",
+  "node_type": "figure_panel_synthesis",
+  "upstream_nodes": [
+    "M5_REVIEW_before_4134",
+    "4130_definition_and_evidence_registry",
+    "4131_robust_positive_phenomenon_atlas",
+    "4132_negative_mechanism_boundary_atlas",
+    "4133_observation_heterogeneity_map"
+  ],
+  "data_scope": "all_19_observations_for_results_figures_with_representative_raw_snapshot_for_figure1",
+  "new_experiment_run": false,
+  "new_target_or_mechanism_introduced": false,
+  "raw_snapshot_source": "data/raw\\Ob2.txt",
+  "counts": {
+    "main_figures": 5,
+    "panel_metadata_rows": 16,
+    "figure_source_rows": 16,
+    "preview_figures": 5,
+    "missing_panel_sources": 0
+  },
+  "quality_checks": {
+    "m5_gate_passed": true,
+    "figure_source_map_written": true,
+    "main_figure_plan_written": true,
+    "supplementary_plan_written": true,
+    "caption_drafts_written": true,
+    "figure_preview_files_written": true,
+    "panel_sources_present": true,
+    "all_19_context_preserved": true,
+    "figure1_built_as_definition_orientation": true,
+    "metadata_boundary_preserved": true,
+    "propagation_not_main_result": true,
+    "no_new_mechanism_or_target": true
+  },
+  "gate_result": "pass_4134_figure_panel_package_ready_for_4135",
+  "interpretation": "The project now has a figure-ready evidence architecture: Figure 1 defines the data and T1 target; Figures 2-3 present the bounded positive phenomenon; Figure 4 presents tested reduction boundaries; Figure 5 presents observation heterogeneity as part of the result.",
+  "does_not_prove": [
+    "camera-ready publication graphics",
+    "a new mechanism",
+    "causal metadata explanation",
+    "propagation absence",
+    "universal history mechanism",
+    "universal T1 survival"
+  ],
+  "next": [
+    "4135_manuscript_style_technical_synthesis"
+  ],
+  "artifacts": [
+    "Output/4134/figure_source_map.csv",
+    "Output/4134/panel_metadata.csv",
+    "Output/4134/main_figure_manifest.csv",
+    "Output/4134/figure_caption_drafts.csv",
+    "Output/4134/main_figure_plan.md",
+    "Output/4134/supplementary_figure_plan.md",
+    "Output/4134/figure_caption_drafts.md",
+    "Output/4134/source_map.csv",
+    "Output/4134/decision.json",
+    "Output/4134/4134_summary.md",
+    "Output/4134/figures/4134_figure1_data_t1_definition.png",
+    "Output/4134/figures/4134_figure2_t1_survival_across_observations.png",
+    "Output/4134/figures/4134_figure3_spatial_timing_structure.png",
+    "Output/4134/figures/4134_figure4_reduction_boundaries.png",
+    "Output/4134/figures/4134_figure5_observation_heterogeneity.png"
+  ]
+}

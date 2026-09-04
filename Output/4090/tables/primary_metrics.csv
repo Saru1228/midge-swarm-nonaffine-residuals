@@ -1,0 +1,3 @@
+target_family,target,median_incremental_r2,positive_ob_fraction,median_shift_incremental_r2,median_real_minus_shift,real_gt_shift_fraction,pass_gate,interpretation
+first_moment,signed_tan_projection,-0.0006327793192029141,0.21052631578947367,-0.00022115704575798034,-0.0003082888383936222,0.42105263157894735,False,no stable grouped OOS support
+second_moment,log_tan_energy,-0.0006213902693890105,0.15789473684210525,-0.00012663631115694685,-0.0006586480320149857,0.3684210526315789,False,no stable grouped OOS support

@@ -1,0 +1,8 @@
+dimension,same,4085_value,4142_centered_value,interpretation
+tested_observation_set,True,"2,5,7,9,10,11,12,13,14,15,16,17,18,19","2,5,7,9,10,11,12,13,14,15,16,17,18,19",same denominator and observation set
+variable,True,all_tangential,all_tangential,same reported variable
+phase_window,True,"[-0.25, 0.00) s","[-0.25, 0.00) s",same near-pre timing bin
+real_event_values,True,cached real phase values,recomputed centered real phase values,max absolute real-value difference = 3e-15
+abs_gap_gate,False,0.12,0.03,4085 is stricter on effect-size excess
+p_gate,False,0.25,0.35,4142 is looser on the pseudo-event tail condition
+null_sampler,False,run_4081.sample_non_event_times,run_4141.sample_like_events,"same real events, different pseudo-event controls"

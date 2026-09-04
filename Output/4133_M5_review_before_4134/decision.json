@@ -1,0 +1,58 @@
+{
+  "node": "M5_REVIEW_before_4134",
+  "date": "2026-08-28",
+  "node_type": "review_gate",
+  "upstream_nodes": [
+    "4130_definition_and_evidence_registry",
+    "4131_robust_positive_phenomenon_atlas",
+    "4132_negative_mechanism_boundary_atlas",
+    "4133_observation_heterogeneity_map"
+  ],
+  "data_scope": "all_19_observations_from_existing_4130_4133_outputs",
+  "new_experiment_run": false,
+  "new_target_or_mechanism_introduced": false,
+  "gate_counts": {
+    "review_gates": 8,
+    "stop_gates": 0,
+    "action_or_boundary_gates": 2,
+    "figure_candidate_panels": 16,
+    "claim_review_rows": 8,
+    "overclaim_risk_rows": 8
+  },
+  "gate_status_counts": {
+    "PASS": 6,
+    "PASS_WITH_BOUNDARY": 1,
+    "ACTION_REQUIRED_IN_4134": 1
+  },
+  "gate_result": "pass_M5_review_enter_4134_with_actions",
+  "primary_actions_for_4134": [
+    "build Figure 1 as data and T1-definition orientation",
+    "preserve all-19 context before survivor-subset panels",
+    "write metadata associations as descriptive only",
+    "write propagation as NOT_TESTED",
+    "write history as observation-specific rather than universal",
+    "write negative mechanism panels as tested reduction failures"
+  ],
+  "interpretation": "4130-4133 are sufficient to enter 4134 figure-panel construction, provided the existing boundary wording is retained and Figure 1 is constructed as a measurement-definition figure rather than a new mechanism.",
+  "does_not_prove": [
+    "publication-ready final figures are already assembled",
+    "a new mechanism has been identified",
+    "metadata explains observation failures",
+    "propagation has been tested or ruled out",
+    "history dependence is universal"
+  ],
+  "next": [
+    "4134_figure_ready_evidence_panels"
+  ],
+  "artifacts": [
+    "Output/4133_M5_review_before_4134/m5_gate_review.csv",
+    "Output/4133_M5_review_before_4134/main_vs_supplement_figure_candidates.csv",
+    "Output/4133_M5_review_before_4134/claim_storyline_review.csv",
+    "Output/4133_M5_review_before_4134/overclaim_risk_register.csv",
+    "Output/4133_M5_review_before_4134/4134_action_checklist.csv",
+    "Output/4133_M5_review_before_4134/artifact_audit.csv",
+    "Output/4133_M5_review_before_4134/source_map.csv",
+    "Output/4133_M5_review_before_4134/decision.json",
+    "Output/4133_M5_review_before_4134/M5_review_before_4134.md"
+  ]
+}

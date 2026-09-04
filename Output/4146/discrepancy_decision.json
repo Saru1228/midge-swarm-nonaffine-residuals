@@ -1,0 +1,16 @@
+{
+  "node": "4146_near_pre_definition_audit",
+  "date": "2026-09-02",
+  "gate_result": "pass_4146_discrepancy_explained_by_gate_and_null_definition",
+  "primary_metrics": {
+    "same_observation_set_variable_window_and_real_values": true,
+    "different_gate_or_null_sampler": true,
+    "reported_4085_near_pre_count": 8,
+    "reported_4142_centered_near_pre_count": 11,
+    "4085_rows_under_4142_gate_count": 11,
+    "4142_centered_rows_under_4085_gate_count": 9,
+    "max_real_phase_abs_diff_4085_vs_4142_centered": 2.9976021664879227e-15
+  },
+  "manuscript_instruction": "Use 4085 8/14 as the main near-pre phase-localization count; describe 4142 near-pre counts only as sensitivity evidence.",
+  "next": "4147_spectral_set_publication_provenance"
+}

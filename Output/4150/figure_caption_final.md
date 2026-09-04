@@ -1,0 +1,14 @@
+        # 4150 Final Figure Captions
+
+        Date: 2026-09-02
+
+        These captions are figure-facing drafts for the active manuscript. They
+        remove internal node labels and retain bounded claims.
+
+        | figure | latex_file | caption |
+| --- | --- | --- |
+| Figure 1 | figures/Fig1_final.pdf | Data and T1 measurement definition. Panel A shows a representative raw three-dimensional snapshot from one observation. Panels B and C define the affine subtraction and the frozen T1 measurement target used in this study. Panel D shows the event-aligned all-tangential profile used to illustrate the measurement pipeline. The figure defines the observable and does not represent a fitted physical mechanism. |
+| Figure 2 | figures/Fig2_final.pdf | T1 survival across observations. The all-observation panel retains both survivor and failure observations. T1 survived local affine subtraction in most observations and remained robust to nearby scale/lag choices inside the survivor class, but the class panel shows that the result was not universal. |
+| Figure 3 | figures/Fig3_final.pdf | Spatial and timing structure of the T1 residual. Support fractions and event-aligned profiles show that diffuse all-tangential activity was the most stable repeated form. Near-pre timing, edge/core contrast, and signed structure were retained as bounded or secondary patterns. |
+| Figure 4 | figures/Fig4_final.pdf | Reduction boundaries. The tested $(C,\dot{C},R)$ first/second moment closure and the state-matched event-local near-pre test did not provide stable reductions of T1. Recent-history separation was visible in some observations but did not become a universal sign/order rule. Propagation remained outside the current confirmatory route. |
+| Figure 5 | figures/Fig5_final.pdf | Observation heterogeneity. Route-level evidence and observation classes show robust survivors, fragile boundaries, and stable failures across the 19 observations. The metadata association panel is descriptive and sensitivity-audited, but it is not a causal recording-condition explanation. |

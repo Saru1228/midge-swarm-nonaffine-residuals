@@ -1,0 +1,2 @@
+node_id,node_type,n_surviving_variables,n_empirical_cumulant_survivors,n_observed_pair_survivors,n_one_fish_baseline_survivors,empirical_cumulant_surviving_variables,observed_pair_surviving_variables,one_fish_baseline_surviving_variables,eg_rt_decision,recommended_next_node,boundary_reading
+4010_empirical_residual_cumulant_audit,cumulant / factorization audit,0,0,0,0,,,,weak_empirical_residual_cumulant_signal,pause 4010 cumulant route,No observed or empirical-cumulant pair variable survives shifted-event null gates.

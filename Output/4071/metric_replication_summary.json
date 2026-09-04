@@ -1,0 +1,80 @@
+[
+  {
+    "variable": "resid_velocity_cov_trace",
+    "taxonomy_class": "V_covariance_anisotropy",
+    "family": "residual_intensity",
+    "n_ob_valid": 3,
+    "directional_consistency": 0.6666666666666666,
+    "median_real_abs_direction_contrast_z": 0.3412984026143536,
+    "median_null_abs_direction_contrast_z": 0.32735423143427167,
+    "median_real_minus_null_abs_direction_contrast_z": 0.013944171180081955,
+    "n_ob_effect_gt_null": 2,
+    "effect_gt_null_fraction": 0.6666666666666666,
+    "metric_passes_gate": true
+  },
+  {
+    "variable": "resid_speed_rms",
+    "taxonomy_class": "I_magnitude_energy",
+    "family": "residual_intensity",
+    "n_ob_valid": 3,
+    "directional_consistency": 0.6666666666666666,
+    "median_real_abs_direction_contrast_z": 0.34344330472717777,
+    "median_null_abs_direction_contrast_z": 0.3101100493057697,
+    "median_real_minus_null_abs_direction_contrast_z": 0.03333325542140808,
+    "n_ob_effect_gt_null": 2,
+    "effect_gt_null_fraction": 0.6666666666666666,
+    "metric_passes_gate": true
+  },
+  {
+    "variable": "resid_tangential_speed_mean",
+    "taxonomy_class": "III_tangential",
+    "family": "tangential_swirl",
+    "n_ob_valid": 3,
+    "directional_consistency": 0.6666666666666666,
+    "median_real_abs_direction_contrast_z": 0.6134503946892399,
+    "median_null_abs_direction_contrast_z": 0.2709881205975882,
+    "median_real_minus_null_abs_direction_contrast_z": 0.30404594724067846,
+    "n_ob_effect_gt_null": 3,
+    "effect_gt_null_fraction": 1.0,
+    "metric_passes_gate": true
+  },
+  {
+    "variable": "resid_radial_abs_mean",
+    "taxonomy_class": "II_radial",
+    "family": "radial",
+    "n_ob_valid": 3,
+    "directional_consistency": 0.6666666666666666,
+    "median_real_abs_direction_contrast_z": 0.16319587137498887,
+    "median_null_abs_direction_contrast_z": 0.3178065353235226,
+    "median_real_minus_null_abs_direction_contrast_z": -0.15461066394853373,
+    "n_ob_effect_gt_null": 0,
+    "effect_gt_null_fraction": 0.0,
+    "metric_passes_gate": false
+  },
+  {
+    "variable": "edge_minus_core_resid_speed",
+    "taxonomy_class": "VII_core_edge_contrast",
+    "family": "edge_core",
+    "n_ob_valid": 3,
+    "directional_consistency": 0.6666666666666666,
+    "median_real_abs_direction_contrast_z": 0.29770654162698396,
+    "median_null_abs_direction_contrast_z": 0.3065487813701749,
+    "median_real_minus_null_abs_direction_contrast_z": -0.008842239743190927,
+    "n_ob_effect_gt_null": 1,
+    "effect_gt_null_fraction": 0.3333333333333333,
+    "metric_passes_gate": false
+  },
+  {
+    "variable": "edge_minus_core_resid_tangential",
+    "taxonomy_class": "VII_core_edge_contrast",
+    "family": "edge_core",
+    "n_ob_valid": 3,
+    "directional_consistency": 0.6666666666666666,
+    "median_real_abs_direction_contrast_z": 0.4035845679646365,
+    "median_null_abs_direction_contrast_z": 0.31785859948025186,
+    "median_real_minus_null_abs_direction_contrast_z": 0.08572596848438463,
+    "n_ob_effect_gt_null": 2,
+    "effect_gt_null_fraction": 0.6666666666666666,
+    "metric_passes_gate": true
+  }
+]

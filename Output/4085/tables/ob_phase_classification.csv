@@ -1,0 +1,15 @@
+ob,target_variable,n_events,peak_phase,peak_abs_event_minus_abs_null_z,peak_p_null_abs_ge_real_abs,phase_gate_any,event_centered_gate,phase_class,interpretation
+2,shell_edge_minus_core,43,near_post,0.1284354090655451,0.0,True,True,post_transition_response_candidate,The target edge/core contrast is strongest just after the transition.
+5,shell_edge_minus_core,93,early_pre,0.1359001053332801,0.025,True,False,broad_state_or_offcenter_profile_candidate,The target contrast is event-conditioned but not sharply centered on the transition.
+7,shell_edge_minus_core,33,near_post,0.0997602641149608,0.1,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+9,shell_edge_minus_core,37,near_pre,0.0939984991596562,0.125,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+10,shell_edge_minus_core,36,near_pre,0.0670083804465441,0.225,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+11,shell_edge_minus_core,119,near_post,0.0458543729118127,0.125,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+12,shell_edge_minus_core,91,late_post,0.0804819924801995,0.025,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+13,shell_edge_minus_core,102,near_pre,0.0325079614424459,0.275,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+14,shell_edge_minus_core,47,early_pre,0.074013562765449,0.225,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+15,shell_edge_minus_core,96,near_pre,0.1331701163838263,0.075,True,True,pre_transition_buildup_candidate,The target edge/core contrast is strongest before the transition.
+16,shell_edge_minus_core,84,near_post,0.066122607147324,0.15,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+17,shell_edge_minus_core,122,late_post,0.0829677276384136,0.025,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+18,shell_edge_minus_core,103,near_pre,0.0708554698367762,0.125,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.
+19,shell_edge_minus_core,143,early_pre,0.0669721174980117,0.025,False,False,no_clear_phase_gate,No phase bin passes the event-vs-non-event gate for the target contrast.

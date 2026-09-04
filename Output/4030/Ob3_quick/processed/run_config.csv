@@ -1,0 +1,2 @@
+pilot_ob,state_frame_metrics,output_subdir,lag_sec,n_null,min_cell_count,modulation_gate,real_minus_null_gate,null_p_gate,min_survivors_for_expand
+3,Output\4020B\Ob3\processed\frame_one_fish_state_metrics.csv,4030\Ob3_quick,0.2,24,100,0.03,0.015,0.15,2

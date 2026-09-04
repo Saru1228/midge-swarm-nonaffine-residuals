@@ -1,0 +1,48 @@
+{
+  "node": "4081d_explain_observation_heterogeneity_before_4082",
+  "date": "2026-08-25",
+  "result": "support_common_t1_survival_with_early_observation_boundary",
+  "n_observations": 19,
+  "t1_survive_any_k": 15,
+  "t1_survive_both_k": 14,
+  "t1_survive_one_k": 1,
+  "t1_not_event_conditioned": 4,
+  "survive_observations": [
+    2,
+    4,
+    5,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "not_event_conditioned_observations": [
+    1,
+    3,
+    6,
+    8
+  ],
+  "rough_binomial_two_sided_p_vs_half_survival": 0.0192108154296875,
+  "failure_concentration_p_if_failure_positions_random": 0.01805985552115583,
+  "interpretation": "The full set supports common T1 local-nonaffine survival, but the failures are concentrated in early observations and are better described as loss of event specificity after local-affine residualization, not as simple local-affine absorption.",
+  "boundary": "Do not make a pooled universal claim before checking why Ob1/3/6/8 fail and why Ob9-Ob19 all pass under the same frozen gate.",
+  "next": [
+    "4082_scale_robustness_on_surviving_observation_class",
+    "4082b_early_failure_condition_or_artifact_audit"
+  ],
+  "artifacts": [
+    "Output/4081d/heterogeneity_features.csv",
+    "Output/4081d/feature_contrasts.csv",
+    "Output/4081d/figures/4081d_observation_route_map.png",
+    "Output/4081d/figures/4081d_t1_ratio_vs_event_specificity.png",
+    "Output/4081d/figures/4081d_feature_contrasts.png"
+  ]
+}

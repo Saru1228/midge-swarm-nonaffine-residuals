@@ -1,0 +1,5 @@
+variable,raw_abs_direction_contrast_z,affine_pred_abs_direction_contrast_z,affine_resid_abs_direction_contrast_z,affine_pred_to_raw_abs_ratio,affine_resid_to_raw_abs_ratio,raw_survives_gate,affine_pred_survives_gate,affine_resid_survives_gate
+speed_rms,0.873029159244425,0.4145955738765503,0.5521874570287999,0.4748931573320732,0.6324960067848112,True,False,True
+velocity_cov_trace,0.6354374581039852,0.46429405766859566,0.5790683828287234,0.7306683793145492,0.9112909153271267,True,False,True
+mean_speed,0.5391038699428399,0.31381854704621615,0.5388222677043808,0.5821114715416339,0.9994776475292434,True,True,True
+tangential_speed_mean,0.37006582467758103,0.22599756774768495,0.42423763470043996,0.6106955916412568,1.1463842549364183,True,False,True

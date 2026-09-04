@@ -1,0 +1,13 @@
+{
+  "node": "4151_final_manuscript_reintegration",
+  "date": "2026-09-02",
+  "gate_result": "pass_4151_active_manuscript_reintegrated_without_internal_smoke_language",
+  "primary_metrics": {
+    "n_active_figure_references_updated": 5,
+    "n_active_internal_term_matches_after_cleanup": 0,
+    "highB_status": "4149 compute boundary, not integrated as formal p-value",
+    "pdf_compiled": false
+  },
+  "manuscript_instruction": "Keep B=100 as limited-resolution pseudo-event calibration, not as a formal high-B p-value. Keep Fig1_final-Fig5_final references in active LaTeX.",
+  "next": "4152_supplement_build"
+}

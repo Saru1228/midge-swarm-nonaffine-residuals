@@ -1,0 +1,61 @@
+{
+  "node": "4131_robust_positive_phenomenon_atlas",
+  "date": "2026-08-27",
+  "node_type": "positive_atlas",
+  "upstream_node": "4130_definition_and_evidence_registry",
+  "data_scope": "all_19_observations_with_survivor_class_subsets_where_defined",
+  "frozen_target": "T1_local_tangential_nonaffine_residual",
+  "registry_source": "Output/4130",
+  "primary_positive_phenomena": [
+    "diffuse_tangential_activity",
+    "local_nonaffine_t1_survival",
+    "scale_lag_robust_survivor_class"
+  ],
+  "secondary_bounded_positive": [
+    "edge_core_contrast_secondary",
+    "observation_specific_history_separation"
+  ],
+  "primary_metrics": {
+    "t1_survival_any_k_observations": 15,
+    "t1_survival_both_k_observations": 14,
+    "total_observations": 19,
+    "scale_lag_robust_observations": 14,
+    "scale_lag_tested_survivor_observations": 15,
+    "diffuse_all_tangential_gate_observations": 13,
+    "diffuse_all_tangential_tested_observations": 14,
+    "all_tangential_near_pre_gate_observations": 8,
+    "history_real_beats_shuffle_median_observations": 14,
+    "history_direction_consistency_fraction": 0.5263157894736842
+  },
+  "quality_checks": {
+    "primary_positive_rows_present": true,
+    "no_unbounded_primary_claims": true,
+    "figures_written": true,
+    "uses_frozen_4130_target": true,
+    "metadata_dependent_claims_used": false
+  },
+  "gate_result": "pass_4131_positive_atlas_ready_with_secondary_boundaries",
+  "interpretation": "The positive evidence can be presented as a bounded atlas: T1 survival is common, robust inside the survivor class, and most stable as diffuse tangential activity. Edge/core and history signals remain secondary and explicitly bounded.",
+  "does_not_prove": [
+    "universal T1 mechanism",
+    "causal trigger",
+    "prediction rule",
+    "stable edge/core phase trigger",
+    "universal history dependence"
+  ],
+  "next": [
+    "4132_negative_mechanism_boundary_atlas"
+  ],
+  "artifacts": [
+    "Output/4131/positive_phenomenon_atlas.csv",
+    "Output/4131/observation_positive_coverage_matrix.csv",
+    "Output/4131/positive_claims_from_4130.csv",
+    "Output/4131/positive_figure_plan.csv",
+    "Output/4131/decision.json",
+    "Output/4131/4131_summary.md",
+    "Output/4131/figures/4131_observation_coverage_matrix.png",
+    "Output/4131/figures/4131_positive_support_bars.png",
+    "Output/4131/figures/4131_spatial_phase_positive_summary.png",
+    "Output/4131/figures/4131_history_secondary_positive.png"
+  ]
+}

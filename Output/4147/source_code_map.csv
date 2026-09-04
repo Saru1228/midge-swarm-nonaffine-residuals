@@ -1,0 +1,11 @@
+stage,role,script,line,artifact,notes
+3032_input,macroscopic input table,Experiment/run_3032_transfer_operator_metastability.py,30,Output/3032/3032_egrt_node.json,3032 reads geometric center observables from 3001.
+3032_variables,slow variables,Experiment/run_3032_transfer_operator_metastability.py,38,Output/3032/tables/egrt_decision_summary.csv,"Default slow variables are r_rms, density_rms, anisotropy."
+3032_discretization,quantile Ulam cells,Experiment/run_3032_transfer_operator_metastability.py,221,Output/3032/tables/ulam_bin_edges.json,Each robust-z slow variable is split into four pooled quantile bins.
+3032_transfer_operator,empirical lagged transition matrix,Experiment/run_3032_transfer_operator_metastability.py,266,Output/3032/tables/spectral_partition_summary.csv,Transitions are counted at lag 0.10 s within each observation.
+3032_spectral_partition,eigenvector split into low/high sets,Experiment/run_3032_transfer_operator_metastability.py,371,Output/3032/tables/spectral_cell_mapping.csv,Nontrivial right eigenvectors are cut at the stationary-mass weighted median.
+3032_best_partition,selected partition,Experiment/run_3032_transfer_operator_metastability.py,1023,Output/3032/tables/egrt_decision_summary.csv,The selected partition is eig2.
+3032b_materialization,frame-level spectral labels,Experiment/run_3032b_state_meaning_residence_audit.py,772,Output/3032b/processed/frame_spectral_labels.csv,Frame ulam_cell values are mapped to low/high labels.
+3041_propagation,attach labels to layer metrics,Experiment/run_3041_anisotropic_layer_residence.py,32,Output/3041/processed/frame_layer_metrics.csv,3032b labels are read by observation and time.
+3041b_propagation,propagate compact_density_2,Experiment/run_3041b_coarse_graining_closure_audit.py,196,Output/3041b/processed/frame_macrostate_candidates.csv,compact_density_2 is copied from spectral_set when available.
+3045_event_detection,detect low/high run switches,Experiment/run_3045_residual_event_trigger_search.py,212,Output/3045/tables/transition_events.csv,Events are label switches with both adjacent runs at least 0.20 s.

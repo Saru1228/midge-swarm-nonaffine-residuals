@@ -1,0 +1,26 @@
+node: 4121_same_current_state_different_history_matched_test
+date: 2026-08-27
+input: Output/4120/state_path_frame.csv
+current_state:
+  - C
+  - dCdt
+  - R
+activity: A_swarm_tangential_z
+history_axes_rad:
+  h250: -0.8135499579853013
+  h500: -0.8093067555287491
+  h750: -0.8038942537790315
+primary:
+  history_window_sec: 0.5
+  state_distance_threshold: 0.5
+  history_angle_threshold_deg: 90.0
+  min_temporal_sep_sec: 1.0
+  max_pairs_per_anchor: 5
+  max_pairs_per_ob: 10000
+  min_pairs_per_ob: 100
+  n_shuffle_reps: 100
+gates:
+  min_obs_fraction_sufficient: 0.75
+  min_abs_effect_z: 0.05
+  min_direction_consistency_fraction: 0.6
+  min_real_beats_null_fraction: 0.6

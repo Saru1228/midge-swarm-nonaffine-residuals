@@ -1,0 +1,12 @@
+check_id,severity,pass,finding,fix,result
+active_path_uses_v2_core_files,stop,True,Active path should use the corrected v2 data/method files.,Update main include files if false.,pass
+t1_plain_term_not_subscripted,fix_required,True,"T1 is used as a named residual family, not a T_1 equation symbol.",Replace T_1/$T1$ variants with plain T1 unless a new symbol is defined.,pass
+t1_not_raw_velocity_or_force,stop,True,T1 boundary against raw velocity/force interpretation is explicit.,Restore explicit T1 boundary wording in Data/Observables.,pass
+local_affine_equation_present,stop,True,Local affine least-squares equation is present.,Restore the local affine equation.,pass
+compact_state_definitions_present,stop,True,"C(t), dot C(t), and R(t) are defined.",Restore compact state coordinate definitions.,pass
+spectral_set_publication_provenance_in_active_methods,fix_required,True,Active Methods should include enough 4147 provenance to avoid circularity.,"Add one concise Methods sentence naming r_rms, density_rms, anisotropy, eig2, and T1-independence.",pass
+near_pre_endpoint_distinction_explicit,fix_required,True,4085 phase bins and 4100 state-matched near-pre aggregate use different endpoint conventions.,State the distinction explicitly in Methods.,pass
+radius_unit_exception_defined,stop,True,The focal-radius versus swarm-level R exception is stated.,Restore unit-of-analysis boundary for radius covariate.,pass
+b3_ratio_defined,fix_required,True,B3 shorthand in local_to_b3_direction_ratio should be defined.,Add a short definition before the survival-gate threshold list.,pass
+near_pre_main_count_not_overwritten_by_4142,stop,True,4146 near-pre main-count correction is preserved.,Keep 4142 near-pre counts as sensitivity evidence only.,pass
+smoke_null_not_formal_high_b,stop,True,B=100 omnibus null remains correctly bounded.,Do not describe B=100 as final high-resolution p-value.,pass

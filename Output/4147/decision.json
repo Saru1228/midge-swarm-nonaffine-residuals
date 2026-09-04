@@ -1,0 +1,27 @@
+{
+  "node": "4147_spectral_set_publication_provenance",
+  "date": "2026-09-02",
+  "gate_result": "pass_4147_spectral_set_publication_provenance_ready",
+  "primary_metrics": {
+    "best_partition_id": "eig2",
+    "candidate_variables": "r_rms, density_rms, anisotropy",
+    "lag_sec": 0.1,
+    "n_bins": 4,
+    "n_total_cells": 64,
+    "n_active_cells": 60,
+    "active_coverage": 1.0,
+    "top_nontrivial_eigenvalue_real": 0.8564307275942583,
+    "best_partition_min_pooled_retention": 0.8751650955023956,
+    "best_partition_min_retention_lift": 0.3750263483202336,
+    "n_frame_labels": 334542,
+    "n_label_observations": 19,
+    "n_low_labels": 167210,
+    "n_high_labels": 167332,
+    "n_transition_events": 1471,
+    "propagation_checks_pass": true,
+    "label_construction_t1_independent": true,
+    "source_code_map_complete": true
+  },
+  "manuscript_instruction": "Describe spectral_set as an inherited transfer-operator compact-density coarse graining based on r_rms, density_rms, and anisotropy. Do not imply it was fitted from T1.",
+  "next": "4148_notation_and_equation_consistency_audit"
+}

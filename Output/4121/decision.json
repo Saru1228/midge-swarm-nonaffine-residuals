@@ -1,0 +1,71 @@
+{
+  "node": "4121_same_current_state_different_history_matched_test",
+  "date": "2026-08-27",
+  "node_type": "primary_gate",
+  "upstream_node": "4120_state_path_feasibility_coordinate_freeze",
+  "data_scope": "all_19_observations",
+  "frozen_target": "T1_local_tangential_nonaffine_residual",
+  "activity_column": "A_swarm_tangential_z",
+  "current_state": [
+    "C_density_rms_z3045",
+    "dCdt_gradient_density_rms_smooth3045",
+    "R_r_rms_z3045"
+  ],
+  "history_feature": "h500_theta_h",
+  "matching_method": "same_observation_current_state_matched_frame_pairs",
+  "primary_thresholds": {
+    "history_window_sec": 0.5,
+    "state_distance_threshold": 0.5,
+    "history_angle_threshold_deg": 90.0,
+    "min_temporal_sep_sec": 1.0,
+    "max_pairs_per_anchor": 5,
+    "max_pairs_per_ob": 10000,
+    "min_pairs_per_ob": 100
+  },
+  "nulls": [
+    "within_observation_history_theta_shuffle_recompute_contrasting_pairs"
+  ],
+  "primary_metrics": {
+    "n_observations_total": 19,
+    "n_observations_sufficient_pairs": 19,
+    "min_observations_required": 15,
+    "median_selected_pairs_per_sufficient_observation": 4723.0,
+    "median_paired_frame_fraction": 0.7720488466757124,
+    "median_state_distance": 0.2972932945091832,
+    "median_observation_signed_axis_delta_A_z": -0.011040047877916181,
+    "median_abs_observation_signed_axis_delta_A_z": 0.07628898491170816,
+    "direction_consistency_fraction": 0.5263157894736842,
+    "real_beats_shuffle_null_median_abs_fraction": 0.7368421052631579,
+    "real_beats_shuffle_null_q95_abs_fraction": 0.3157894736842105,
+    "median_shuffle_null_abs_signed_axis_delta_A_z": 0.03803189509177676,
+    "median_real_minus_shuffle_null_abs_effect": 0.03414293122320826
+  },
+  "pre_frozen_gates": {
+    "min_obs_fraction_sufficient": 0.75,
+    "min_abs_effect_z": 0.05,
+    "min_direction_consistency_fraction": 0.6,
+    "min_real_beats_null_fraction": 0.6
+  },
+  "gate_result": "boundary_observation_specific_history_dependence",
+  "interpretation": "Some history-conditioned separation is visible, but the effect is not strong enough across all gate criteria to claim robust same-state history dependence.",
+  "does_not_prove": [
+    "causal memory mechanism",
+    "thermodynamic hysteresis",
+    "transition trigger",
+    "out-of-sample history gain",
+    "network propagation"
+  ],
+  "next": [
+    "4125_observation_specific_history_synthesis"
+  ],
+  "artifacts": [
+    "Output/4121/state_matched_history_pairs.csv",
+    "Output/4121/matching_quality.csv",
+    "Output/4121/observation_level_effects.csv",
+    "Output/4121/history_shuffle_null.csv",
+    "Output/4121/sensitivity.csv",
+    "Output/4121/figures/",
+    "Output/4121/decision.json",
+    "Output/4121/4121_summary.md"
+  ]
+}

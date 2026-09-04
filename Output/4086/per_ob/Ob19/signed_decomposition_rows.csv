@@ -1,0 +1,11 @@
+ob,variable,phase,low_to_high_excess_z,high_to_low_excess_z,signed_separation_z,mirror_opposite_sign,mirror_balance,low_to_high_gate,high_to_low_gate,signed_class,interpretation
+19,all_tangential,near_pre,-0.3663701321523505,0.1364861918192619,-0.5028563239716124,True,0.3725363501042869,True,True,opposite_sign_but_imbalanced,"Both transition directions pass with opposite signs, but one side is much larger."
+19,all_tangential,near_post,0.11354867350770527,0.020677622220317493,0.09287105128738778,False,0.18210359999418518,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.
+19,shell_edge_minus_core,near_pre,-0.0314294383353849,-0.08477939452401212,0.05334995618862722,False,0.3707202500306029,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.
+19,shell_edge_minus_core,near_post,-0.11462781867204618,0.14942961022305695,-0.26405742889510314,True,0.7671024404128381,False,True,high_to_low_dominant,Only high-to-low passes the event-type gate.
+19,shell_core_tangential,near_pre,-0.2151633997982533,0.14595740478821895,-0.3611208045864722,True,0.6783561001781672,True,True,mirror_symmetric_opposite_sign,Both transition directions pass and have balanced opposite signs.
+19,shell_core_tangential,near_post,0.18917997240229711,-0.18012688462681153,0.36930685702910865,True,0.9521456332796481,True,True,mirror_symmetric_opposite_sign,Both transition directions pass and have balanced opposite signs.
+19,shell_middle_tangential,near_pre,-0.1840737153953235,0.033506681096720226,-0.21758039649204372,True,0.18202860209976227,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+19,shell_middle_tangential,near_post,0.11067992981429281,-0.2229454384372593,0.3336253682515521,True,0.4964440205195768,False,True,high_to_low_dominant,Only high-to-low passes the event-type gate.
+19,shell_edge_tangential,near_pre,-0.1524115487428081,0.4440847967827012,-0.5964963455255092,True,0.34320370759592983,True,True,opposite_sign_but_imbalanced,"Both transition directions pass with opposite signs, but one side is much larger."
+19,shell_edge_tangential,near_post,0.003963224433466601,-0.07764273121038122,0.08160595564384782,True,0.05104437172267708,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.

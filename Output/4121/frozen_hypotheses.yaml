@@ -1,0 +1,15 @@
+node: 4121_same_current_state_different_history_matched_test
+primary_hypothesis:
+  H412_1: >
+    T1 differs between frames with matched current C,dCdt,R but contrasting
+    recent C-R path direction theta_h at h=0.50 sec.
+primary_target: A_swarm_tangential_z
+primary_history_feature: h500_theta_h
+primary_null:
+  N0: within-observation history-theta shuffle with pair recomputation
+interpretation_rule:
+  pass: >
+    Only if matching coverage, effect size, direction consistency, and
+    shuffled-history null criteria all pass.
+  fail: >
+    Stop 412x low-dimensional recent-history expansion and route to 4125.

@@ -1,0 +1,12 @@
+{
+  "node": "4081_global_vs_local_geometry_ladder",
+  "question": "Does local affine deformation explain the global-affine residual targets, or does local non-affine signal survive?",
+  "result": "boundary_t1_absorbed_or_not_event_conditioned",
+  "t1_local_gate_any": false,
+  "t2_local_gate_any": false,
+  "interpretation": "The primary tangential target does not clearly survive local-affine residualization in this Ob1 pilot.",
+  "next": [
+    "4081b_confirm_t1_absorption_or_pause_route_a"
+  ],
+  "target_policy": "split_targets"
+}

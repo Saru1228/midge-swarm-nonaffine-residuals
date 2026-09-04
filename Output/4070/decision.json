@@ -1,0 +1,21 @@
+{
+  "node": "4070_bounded_result_and_negative_mechanism_map",
+  "question": "What survived geometry in 4001-4066, which mechanism explanations failed, and what can be tested next without reopening metric search?",
+  "result": "pass",
+  "interpretation": "The 4xxx chain can be written as a bounded model-criticism result with a surviving affine-residual velocity target and multiple excluded or bounded mechanism stories.",
+  "target_sentence": "After removing translation plus global affine deformation, the transition-aligned affine-residual velocity observables speed_rms, velocity_cov_trace, mean_speed, and tangential_speed_mean remain robust under the original 4001 shifted-event screen across 19 observations and 1471 events; this target still requires 4072 metric freeze, 4073 null freeze, 4071 cross-dataset replication, and 408x local-affine testing.",
+  "gate": "Can write one strict target sentence with explicit baseline, residual observable, and robustness caveat.",
+  "gate_evaluation": "passed_with_caveat",
+  "caveat": "The target is strict enough to continue foundation work, but not yet strict enough for local-affine or biological mechanism claims.",
+  "next": [
+    "4072_residual_observable_taxonomy",
+    "4073_null_and_baseline_registry",
+    "4071_cross_dataset_baseline_audit",
+    "4074_event_free_vs_event_conditioned_audit"
+  ],
+  "frozen_parameters": {
+    "full_dataset_default": false,
+    "replication_before_full_set": "Ob1 -> Ob2/Ob3 -> full 19 only after predefined gates",
+    "primary_next_rule": "Do not enter 408x until 4072 and 4073 are complete."
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "node": "4143_local_affine_conditioning_qc",
+  "date": "2026-09-02",
+  "question": "Are local affine fits rank-sufficient and well-conditioned, and are high T1 values driven by ill-conditioned fits?",
+  "gate_result": "pass_local_affine_conditioning_qc",
+  "interpretation": "Local affine fits are broadly rank-sufficient and well-conditioned; large T1 samples are not concentrated in severely ill-conditioned fits.",
+  "primary_metrics": {
+    "n_ob_k_combos": 38,
+    "n_combo_passes": 38,
+    "n_observations": 19,
+    "n_observations_all_k_pass": 19,
+    "median_valid_fit_fraction": 1.0,
+    "min_valid_fit_fraction": 0.999763481551561,
+    "median_condition_number_over_combos": 2.3674845690394064,
+    "max_combo_q95_condition_number": 6.282690016495806,
+    "max_combo_frac_condition_gt_100": 0.0,
+    "median_top5_t1_condition_number": 2.061165679743935,
+    "max_top5_t1_frac_condition_gt_100": 0.0,
+    "median_spearman_log_condition_vs_log_t1": -0.13830010865250766,
+    "max_abs_spearman_log_condition_vs_log_t1": 0.19438476033187416
+  },
+  "sampling_meta": [
+    {
+      "ob": 1,
+      "dataset": "Ob1.txt",
+      "n_frames_total": 10989,
+      "n_frames_sampled": 300,
+      "median_dt": 0.009999999999999787,
+      "lag_steps": 10,
+      "n_rows": 14400
+    },
+    {
+      "ob": 2,
+      "dataset": "Ob2.txt",
+      "n_frames_total": 14859,
+      "n_frames_sampled": 300,
+      "median_dt": 0.009999999999999787,
+      "lag_steps": 10,
+      "n_rows": 14400
+    },
+    {
+      "ob": 3,
+      "dataset": "Ob3.txt",
+      "n_frames_total": 14990,
+      "n_frames_sampled": 300,
+      "median_dt": 0.009999999999999787,
+      "lag_steps": 10,
+      "n_rows": 14400
+    },
+    {
+      "ob": 4,
+      "dataset": "Ob4.txt",
+      "n_frames_total": 14952,
+      "n_frames_sampled": 300,
+      "median_dt": 0.009999999999999787,
+      "lag_steps": 10,
+      "n_rows": 14400
+    },
+    {
+      "ob": 5,
+      "dataset": "Ob5.txt",
+      "n_frames_total": 14957,
+      "n_frames_sampled": 300,
+      "median_dt": 0.009999999999999787,
+      "lag_steps": 10,
+      "n_rows": 13138
+    },
+    {
+      "ob": 6,
+      "dataset": "Ob6.txt",
+      "n_frames_total": 19991,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 10638
+    },
+    {
+      "ob": 7,
+      "dataset": "Ob7.txt",
+      "n_frames_total": 9992,
+      "n_frames_sampled": 300,
+      "median_dt": 0.009999999999999787,
+      "lag_steps": 10,
+      "n_rows": 14352
+    },
+    {
+      "ob": 8,
+      "dataset": "Ob8.txt",
+      "n_frames_total": 18989,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 14200
+    },
+    {
+      "ob": 9,
+      "dataset": "Ob9.txt",
+      "n_frames_total": 9949,
+      "n_frames_sampled": 300,
+      "median_dt": 0.009999999999999787,
+      "lag_steps": 10,
+      "n_rows": 14306
+    },
+    {
+      "ob": 10,
+      "dataset": "Ob10.txt",
+      "n_frames_total": 14991,
+      "n_frames_sampled": 300,
+      "median_dt": 0.009999999999999787,
+      "lag_steps": 10,
+      "n_rows": 14352
+    },
+    {
+      "ob": 11,
+      "dataset": "Ob11.txt",
+      "n_frames_total": 19990,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 8456
+    },
+    {
+      "ob": 12,
+      "dataset": "Ob12.txt",
+      "n_frames_total": 19990,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 10956
+    },
+    {
+      "ob": 13,
+      "dataset": "Ob13.txt",
+      "n_frames_total": 19989,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 14284
+    },
+    {
+      "ob": 14,
+      "dataset": "Ob14.txt",
+      "n_frames_total": 19989,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 14400
+    },
+    {
+      "ob": 15,
+      "dataset": "Ob15.txt",
+      "n_frames_total": 19990,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 11954
+    },
+    {
+      "ob": 16,
+      "dataset": "Ob16.txt",
+      "n_frames_total": 19990,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 14352
+    },
+    {
+      "ob": 17,
+      "dataset": "Ob17.txt",
+      "n_frames_total": 19991,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 8830
+    },
+    {
+      "ob": 18,
+      "dataset": "Ob18.txt",
+      "n_frames_total": 19989,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 11360
+    },
+    {
+      "ob": 19,
+      "dataset": "Ob19.txt",
+      "n_frames_total": 29991,
+      "n_frames_sampled": 300,
+      "median_dt": 0.00999999999999801,
+      "lag_steps": 10,
+      "n_rows": 14338
+    }
+  ],
+  "gate": {
+    "combo_pass": [
+      "valid_fit_fraction >= 0.85",
+      "rank_screen_pass_fraction >= 0.85",
+      "median_condition_number <= 10",
+      "q95_condition_number <= 50",
+      "frac_condition_gt_100 <= 0.01",
+      "top5_t1_frac_condition_gt_100 <= 0.05"
+    ],
+    "overall_pass": "at least 34/38 ob-k combos and at least 16/19 observations pass both k values"
+  },
+  "does_not_prove": [
+    "biological mechanism",
+    "correctness of the T1 phenomenon by itself",
+    "formal 4141 p-value",
+    "detrending robustness",
+    "absence of all preprocessing artifacts"
+  ],
+  "next": [
+    "4144_definition_notation_figure_cleanup"
+  ],
+  "diagnostic_notes": {
+    "median_spearman_log_condition_vs_log_t1": -0.13830010865250766,
+    "max_combo_frac_condition_gt_100": 0.0,
+    "max_top5_t1_frac_condition_gt_100": 0.0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "ob": 8,
+  "sensitivity_family": "state_definition",
+  "sensitivity_id": "state_k8_lag0p100_window0p200_minrun0p250",
+  "k": 8,
+  "lag_sec": 0.1,
+  "prepost_sec": 0.2,
+  "min_run_sec": 0.25,
+  "n_events": 66,
+  "source": "computed_4087",
+  "b3_event_direction_abs_z": 0.0939542440068157,
+  "local_event_direction_abs_z": 0.2912496251263208,
+  "local_non_event_direction_abs_median_z": 0.27624956879727625,
+  "local_event_minus_non_event_direction_z": 0.015000056329044553,
+  "p_non_event_direction_ge_event": 0.475,
+  "local_to_b3_direction_ratio": 3.0999091973449624,
+  "event_conditioned_local_gate": false,
+  "geometry_ladder_reading": "inconclusive"
+}

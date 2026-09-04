@@ -1,0 +1,11 @@
+node: 4080_local_affine_feasibility
+date: 2026-08-25
+node_type: local_affine_feasibility_smoke_test
+source_target_config: Output/4075/target_config_for_4080.json
+observation: Ob1
+dataset: Ob1.txt
+k_values: 4,6,8,10,12
+lag_secs: 0.05,0.1,0.2
+frame_stride: 10
+max_frames: 500
+max_focals_per_frame: 24

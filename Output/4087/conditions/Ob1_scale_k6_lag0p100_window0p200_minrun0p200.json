@@ -1,0 +1,19 @@
+{
+  "ob": 1,
+  "sensitivity_family": "scale_timing",
+  "sensitivity_id": "scale_k6_lag0p100_window0p200_minrun0p200",
+  "k": 6,
+  "lag_sec": 0.1,
+  "prepost_sec": 0.2,
+  "min_run_sec": 0.2,
+  "n_events": 28,
+  "source": "computed_4087",
+  "b3_event_direction_abs_z": 0.7109644217572649,
+  "local_event_direction_abs_z": 0.5121224471127146,
+  "local_non_event_direction_abs_median_z": 0.24149036977726934,
+  "local_event_minus_non_event_direction_z": 0.27063207733544525,
+  "p_non_event_direction_ge_event": 0.125,
+  "local_to_b3_direction_ratio": 0.7203207803942145,
+  "event_conditioned_local_gate": true,
+  "geometry_ladder_reading": "local_nonaffine_signal_survives_gate"
+}

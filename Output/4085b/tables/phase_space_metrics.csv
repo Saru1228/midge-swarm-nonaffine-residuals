@@ -1,0 +1,8 @@
+metric,value,interpretation
+near_pre_all_tangential_low_to_high,-0.15667648130806688,ob-balanced median low-to-high all_tangential in near-pre phase
+near_pre_all_tangential_high_to_low,0.13178726324726192,ob-balanced median high-to-low all_tangential in near-pre phase
+near_pre_all_tangential_signed_separation,-0.2884637445553288,low-to-high minus high-to-low separation in the diffuse timing coordinate
+near_pre_edge_core_low_to_high,0.04553964142998812,ob-balanced median low-to-high edge/core contrast in near-pre phase
+near_pre_edge_core_high_to_low,-0.055534899881199785,ob-balanced median high-to-low edge/core contrast in near-pre phase
+phase_space_loop_area_all_vs_edge_low_to_high,0.004060608205896148,"diagnostic 2D loop area, not an attractor metric"
+phase_space_loop_area_all_vs_edge_high_to_low,0.005255102986920064,"diagnostic 2D loop area, not an attractor metric"

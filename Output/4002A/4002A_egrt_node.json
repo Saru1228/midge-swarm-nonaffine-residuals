@@ -1,0 +1,63 @@
+{
+  "node_id": "4002a_residual_spatial_structure_audit",
+  "series": "4xxx",
+  "node_type": "mechanism screen",
+  "parent_node": "4001_geometric_baseline_residual_audit",
+  "question": "What kind of affine-residual velocity structure remains around compact-density transitions?",
+  "competing_interpretations": [
+    "H_edge_core: residual signal is localized by position inside the school",
+    "H_radial: residual signal is expansion/contraction-like after affine subtraction",
+    "H_tangential: residual signal is tangential or swirl-like",
+    "H_order: residual velocities become more globally ordered",
+    "H_shift_null: shifted event times show comparable spatial-structure changes"
+  ],
+  "input_artifacts": [
+    "data/raw/Ob*.txt",
+    "Output/3045/tables/transition_events.csv",
+    "Output/4001/tables/egrt_decision_summary.csv"
+  ],
+  "method": [
+    "fit per-frame affine baseline and compute affine residual velocities",
+    "compute edge/core, radial, tangential/swirl, intensity, and order metrics",
+    "remove 1-sec smooth trend and robust-z residualize within observation",
+    "compare transition events against 160 shifted-event null replicates"
+  ],
+  "pass_gate": {
+    "direction": "real-null direction gap >= 0.12 z, p <= 0.1, sign consistency >= 0.70",
+    "route": "route to the first surviving interpretable family in edge_core, tangential_swirl, radial, residual_order, residual_intensity order"
+  },
+  "outputs": [
+    "Output/4002A/tables/residual_structure_direction_null_comparison.csv",
+    "Output/4002A/tables/egrt_decision_summary.csv",
+    "Output/4002A/4002A_summary.md"
+  ],
+  "provenance": {
+    "script": "Experiment/run_4002a_residual_spatial_structure_audit.py",
+    "config": {
+      "data_dir": "data/raw",
+      "max_ob": null,
+      "smooth_window_sec": 1.0,
+      "event_window_sec": 0.4,
+      "prepost_window_sec": 0.2,
+      "n_null": 160,
+      "direction_gap_gate_z": 0.12,
+      "null_p_gate": 0.1,
+      "min_ob_gate": 12,
+      "min_family_survivors_for_route": 1
+    },
+    "decision": {
+      "node_id": "4002a_residual_spatial_structure_audit",
+      "node_type": "mechanism screen",
+      "n_surviving_variables": 6,
+      "n_edge_core_survivors": 2,
+      "n_radial_survivors": 1,
+      "n_tangential_swirl_survivors": 1,
+      "n_residual_intensity_survivors": 2,
+      "n_residual_order_survivors": 0,
+      "surviving_variables": "resid_velocity_cov_trace, resid_speed_rms, resid_tangential_speed_mean, resid_radial_abs_mean, edge_minus_core_resid_speed, edge_minus_core_resid_tangential",
+      "eg_rt_decision": "support_residual_edge_core_structure_signal",
+      "recommended_next_node": "4002b edge/core residual localization audit",
+      "boundary_reading": "Residual affine-subtracted velocities have shifted-null robust spatial-structure signals; route to the strongest interpretable family."
+    }
+  }
+}

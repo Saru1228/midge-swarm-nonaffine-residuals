@@ -1,0 +1,23 @@
+node: 4141_full_pipeline_omnibus_survival_null
+date: 2026-09-01
+input_contract: Output/4140/frozen_analysis_contract.yaml
+analysis_scope: all_19_observations
+mode: smoke
+n_null_replicates: 100
+n_controls_per_replicate_observation: 40
+k_values: 8,10
+lag_sec: 0.1
+frame_stride: 2
+max_focals_per_frame: 24
+prepost_sec: 0.2
+exclusion_sec: 0.8
+observed_n_both: 14
+observed_n_any: 15
+survival_gate:
+  local_event_minus_non_event_direction_z: "> 0.03"
+  p_non_event_direction_ge_event: "<= 0.35"
+  local_to_b3_direction_ratio: ">= 0.3"
+null_design:
+  pseudo_events: same_observation_uniform_times_avoiding_true_transition_windows
+  controls: same_observation_uniform_times_avoiding_true_and_pseudo_event_windows
+  event_type_counts: preserved_from_real_events

@@ -1,0 +1,10 @@
+node: 4073_null_and_baseline_registry
+date: 2026-08-25
+node_type: foundation_null_baseline_freeze
+parent_node: 4072_residual_observable_taxonomy
+no_trajectory_reprocessing: true
+next_node: 4071_cross_dataset_baseline_audit
+registry_items:
+  baselines: 5
+  nulls: 5
+  future_node_rules: 7

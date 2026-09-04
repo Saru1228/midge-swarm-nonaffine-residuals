@@ -1,0 +1,2 @@
+node_id,node_type,pilot_ob,n_surviving_variables,surviving_variables,eg_rt_decision,recommended_next_node,boundary_reading
+4030_coarse_grained_stochastic_state_transition_pilot,single-observation stochastic coarse-graining pilot,3,0,,weak_coarse_state_transition_modulation_pilot,4040 4xxx synthesis and pause,No residual coarse state modulates compact-state transitions beyond shifted-bin null gates.

@@ -1,0 +1,29 @@
+{
+  "node": "4072_residual_observable_taxonomy",
+  "question": "Which residual observables are primary targets, secondary diagnostics, or retired controls before replication?",
+  "result": "pass",
+  "primary_target_metrics": [
+    "resid_velocity_cov_trace",
+    "resid_speed_rms",
+    "resid_tangential_speed_mean",
+    "resid_radial_abs_mean",
+    "edge_minus_core_resid_speed",
+    "edge_minus_core_resid_tangential"
+  ],
+  "secondary_diagnostics": [
+    "radius_resid_speed_corr",
+    "resid_inward_fraction",
+    "resid_radial_velocity_mean",
+    "radius_resid_tangential_corr",
+    "resid_tangential_fraction"
+  ],
+  "retired_or_negative_controls": [
+    "resid_polarization"
+  ],
+  "gate": "primary_target_metrics <= 6 and secondary_diagnostics <= 12",
+  "gate_evaluation": "primary=6, secondary=5, retired=1",
+  "interpretation": "The residual target is now metric-frozen for 4073/4071. New primary metrics should not be added during replication.",
+  "next": [
+    "4073_null_and_baseline_registry"
+  ]
+}

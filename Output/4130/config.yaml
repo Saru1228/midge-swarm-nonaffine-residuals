@@ -1,0 +1,13 @@
+node: 4130_definition_and_evidence_registry
+date: 2026-08-27
+route: 413x_phenomenon_boundary_evidence_synthesis
+upstream_node: 4125_state_path_history_synthesis
+new_mechanism_search_allowed: false
+new_target_search_allowed: false
+required_outputs:
+  - definition_dictionary.csv
+  - evidence_registry.csv
+  - claim_strength_registry.csv
+  - metadata_source_audit.csv
+  - claim_dependency_graph.md
+  - route_timeline.md

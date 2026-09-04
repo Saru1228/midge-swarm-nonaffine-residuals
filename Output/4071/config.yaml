@@ -1,0 +1,12 @@
+node: 4071_cross_dataset_baseline_audit
+date: 2026-08-25
+node_type: cross_dataset_replication
+source_primary_metrics: Output/4072/primary_metrics.csv
+baseline: B3_global_affine
+null: N1_shifted_event
+observations: 1,2,3
+n_null: 80
+no_new_primary_metrics: true
+next_if_pass: 4074_event_free_vs_event_conditioned_audit
+next_if_boundary: 4074_event_free_vs_event_conditioned_audit_or_M0_boundary_review
+next_if_fail: stop_main_residual_mechanism_program_or_reclassify_as_dataset_specific

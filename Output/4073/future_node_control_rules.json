@@ -1,0 +1,58 @@
+[
+  {
+    "future_node": "4071_cross_dataset_baseline_audit",
+    "required_primary_metrics": "4072 primary metrics only",
+    "required_baselines": "B3",
+    "required_nulls_or_controls": "N1; report dataset-wise effects and sign consistency",
+    "forbidden_shortcut": "Do not add or replace primary metrics after seeing Ob2/Ob3.",
+    "entry_condition": "4072 and 4073 completed."
+  },
+  {
+    "future_node": "4074_event_free_vs_event_conditioned_audit",
+    "required_primary_metrics": "4072 primary metrics; secondary diagnostics only as context",
+    "required_baselines": "B0,B3",
+    "required_nulls_or_controls": "N1,N2,N5",
+    "forbidden_shortcut": "Do not define events using the same downstream propagation metric.",
+    "entry_condition": "4071 completed or explicitly skipped for a documented reason."
+  },
+  {
+    "future_node": "4080_local_affine_feasibility",
+    "required_primary_metrics": "not metric-driven; fit-quality diagnostics first",
+    "required_baselines": "B4 feasibility only",
+    "required_nulls_or_controls": "condition-number and neighbor-turnover diagnostics",
+    "forbidden_shortcut": "Do not interpret D2min if local affine fits are numerically unstable.",
+    "entry_condition": "4072/4073 completed; 4071 does not collapse the target."
+  },
+  {
+    "future_node": "4081_global_vs_local_geometry_ladder",
+    "required_primary_metrics": "4072 primary metrics",
+    "required_baselines": "B1,B2,B3,B4",
+    "required_nulls_or_controls": "N4 geometry-matched null if claiming non-affine residual beyond local geometry",
+    "forbidden_shortcut": "Do not claim non-affinity from B3 residual alone.",
+    "entry_condition": "4080 feasibility pass."
+  },
+  {
+    "future_node": "4090_conditional_mean_vs_variance",
+    "required_primary_metrics": "4072 metrics or 408x local-nonaffine metric if Route A survives",
+    "required_baselines": "B3 or B4, depending on Route A result",
+    "required_nulls_or_controls": "N1,N2,N4; out-of-sample mean-vs-variance comparison",
+    "forbidden_shortcut": "Do not treat correlation or in-sample fit gain as force/mechanism.",
+    "entry_condition": "M1 review says residual survives the relevant geometry baseline."
+  },
+  {
+    "future_node": "410x_transient_propagation",
+    "required_primary_metrics": "Frozen residual/non-affine activity metric",
+    "required_baselines": "B3 or B4",
+    "required_nulls_or_controls": "N1,N2,N5; matched non-burst windows",
+    "forbidden_shortcut": "Do not call lagged correlation a wave without stable lag-distance structure and replication.",
+    "entry_condition": "Frozen burst/activity definition from 4072 or 408x."
+  },
+  {
+    "future_node": "411x_network_organization",
+    "required_primary_metrics": "Frozen residual/non-affine activity metric",
+    "required_baselines": "B0,B3 or B4",
+    "required_nulls_or_controls": "N3,N4 plus degree/geometry preserving graph controls",
+    "forbidden_shortcut": "Do not infer biological interaction from a single graph edge or metric.",
+    "entry_condition": "4072/4073 completed and target residual variable frozen; preferably after Route A."
+  }
+]

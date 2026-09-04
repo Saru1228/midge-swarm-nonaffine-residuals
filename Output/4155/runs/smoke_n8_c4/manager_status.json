@@ -1,0 +1,14 @@
+{
+  "node": "4155_parallel_highB_omnibus_null",
+  "run_name": "smoke_n8_c4",
+  "status": "workers_finished",
+  "updated_at": "2026-09-02T16:28:03",
+  "total_null": 8,
+  "chunk_size": 2,
+  "workers": 2,
+  "running_chunks": [],
+  "remaining_to_launch": 0,
+  "chunks_completed_this_invocation": 4,
+  "chunks_complete_total": 4,
+  "failed": []
+}

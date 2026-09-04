@@ -1,0 +1,12 @@
+metric,value,notes
+pdf_pages,10,Parsed from final pdflatex log
+pages_10,true,Expected final manuscript length
+latex_errors,0,No LaTeX errors detected
+undefined_control_sequence,0,No undefined control sequence detected
+citation_warnings,0,No unresolved citation warnings detected
+reference_warnings,0,No unresolved reference warnings detected
+undefined_refs_warning,false,No global undefined-reference warning detected
+label_changed_warning,false,No rerun-for-label-change warning detected after two passes
+overfull_boxes,0,No overfull-box warnings detected
+underfull_boxes,16,Layout-quality warnings remain only
+final_pdf_bytes,393356,Size of mypaper2/Latex/main_final.pdf after final compile

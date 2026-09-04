@@ -1,0 +1,15 @@
+node: 4142_detrending_challenge
+date: 2026-09-02
+node_type: submission_hardening_artifact_control
+survival_source: Output/4141/cache
+phase_source: Output/4084/per_ob
+events: Output/3045/tables/transition_events.csv
+variants: ['centered_1s', 'past_1s', 'none_z']
+k_values: [8, 10]
+lag_sec: 0.1
+frame_stride: 2
+max_focals_per_frame: 24
+n_controls: 40
+prepost_sec: 0.2
+exclusion_sec: 0.8
+phase_observations: [2, 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]

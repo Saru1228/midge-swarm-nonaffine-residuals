@@ -1,0 +1,10 @@
+node: 4085b_phase_space_projection_of_t1_edge_core_signal
+date: 2026-08-26
+node_type: diagnostic_projection
+input_nodes:
+  - 4085_event_phase_profile_of_t1_signal
+  - 4086_signed_direction_and_state_decomposition
+observations: 2,5,7,9,10,11,12,13,14,15,16,17,18,19
+compact_coordinate: density_rms_resid3045
+variables: all_tangential,shell_edge_minus_core,shell_core_tangential,shell_edge_tangential
+attractor_test: false

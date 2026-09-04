@@ -1,0 +1,11 @@
+ob,variable,phase,low_to_high_excess_z,high_to_low_excess_z,signed_separation_z,mirror_opposite_sign,mirror_balance,low_to_high_gate,high_to_low_gate,signed_class,interpretation
+17,all_tangential,near_pre,-0.0756206941275813,0.14293440288725323,-0.21855509701483453,True,0.5290587332374485,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.
+17,all_tangential,near_post,0.34176661333727776,-0.056401770528356036,0.3981683838656338,True,0.1650300770388448,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+17,shell_edge_minus_core,near_pre,-0.15231949393862948,0.09599978307698584,-0.24831927701561532,True,0.6302527706379117,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+17,shell_edge_minus_core,near_post,-0.34328820626676787,-0.06636408038682429,-0.2769241258799436,False,0.19331884747375513,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+17,shell_core_tangential,near_pre,-0.07504535249549077,0.037334310821838246,-0.11237966331732901,True,0.497489978797575,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.
+17,shell_core_tangential,near_post,0.37034350218940537,-0.08698794001951657,0.45733144220892197,True,0.23488447753304495,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+17,shell_middle_tangential,near_pre,0.06739019665323785,0.06737403266826004,1.6163984977807244e-05,False,0.9997601433772187,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.
+17,shell_middle_tangential,near_post,0.2496265282769477,-0.10444744887224852,0.3540739771491962,True,0.41841485996379957,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+17,shell_edge_tangential,near_pre,-0.14860523679481558,0.27703021961821694,-0.4256354564130325,True,0.5364224776618688,True,True,mirror_symmetric_opposite_sign,Both transition directions pass and have balanced opposite signs.
+17,shell_edge_tangential,near_post,0.037123101021881016,-0.0819357997671884,0.11905890078906942,True,0.45307547039709434,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.

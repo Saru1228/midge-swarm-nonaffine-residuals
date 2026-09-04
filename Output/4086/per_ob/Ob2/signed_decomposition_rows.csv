@@ -1,0 +1,11 @@
+ob,variable,phase,low_to_high_excess_z,high_to_low_excess_z,signed_separation_z,mirror_opposite_sign,mirror_balance,low_to_high_gate,high_to_low_gate,signed_class,interpretation
+2,all_tangential,near_pre,-0.29326495506122585,0.326148873909048,-0.6194138289702739,True,0.899175126825695,True,True,mirror_symmetric_opposite_sign,Both transition directions pass and have balanced opposite signs.
+2,all_tangential,near_post,0.20383112744975435,0.06093359894217196,0.1428975285075824,False,0.29894157827877627,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+2,shell_edge_minus_core,near_pre,-0.28481134075084075,-0.23603927149628812,-0.04877206925455263,False,0.8287565757530017,True,True,same_direction_both_event_types,Both transition directions pass but shift in the same sign.
+2,shell_edge_minus_core,near_post,0.22886748096828796,-0.009787140019363965,0.23865462098765192,True,0.04276334924453543,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+2,shell_core_tangential,near_pre,0.09627821024203606,0.06505563673913847,0.031222573502897588,False,0.6757046747710991,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.
+2,shell_core_tangential,near_post,-0.28499758403032016,0.16426552956595744,-0.4492631135962776,True,0.5763751651609849,True,True,mirror_symmetric_opposite_sign,Both transition directions pass and have balanced opposite signs.
+2,shell_middle_tangential,near_pre,-0.06270882548295323,0.05079015998506073,-0.11349898546801396,True,0.8099363940226807,False,False,no_signed_gate,Neither transition direction passes the signed event-type gate.
+2,shell_middle_tangential,near_post,0.3999108616204597,0.007901802100166395,0.3920090595202933,False,0.01975890844311625,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+2,shell_edge_tangential,near_pre,-0.3341213841881221,-0.0452306679574007,-0.2888907162307214,False,0.13537196389661263,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.
+2,shell_edge_tangential,near_post,0.23860270330380054,-0.039259968906147344,0.27786267220994787,True,0.16454117393699286,True,False,low_to_high_dominant,Only low-to-high passes the event-type gate.

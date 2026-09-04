@@ -1,0 +1,69 @@
+{
+  "node": "4120_state_path_feasibility_coordinate_freeze",
+  "date": "2026-08-27",
+  "node_type": "technical_gate",
+  "upstream_node": "4105_state_matched_negative_synthesis",
+  "data_scope": "all_19_observations",
+  "frozen_target": "T1_local_tangential_nonaffine_residual",
+  "activity_column": "A_swarm_tangential_z",
+  "current_state": [
+    "C_density_rms_z3045",
+    "dCdt_gradient_density_rms_smooth3045",
+    "R_r_rms_z3045"
+  ],
+  "path_coordinates": [
+    "density_rms_smooth3045",
+    "r_rms_smooth3045"
+  ],
+  "primary_history_window_sec": 0.5,
+  "sensitivity_history_windows_sec": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "primary_history_features": [
+    "DeltaC_h",
+    "DeltaR_h",
+    "path_length",
+    "theta_h",
+    "theta_v",
+    "turning_proxy"
+  ],
+  "stability_thresholds": {
+    "min_path_feature_coverage": 0.9,
+    "min_obs_coverage_count": 15,
+    "max_abs_dRdt_q99": 1000.0
+  },
+  "primary_metrics": {
+    "obs_path_coverage_ge_0p90": 19,
+    "obs_theta_valid_ge_0p90": 19,
+    "min_current_state_finite_fraction": 1.0,
+    "min_dRdt_finite_fraction": 1.0,
+    "max_q99_abs_dRdt": 3.8681494417280153,
+    "median_primary_path_length": 0.5139233733956774,
+    "median_abs_turning_proxy_rad": 0.19158180401952252,
+    "max_abs_spearman_history_current_corr": 0.8936659441916868
+  },
+  "gate_result": "pass_state_path_features_feasible_with_leakage_audit",
+  "interpretation": "State-path features are technically identifiable at the primary 0.50 sec history window. History-current correlations are recorded as leakage audits and must be controlled by 4121 current-state matching.",
+  "does_not_prove": [
+    "history dependence of T1",
+    "same-state different-history effect",
+    "hysteresis-like path dependence",
+    "OOS history gain",
+    "causal memory mechanism"
+  ],
+  "next": [
+    "4121_same_current_state_different_history_matched_test"
+  ],
+  "artifacts": [
+    "Output/4120/state_path_frame.csv",
+    "Output/4120/path_feature_qc.csv",
+    "Output/4120/history_window_sensitivity.csv",
+    "Output/4120/state_leakage_audit.csv",
+    "Output/4120/observation_coverage.csv",
+    "Output/4120/figures/",
+    "Output/4120/decision.json",
+    "Output/4120/4120_summary.md"
+  ]
+}

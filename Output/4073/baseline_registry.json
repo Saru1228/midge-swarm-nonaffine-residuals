@@ -1,0 +1,57 @@
+[
+  {
+    "baseline_id": "B0",
+    "name": "identity_measurement_audit",
+    "class": "artifact_control",
+    "definition": "Track dropout, membership change, finite-N averaging, velocity-estimation sensitivity, and frame-rate sensitivity checks.",
+    "preserves": "Raw measurement process and trajectory identity metadata.",
+    "removes_or_controls": "Measurement and preprocessing artifacts before interpreting residual organization.",
+    "primary_use": "Required diagnostic layer before strong mechanism claims.",
+    "allowed_future_nodes": "4074,4080,4081,4090,4100,4110",
+    "status": "registered_required_artifact_layer"
+  },
+  {
+    "baseline_id": "B1",
+    "name": "translation",
+    "class": "geometric_baseline",
+    "definition": "Subtract swarm-level center-of-mass/common translational velocity.",
+    "preserves": "Relative motion, rotation, strain, shear, local deformation, and residual individual differences.",
+    "removes_or_controls": "Global common motion.",
+    "primary_use": "First rung of 4081 geometry ladder.",
+    "allowed_future_nodes": "4081",
+    "status": "registered"
+  },
+  {
+    "baseline_id": "B2",
+    "name": "global_rigid",
+    "class": "geometric_baseline",
+    "definition": "Subtract translation plus best global rigid rotation.",
+    "preserves": "Global strain/shear, local deformation, non-affine motion, and stochastic residuals.",
+    "removes_or_controls": "Common motion plus rigid-body rotation.",
+    "primary_use": "Second rung of 4081 geometry ladder.",
+    "allowed_future_nodes": "4081",
+    "status": "registered"
+  },
+  {
+    "baseline_id": "B3",
+    "name": "global_affine",
+    "class": "geometric_baseline",
+    "definition": "Subtract translation plus global affine deformation, including rotation, strain, stretching, and shear.",
+    "preserves": "Spatially heterogeneous local affine deformation, local non-affine motion, stochastic residuals, and graph/network structure.",
+    "removes_or_controls": "Ordinary global non-rigid group geometry.",
+    "primary_use": "Current 4001/4002A baseline and 4071 replication baseline.",
+    "allowed_future_nodes": "4071,4074,4081,4090",
+    "status": "registered_current_target_baseline"
+  },
+  {
+    "baseline_id": "B4",
+    "name": "local_affine",
+    "class": "geometric_baseline",
+    "definition": "For each focal individual and neighbor scale, fit a local affine deformation tensor before computing residual/non-affine motion.",
+    "preserves": "Local non-affine rearrangement, state-dependent stochasticity, transient propagation, and network-level residual structure.",
+    "removes_or_controls": "Spatially heterogeneous but locally affine deformation.",
+    "primary_use": "4080 feasibility and 4081 major geometry-irreducibility gate.",
+    "allowed_future_nodes": "4080,4081,4082,4083,4084,4090,4100,4110",
+    "status": "registered_not_yet_computed"
+  }
+]

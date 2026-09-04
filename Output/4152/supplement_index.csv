@@ -1,0 +1,9 @@
+section,file,topic,primary_source,main_role,status
+S1,Supplement/S1_omnibus.md,Full-pipeline omnibus calibration,Output/4141/p_omnibus.json,Limited-resolution pseudo-event calibration of 14/19 both-scale support,complete
+S2,Supplement/S2_detrending.md,Detrending challenge,Output/4142/decision.json,Preprocessing sensitivity of survival and near-pre timing,complete
+S3,Supplement/S3_affine_qc.md,Local affine conditioning QC,Output/4143/decision.json,Numerical conditioning defense for local affine fits,complete
+S4,Supplement/S4_scale_lag.md,Scale and lag sensitivity,Output/4131/decision.json,Survivor-class robustness under nearby scale and lag choices,complete
+S5,Supplement/S5_state_matching.md,Compact-state and event-locality tests,Output/4090/primary_metrics.csv,Negative reduction tests using C dC/dt R state matching,complete
+S6,Supplement/S6_history.md,Recent-history matching,Output/4121/decision.json,Observation-specific history boundary,complete
+S7,Supplement/S7_spectral_set.md,spectral_set construction,Output/4147/spectral_set_algorithm.md,Provenance for low/high compact-density labels,complete
+S8,Supplement/S8_parameter_registry.md,Parameter registry,Output/4140/frozen_analysis_contract.yaml,Frozen gates parameters and source path registry,complete

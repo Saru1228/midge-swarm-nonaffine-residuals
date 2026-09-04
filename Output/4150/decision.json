@@ -1,0 +1,14 @@
+{
+  "node": "4150_final_figure_cleanup",
+  "date": "2026-09-02",
+  "gate_result": "pass_4150_final_figure_package_ready_for_reintegration",
+  "primary_metrics": {
+    "n_final_figures": 5,
+    "n_png_outputs": 10,
+    "n_pdf_outputs": 10,
+    "n_failed_audit_items": 0,
+    "latex_copies_written": true
+  },
+  "manuscript_instruction": "Use Fig1_final through Fig5_final and the final captions; do not retain 4134 figure file names in active includegraphics commands.",
+  "next": "4151_final_manuscript_reintegration"
+}

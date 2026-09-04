@@ -1,0 +1,5 @@
+audit_item,status,evidence
+smoke_language_removed_from_active_path,pass,"rg found no smoke matches in files included by main.tex after 4151 cleanup."
+old_4134_figure_names_removed_from_active_path,pass,"Active v2 includegraphics commands point to Fig1_final.pdf through Fig5_final.pdf."
+highB_boundary_respected,pass,"4149 was not integrated as a formal high-B p-value; B=100 remains limited-resolution calibration."
+pdf_compilation_deferred,pass,"No PDF compilation was run at 4151 under the deferred-compilation policy."

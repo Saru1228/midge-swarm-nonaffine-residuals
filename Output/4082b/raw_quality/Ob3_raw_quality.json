@@ -1,0 +1,20 @@
+{
+  "ob": 3,
+  "dataset": "Ob3.txt",
+  "file_size_mb": 50.61789321899414,
+  "duration_sec": 149.89,
+  "n_frames": 14990,
+  "median_dt_sec": 0.009999999999999787,
+  "unique_ids": 4228,
+  "median_individuals_per_frame": 46.0,
+  "q10_individuals_per_frame": 42.0,
+  "q90_individuals_per_frame": 50.0,
+  "median_track_length_frames": 52.0,
+  "median_track_span_sec": 0.5100000000000051,
+  "track_continuity_fraction": 1.0,
+  "median_raw_speed": 228.62106298633117,
+  "q95_raw_speed": 429.37536122544606,
+  "median_swarm_radius": 167.48557719134504,
+  "q90_swarm_radius": 286.8492900616629,
+  "swarm_radius_cv": 0.07176419405294387
+}

@@ -1,0 +1,6 @@
+open_space,why_open,requires_before_testing
+higher_dimensional_state_representation,"4090 tested only C,dCdt,R first/second moments",new frozen state variables and grouped validation plan
+observation_specific_models,4121 and 4086 show heterogeneity rather than universal signs,4133 heterogeneity map and a predeclared grouping rule
+network_or_local_interaction_descriptions,"4100A warned that raw neighbor residual vectors are overlapping, not independent",non-overlapping or explicitly modeled spatial unit definition
+propagation_or_burst_dynamics,"4100 event-locality gate failed, so propagation was not confirmatorily tested",new event-local target or descriptive rather than confirmatory framing
+metadata_conditioned_explanation,recording condition and observation order metadata remain unverified,independent metadata audit

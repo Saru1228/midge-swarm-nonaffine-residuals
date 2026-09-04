@@ -1,0 +1,14 @@
+node: 4120_state_path_feasibility_coordinate_freeze
+purpose: >
+  Freeze a technically stable C-R state-path representation before
+  testing any history dependence.
+not_tested_here:
+  - T1 history dependence
+  - same-state different-history effect
+  - OOS history gain
+pass_gate: >
+  Most observations must have >=90% primary path feature and theta
+  coverage, current-state and dRdt coverage must be high, and dRdt must
+  not show catastrophic derivative magnitude.
+next_if_pass: 4121_same_current_state_different_history_matched_test
+next_if_fail: 4125_technical_synthesis

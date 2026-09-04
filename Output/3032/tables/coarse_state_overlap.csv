@@ -1,0 +1,2 @@
+partition_id,n_frames,normalized_mutual_information,cramers_v,coarse_state_source
+eig2,334542,0.001152372273950722,0.04678246540825065,3013 classifier

@@ -1,0 +1,19 @@
+{
+  "ob": 3,
+  "sensitivity_family": "window",
+  "sensitivity_id": "window_k8_lag0p100_window0p150_minrun0p200",
+  "k": 8,
+  "lag_sec": 0.1,
+  "prepost_sec": 0.15,
+  "min_run_sec": 0.2,
+  "n_events": 40,
+  "source": "computed_4087",
+  "b3_event_direction_abs_z": 0.3002659313051579,
+  "local_event_direction_abs_z": 0.15640131772985721,
+  "local_non_event_direction_abs_median_z": 0.2750626011071653,
+  "local_event_minus_non_event_direction_z": -0.11866128337730808,
+  "p_non_event_direction_ge_event": 0.7,
+  "local_to_b3_direction_ratio": 0.5208760016497103,
+  "event_conditioned_local_gate": false,
+  "geometry_ladder_reading": "local_nonaffine_not_event_conditioned"
+}

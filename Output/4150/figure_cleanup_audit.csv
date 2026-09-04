@@ -1,0 +1,6 @@
+item,status,evidence
+Figure 1 internal workflow note,pass,Fig1_final removes the old bottom note that mentioned use in 4134.
+Figure 3 history removal,pass,Fig3_final excludes history bars and leaves recent-history evidence to Figure 4/Figure 5.
+Figure 4A observation-level redesign,pass,Fig4_final panel A uses held-out observation points from Output/4090/grouped_oos_results.csv.
+Publication-facing figure names,pass,Final files are named Fig1_final through Fig5_final and copied to mypaper2/Latex/figures.
+No per-node compilation,pass,No LaTeX compilation was run at 4150; compilation is deferred to 4154.

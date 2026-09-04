@@ -1,0 +1,73 @@
+{
+  "node_id": "4001_geometric_baseline_residual_audit",
+  "series": "4xxx",
+  "node_type": "artifact-control / baseline audit",
+  "parent_node": "3045d_velocity_timing_audit",
+  "question": "Do 3045c velocity event signals survive after subtracting translation plus affine non-rigid geometry?",
+  "competing_interpretations": [
+    "H_geometry: velocity signal is mostly a natural consequence of group deformation",
+    "H_extra_coordination: velocity signal remains in affine residuals",
+    "H_mixed: both affine-predicted and residual components carry event signal",
+    "H_shift_null: shifted event times show comparable component signals"
+  ],
+  "input_artifacts": [
+    "data/raw/Ob*.txt",
+    "Output/3045/tables/transition_events.csv",
+    "Output/3045c/tables/velocity_direction_null_comparison.csv"
+  ],
+  "method": [
+    "fit per-frame v = center_velocity + relative_position @ A",
+    "compute raw, affine_pred, and affine_resid velocity metrics",
+    "remove 1-sec smooth trend and robust-z residualize within observation",
+    "compare transition events against 160 circularly shifted event-time nulls"
+  ],
+  "pass_gate": {
+    "direction": "real-null direction gap >= 0.12 z, p <= 0.1, sign consistency >= 0.70",
+    "extra_coordination": "at least 2 affine_resid variables pass",
+    "geometry_explains": "raw survives and affine_resid/raw median ratio < 0.3, or affine_pred survives while residual does not"
+  },
+  "outputs": [
+    "Output/4001/tables/component_direction_null_comparison.csv",
+    "Output/4001/tables/component_retention_summary.csv",
+    "Output/4001/tables/egrt_decision_summary.csv",
+    "Output/4001/4001_summary.md"
+  ],
+  "provenance": {
+    "script": "Experiment/run_4001_geometric_baseline_residual_audit.py",
+    "config": {
+      "data_dir": "data/raw",
+      "max_ob": null,
+      "smooth_window_sec": 1.0,
+      "event_window_sec": 0.35,
+      "prepost_window_sec": 0.2,
+      "n_null": 160,
+      "direction_gap_gate_z": 0.12,
+      "null_p_gate": 0.1,
+      "min_ob_gate": 12,
+      "residual_retention_gate": 0.3,
+      "min_residual_survivors_for_extra_coordination": 2
+    },
+    "variables": [
+      "speed_rms",
+      "velocity_cov_trace",
+      "mean_speed",
+      "tangential_speed_mean"
+    ],
+    "decision": {
+      "node_id": "4001_geometric_baseline_residual_audit",
+      "node_type": "artifact-control / baseline audit",
+      "n_raw_direction_survivors": 4,
+      "n_affine_pred_direction_survivors": 1,
+      "n_affine_resid_direction_survivors": 4,
+      "raw_surviving_variables": "speed_rms, velocity_cov_trace, mean_speed, tangential_speed_mean",
+      "affine_pred_surviving_variables": "mean_speed",
+      "affine_resid_surviving_variables": "speed_rms, velocity_cov_trace, mean_speed, tangential_speed_mean",
+      "median_affine_pred_to_raw_abs_ratio_for_raw_survivors": 0.5964035315914453,
+      "median_affine_resid_to_raw_abs_ratio_for_raw_survivors": 0.955384281428185,
+      "aligned_affine_r2_delta_z": 0.032878902167898905,
+      "eg_rt_decision": "support_extra_affine_residual_velocity_coordination",
+      "recommended_next_node": "4002 residual coordination structure audit",
+      "boundary_reading": "Velocity event signal survives after subtracting translation plus affine deformation, supporting an extra coordination route."
+    }
+  }
+}

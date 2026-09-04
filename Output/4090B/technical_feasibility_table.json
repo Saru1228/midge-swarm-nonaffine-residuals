@@ -1,0 +1,23 @@
+[
+  {
+    "item": "vector_level_local_nonaffine_residual",
+    "status": "available_by_recomputation",
+    "evidence": "sample rows exported = 2560 using 4081 local-affine equations; current 4081 outputs save frame-level aggregates, not this vector table.",
+    "boundary": "The vector unit is focal-neighborhood neighbor residual, matching the 4081 all_tangential aggregate. It is not yet a unique focal-individual residual vector.",
+    "recommended_4090_handling": "Use this vector-level source with explicit unit label, or aggregate to focal-neighborhood before modeling."
+  },
+  {
+    "item": "continuous_compact_density_coordinate",
+    "status": "available",
+    "evidence": "C source = density_rms_z3045; min finite C fraction = 0.998; min finite dC/dt fraction = 1.000; partition evidence = available",
+    "boundary": "C is a traced compact-density coordinate, not a newly optimized 4090 score.",
+    "recommended_4090_handling": "Use density_rms_z3045 as C(t) and gradient(density_rms_smooth3045,t) as dC/dt."
+  },
+  {
+    "item": "metadata_for_recording_order_or_batch",
+    "status": "unavailable",
+    "evidence": "4090A found no recording day/session/camera metadata in existing outputs.",
+    "boundary": "Do not call observation index a confirmed acquisition batch variable.",
+    "recommended_4090_handling": "Keep observation identity and 4088 boundary strata explicit in grouped validation."
+  }
+]

@@ -1,0 +1,103 @@
+\subsection{Compact-Density State and Transition Events}
+
+For each frame, the swarm center and root-mean-square radius were computed as
+\begin{equation}
+R_{\mathrm{rms}}(t)=
+\sqrt{
+\frac{1}{n(t)}
+\sum_i \left\|\mathbf{x}_i(t)-\bar{\mathbf{x}}(t)\right\|^2
+}.
+\end{equation}
+We then used the radius-based density proxy
+\begin{equation}
+\rho_{\mathrm{rms}}(t)=
+\frac{n(t)}{(4/3)\pi R_{\mathrm{rms}}(t)^3}.
+\end{equation}
+Within each observation, $\rho_{\mathrm{rms}}(t)$ was robust-z standardized to
+define the compact-density coordinate $C(t)$. A one-second centered rolling
+mean of this standardized coordinate provided the smoothed compact-density
+trace, and $\dot{C}(t)$ was computed as the time gradient of that smoothed
+trace. The swarm-size coordinate $R(t)$ was the robust-z standardized
+$R_{\mathrm{rms}}(t)$.
+
+Transition events were inherited from the upstream compact-density
+coarse-graining. The continuous quantity was $C(t)$ and the low/high labels
+were the frozen \texttt{spectral\_set} state labels. A transition was defined
+as a switch between the two labels. It was retained only when both the
+preceding and following state runs lasted at least 0.20 s, a persistence
+screen used to remove single-frame or very short label flicker at the 100 Hz
+sampling rate. The event time was the first frame of the new run, and events
+were labeled as low-to-high or high-to-low transitions.
+The \texttt{spectral\_set} labels came from an upstream transfer-operator
+compact-density coarse-graining of robust-standardized \texttt{r\_rms},
+\texttt{density\_rms}, and \texttt{anisotropy}. The selected \texttt{eig2}
+partition separated a more compact high-density state from a less compact
+low-density state and was constructed upstream of T1, not fitted from T1.
+
+\subsection{Local Non-Affine T1 Observable}
+
+T1 is the frozen local tangential non-affine measurement target used in this
+study. It is not a raw individual velocity, an inferred force, or a behavioral
+rule. It is computed from focal-neighborhood relative motion after local
+affine deformation has been removed.
+
+For a focal individual $i$, let
+\begin{equation}
+\mathbf{r}_{ij}(t)=\mathbf{x}_j(t)-\mathbf{x}_i(t), \qquad
+\Delta\mathbf{r}_{ij}(t,\ell)
+=
+\mathbf{r}_{ij}(t+\ell)-\mathbf{r}_{ij}(t),
+\end{equation}
+where $j$ indexes retained nearest neighbors of the focal individual and
+$\ell$ is the finite temporal lag. The local affine deformation was fitted by
+equal-weight least squares,
+\begin{equation}
+\hat{\mathbf{J}}_i(t)=
+\arg\min_{\mathbf{J}}
+\sum_{j\in N_i(t)}
+\left\|
+\Delta\mathbf{r}_{ij}(t,\ell)
+-
+\mathbf{J}\mathbf{r}_{ij}(t)
+\right\|^2 .
+\end{equation}
+Because the fit uses focal-centered relative coordinates, local translation is
+already removed. The finite-lag non-affine residual velocity is
+\begin{equation}
+\mathbf{u}^{NA}_{ij}(t)=
+\frac{
+\Delta\mathbf{r}_{ij}(t,\ell)
+-
+\hat{\mathbf{J}}_i(t)\mathbf{r}_{ij}(t)
+}{\Delta t_{\ell}},
+\end{equation}
+where $\Delta t_{\ell}$ is the elapsed time corresponding to lag $\ell$.
+
+Let $\hat{\boldsymbol{\rho}}_i(t)$ denote the unit vector from the swarm center
+to focal individual $i$. The tangential residual is
+\begin{equation}
+\mathbf{u}^{NA}_{ij,\mathrm{tan}}(t)=
+\mathbf{u}^{NA}_{ij}(t)
+-
+\left[
+\mathbf{u}^{NA}_{ij}(t)\cdot\hat{\boldsymbol{\rho}}_i(t)
+\right]
+\hat{\boldsymbol{\rho}}_i(t).
+\end{equation}
+The primary positive analyses used unsigned tangential magnitude or activity.
+For the later state-matched analyses, the focal-centered activity was frozen
+as
+\begin{equation}
+A^{NA}_{\mathrm{tan},i}(t)=
+\operatorname{median}_{j\in N_i(t)}
+\left\|
+\mathbf{u}^{NA}_{ij,\mathrm{tan}}(t)
+\right\|^2,
+\end{equation}
+and the swarm-level frame activity was
+\begin{equation}
+A^{NA}_{\mathrm{tan}}(t)=
+\operatorname{median}_{i} A^{NA}_{\mathrm{tan},i}(t).
+\end{equation}
+We refer to this residual activity family as T1. Signed quantities were used
+only for secondary event-type and moment-structure tests.

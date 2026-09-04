@@ -1,0 +1,57 @@
+[
+  {
+    "null_id": "N1",
+    "name": "time_shift_or_shifted_event",
+    "class": "temporal_null",
+    "definition": "Shift event labels or comparison windows in time while preserving within-observation trajectories and individual-level statistics.",
+    "preserves": "Individual trajectories, smooth temporal structure, approximate observation-level distributions.",
+    "destroys": "Event-locked synchrony between target residual metrics and compact-density transitions.",
+    "primary_use": "4071 replication of 4001/4002A style event-conditioned residual signals.",
+    "allowed_future_nodes": "4071,4074,4081,4090,4101,405x-style graph controls",
+    "status": "registered_current_primary_event_null"
+  },
+  {
+    "null_id": "N2",
+    "name": "phase_or_spectrum_preserving_temporal_null",
+    "class": "temporal_smooth_null",
+    "definition": "Preserve autocorrelation/spectrum or smooth rank structure while disrupting cross-individual or event-specific organization.",
+    "preserves": "Smooth temporal autocorrelation and broad spectrum of a metric.",
+    "destroys": "Specific cross-individual or event-aligned organization beyond smooth time-series structure.",
+    "primary_use": "Guard against smooth time-series artifacts in 4074, 4090, and 4101.",
+    "allowed_future_nodes": "4074,4090,4101,4104",
+    "status": "registered_required_for_smooth_time_series_claims"
+  },
+  {
+    "null_id": "N3",
+    "name": "identity_permutation",
+    "class": "identity_history_null",
+    "definition": "Preserve frame-level geometry while permuting identity/history labels within valid constraints.",
+    "preserves": "Frame geometry, density, radial positions, and instantaneous spatial configuration.",
+    "destroys": "Individual identity continuity and history-dependent coupling.",
+    "primary_use": "Membership/history artifact control and graph-history checks.",
+    "allowed_future_nodes": "4074,4110,4111,4112",
+    "status": "registered"
+  },
+  {
+    "null_id": "N4",
+    "name": "neighbor_or_geometry_matched_null",
+    "class": "geometry_matched_null",
+    "definition": "Preserve local distance, density, radial position, and core-edge composition as much as possible while disrupting residual coupling.",
+    "preserves": "Geometry, density, radial/core-edge structure, and approximate neighbor context.",
+    "destroys": "Residual coupling beyond geometry-matched context.",
+    "primary_use": "Required for core/edge, density, local-affine, and graph claims.",
+    "allowed_future_nodes": "4081,4084,4092,4110,4114",
+    "status": "registered_required_for_geometry_sensitive_claims"
+  },
+  {
+    "null_id": "N5",
+    "name": "matched_non_event_window",
+    "class": "sampling_window_control",
+    "definition": "Sample non-event windows matched on observation, window length, N, radial/density context, and available track coverage.",
+    "preserves": "Observation context, measurement availability, and broad geometry/density composition.",
+    "destroys": "Selection of the original compact-density transition event labels.",
+    "primary_use": "4074 event-free versus event-conditioned audit.",
+    "allowed_future_nodes": "4074,4101",
+    "status": "registered_for_event_selection_control"
+  }
+]

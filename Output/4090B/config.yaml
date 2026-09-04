@@ -1,0 +1,12 @@
+node: 4090B_residual_vector_and_continuous_state_feasibility_check
+date: 2026-08-26
+node_type: technical_gate
+upstream_node: 4090A_observation_regime_boundary_audit
+sample_observation: 2
+k: 8
+lag_sec: 0.1
+frame_stride: 100
+max_frames: 40
+max_focals: 8
+C_primary: density_rms_z3045
+dCdt_source: gradient(density_rms_smooth3045,t)

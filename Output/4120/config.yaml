@@ -1,0 +1,19 @@
+node: 4120_state_path_feasibility_coordinate_freeze
+date: 2026-08-27
+upstream_node: 4105_state_matched_negative_synthesis
+state_source: Output/3045/processed/frame_residual_signals.csv
+activity_source: Output/4100A/swarm_activity_frame.csv
+current_state:
+  C: density_rms_z3045
+  dCdt: gradient(density_rms_smooth3045,t)
+  R: r_rms_z3045
+path_coordinates:
+  C_path: density_rms_smooth3045
+  R_path: r_rms_smooth3045
+history_windows_sec: [0.25, 0.5, 0.75]
+primary_history_window_sec: 0.5
+min_path_length_for_angle: 0.05
+min_velocity_norm_for_theta_v: 0.05
+min_path_feature_coverage_gate: 0.9
+min_obs_coverage_count_gate: 15
+max_abs_dRdt_q99_gate: 1000.0

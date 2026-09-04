@@ -1,0 +1,39 @@
+{
+  "node": "4125_state_path_history_synthesis",
+  "date": "2026-08-27",
+  "node_type": "technical_synthesis",
+  "upstream_nodes": [
+    "4120_state_path_feasibility_coordinate_freeze",
+    "4121_same_current_state_different_history_matched_test"
+  ],
+  "classification": "P1_observation_specific_history_dependence_boundary",
+  "interpretation": "History-conditioned T1 separation is visible in several observations, but it does not form a stable cross-observation direction rule.",
+  "route_decision": "stop_before_4122_unless_reopened_as_descriptive_observation_specific_analysis",
+  "primary_metrics": {
+    "4120_gate": "pass_state_path_features_feasible_with_leakage_audit",
+    "4121_gate": "boundary_observation_specific_history_dependence",
+    "n_observations_sufficient_pairs": 19,
+    "median_abs_observation_signed_axis_delta_A_z": 0.07628898491170816,
+    "direction_consistency_fraction": 0.5263157894736842,
+    "real_beats_shuffle_null_median_abs_fraction": 0.7368421052631579,
+    "positive_effect_observations": 9,
+    "negative_effect_observations": 10,
+    "real_beats_null_median_observations": 14,
+    "real_beats_null_q95_observations": 6
+  },
+  "bounded_claim": "Recent C-R path direction can be measured and produces observation-specific T1 separations after same-current-state matching, but the sign/order is not stable enough to claim a universal history dependence mechanism.",
+  "does_not_support": [
+    "robust same-state history dependence",
+    "approach/departure hysteresis route as primary confirmatory analysis",
+    "grouped OOS history-gain modeling",
+    "network propagation mechanism",
+    "causal memory mechanism"
+  ],
+  "next": [],
+  "artifacts": [
+    "Output/4125/decision.json",
+    "Output/4125/4125_summary.md",
+    "Output/4125/tables/strongest_observation_effects.csv",
+    "Output/4125/tables/4121_primary_sensitivity_h500.csv"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "node": "4090A_observation_regime_boundary_audit",
+  "date": "2026-08-26",
+  "node_type": "artifact-control",
+  "upstream_node": "4088_bounded_408x_synthesis_with_failure_boundary",
+  "upstream_target": "T1_local_tangential_nonaffine_residual",
+  "data_scope": "all_19_observations",
+  "metadata_available": false,
+  "recording_order_confirmed": false,
+  "gate_result": "R1_unconfirmed_observation_sequence_proxy",
+  "strong_known_covariates": [],
+  "dominant_known_covariates": [],
+  "strong_sequence_proxy_covariates": [
+    "early_ob_le_8"
+  ],
+  "interpretation": "T1 effect strength is strongly associated with observation sequence proxy variable(s): early_ob_le_8. Because metadata are unavailable, this is a routing boundary rather than proof of batch artifact. 4090 should keep observation identity and survivor/failure stratification explicit.",
+  "does_not_prove": [
+    "batch artifact, because recording metadata are unavailable",
+    "biological mechanism",
+    "causal explanation of Ob6/Ob8 stable failures",
+    "first-vs-second moment structure"
+  ],
+  "next": [
+    "4090B_then_4090_with_observation_identity_and_boundary_strata"
+  ],
+  "artifacts": [
+    "Output/4090A/observation_regime_table.csv",
+    "Output/4090A/t1_continuous_effects.csv",
+    "Output/4090A/covariate_association_table.csv",
+    "Output/4090A/leave_one_out_sensitivity.csv",
+    "Output/4090A/figures/4090A_observation_regime_overview.png",
+    "Output/4090A/figures/4090A_t1_effect_vs_covariates.png",
+    "Output/4090A/figures/4090A_primary_association_ranking.png",
+    "Output/4090A/4090A_summary.md"
+  ]
+}

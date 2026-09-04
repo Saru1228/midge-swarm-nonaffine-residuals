@@ -1,0 +1,5 @@
+check_id,n_intersection_rows,metric,value,pass,notes
+3032b_to_3041b_spectral_set_match,334542,fraction_equal,1.0,True,Frame-level spectral_set labels are preserved into 3041b.
+3032b_to_3041b_compact_density_2_match,334542,fraction_equal,1.0,True,compact_density_2 is a copy of spectral_set for low/high frames.
+3045_transition_state_labels,1471,all_from_to_low_high_and_switch,1.0,True,Transition events switch between low and high.
+3045_transition_persistence_filter,1471,all_prev_next_duration_ge_0p20s,1.0,True,Both adjacent state runs satisfy the 0.20 s persistence screen.

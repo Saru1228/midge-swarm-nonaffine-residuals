@@ -1,0 +1,22 @@
+node: 4090_continuous_moment_classification_with_vector_unit_note
+date: 2026-08-26
+node_type: screen
+upstream_nodes:
+  - 4088_bounded_408x_synthesis_with_failure_boundary
+  - 4090A_observation_regime_boundary_audit
+  - 4090B_residual_vector_and_continuous_state_feasibility_check
+residual_unit: focal_neighborhood_neighbor_residual_vector
+k: 8
+lag_sec: 0.1
+frame_stride: 100
+max_focals_per_frame: 8
+observations: all
+C: density_rms_z3045
+dCdt: gradient(density_rms_smooth3045,t)
+baseline: radius_only_binned_model
+state_model: C_dCdt_radius_binned_model
+null: within_observation_circular_shift_C_dCdt
+validation: leave_one_observation_out
+c_bins: 4
+dCdt_bins: 3
+radius_bins: 3

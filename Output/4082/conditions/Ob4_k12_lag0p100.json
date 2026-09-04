@@ -1,0 +1,16 @@
+{
+  "ob": 4,
+  "k": 12,
+  "lag_sec": 0.1,
+  "axis": "scale",
+  "source": "computed_4082",
+  "n_events": 58,
+  "b3_event_direction_abs_z": 0.3960566270277845,
+  "local_event_direction_abs_z": 0.39035607829265484,
+  "local_non_event_direction_abs_median_z": 0.2775559275607395,
+  "local_event_minus_non_event_direction_z": 0.11280015073191535,
+  "p_non_event_direction_ge_event": 0.325,
+  "local_to_b3_direction_ratio": 0.9856067331131169,
+  "event_conditioned_local_gate": true,
+  "geometry_ladder_reading": "local_nonaffine_signal_survives_pilot"
+}

@@ -1,0 +1,57 @@
+{
+  "route_a_allowed": true,
+  "next_node": "4080_local_affine_feasibility",
+  "target_policy": "split_targets",
+  "targets": [
+    {
+      "target_id": "T1_transition_tangential_residual",
+      "target_role": "primary_route_a_target",
+      "primary_metrics": "resid_tangential_speed_mean",
+      "supporting_metrics": "edge_minus_core_resid_tangential",
+      "source_evidence": "4071 pass; 4074 event-conditioned direction gate passes for resid_tangential_speed_mean; median real-minus-non-event direction gap = 0.3429; effect greater than non-event in 3/3 observations.",
+      "interpretation": "This is the clearest transition-conditioned residual signal after global affine subtraction.",
+      "route_a_question": "Does local affine deformation explain the transition-conditioned tangential residual, or does a local non-affine tangential residual survive?",
+      "decision": "carry_forward_as_primary",
+      "next_node_use": "4080 feasibility is allowed; 4081 should evaluate this as the main event-conditioned target."
+    },
+    {
+      "target_id": "T2_general_residual_activity",
+      "target_role": "secondary_route_a_target",
+      "primary_metrics": "resid_velocity_cov_trace; resid_speed_rms",
+      "supporting_metrics": "",
+      "source_evidence": "4071 pass for both residual-intensity anchors; 4074 event-conditioned direction gates fail, but general activity gates pass for both.",
+      "interpretation": "These metrics are robust residual activity/intensity signals, but not clean transition-specific direction signals.",
+      "route_a_question": "Does local affine deformation absorb broad residual activity, or does general local non-affine activity remain outside transition selection?",
+      "decision": "carry_forward_as_secondary_general_activity",
+      "next_node_use": "4080 feasibility may include these for fit diagnostics; 4081 should analyze them separately from transition-specific targets."
+    },
+    {
+      "target_id": "T3_radial_residual",
+      "target_role": "retired_primary",
+      "primary_metrics": "resid_radial_abs_mean",
+      "supporting_metrics": "",
+      "source_evidence": "4071 fails; 4074 fails event-conditioned comparison.",
+      "interpretation": "Radial residual magnitude is not supported as a stable Ob1-Ob3 primary target.",
+      "route_a_question": "No Route A primary question.",
+      "decision": "retire_from_primary_route",
+      "next_node_use": "Use only as optional diagnostic if already cheap."
+    },
+    {
+      "target_id": "T4_core_edge_speed",
+      "target_role": "retired_primary",
+      "primary_metrics": "edge_minus_core_resid_speed",
+      "supporting_metrics": "",
+      "source_evidence": "4071 fails; 4074 fails event-conditioned comparison, though general activity gate appears in 4074 as non-stable context.",
+      "interpretation": "Core-edge residual speed should not be treated as a stable primary target.",
+      "route_a_question": "No Route A primary question.",
+      "decision": "retire_from_primary_route",
+      "next_node_use": "Use only as optional diagnostic if already cheap."
+    }
+  ],
+  "global_constraints": [
+    "Do not treat residual velocity as a single phenomenon after 4074.",
+    "Do not use radial residual magnitude or core-edge residual speed as primary Route A claims.",
+    "4080 is feasibility only; 4081 is the first geometry-ladder interpretation node.",
+    "T1 is transition-conditioned; T2 is general residual activity and must not be described as transition-specific."
+  ]
+}

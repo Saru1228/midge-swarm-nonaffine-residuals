@@ -1,0 +1,62 @@
+{
+  "node": "4090_continuous_moment_classification_with_vector_unit_note",
+  "date": "2026-08-26",
+  "node_type": "screen",
+  "upstream_node": "4090B_residual_vector_and_continuous_state_feasibility_check",
+  "upstream_target": "T1_local_tangential_nonaffine_residual",
+  "residual_unit": "focal_neighborhood_neighbor_residual_vector",
+  "conditioning_state": [
+    "C_density_rms_z3045",
+    "dCdt_gradient_density_rms_smooth3045",
+    "focal_radius"
+  ],
+  "baseline": "radius_only_binned_model",
+  "null": "within_observation_circular_shift_of_C_and_dCdt",
+  "grouped_validation": "leave_one_observation_out",
+  "gate_result": "transition_linked_but_not_lowdimensional_state_conditioned",
+  "interpretation": "Neither signed first moment nor second moment shows stable grouped OOS improvement over radius-only baseline with shifted-state separation. This routes away from low-dimensional stochastic closure.",
+  "first_moment_metric": {
+    "target_family": "first_moment",
+    "target": "signed_tan_projection",
+    "median_incremental_r2": -0.0006327793192029141,
+    "positive_ob_fraction": 0.21052631578947367,
+    "median_shift_incremental_r2": -0.00022115704575798034,
+    "median_real_minus_shift": -0.0003082888383936222,
+    "real_gt_shift_fraction": 0.42105263157894735,
+    "pass_gate": false,
+    "interpretation": "no stable grouped OOS support"
+  },
+  "second_moment_metric": {
+    "target_family": "second_moment",
+    "target": "log_tan_energy",
+    "median_incremental_r2": -0.0006213902693890105,
+    "positive_ob_fraction": 0.15789473684210525,
+    "median_shift_incremental_r2": -0.00012663631115694685,
+    "median_real_minus_shift": -0.0006586480320149857,
+    "real_gt_shift_fraction": 0.3684210526315789,
+    "pass_gate": false,
+    "interpretation": "no stable grouped OOS support"
+  },
+  "next": [
+    "4094_bounded_stochastic_negative_synthesis",
+    "consider_410x_transient_event_local_route"
+  ],
+  "does_not_prove": [
+    "biological force law",
+    "multiplicative Langevin mechanism",
+    "causal precursor",
+    "unique focal-individual residual vector"
+  ],
+  "artifacts": [
+    "Output/4090/vector_moment_samples.csv.gz",
+    "Output/4090/grouped_oos_results.csv",
+    "Output/4090/primary_metrics.csv",
+    "Output/4090/dataset_level_effects.csv",
+    "Output/4090/state_bin_profiles.csv",
+    "Output/4090/null_results.csv",
+    "Output/4090/figures/4090_oos_by_observation.png",
+    "Output/4090/figures/4090_dataset_highC_effects.png",
+    "Output/4090/figures/4090_state_profile_heatmaps.png",
+    "Output/4090/4090_summary.md"
+  ]
+}

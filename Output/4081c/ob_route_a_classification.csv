@@ -1,0 +1,20 @@
+ob,n_events,t1_gate_any,t1_gate_k_values,t1_median_local_to_b3_ratio,t1_median_local_event_minus_non_event_z,t2_gate_any,t2_gate_count,ob_route_a_class,interpretation
+1,28,False,,0.30813396428528594,-0.018902812176996034,False,0,t1_not_event_conditioned_after_local_affine,T1 local signal is not stronger than matched non-event windows.
+2,43,True,"8,10",0.890504380495587,0.3595533481787678,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+3,40,False,,0.4611895505491381,-0.17750164187049727,True,2,t1_not_event_conditioned_after_local_affine,T1 local signal is not stronger than matched non-event windows.
+4,58,True,10,0.5666515091459132,0.0384929074301147,True,4,t1_local_nonaffine_survives_one_k,T1 survives local-affine residualization for one k value only.
+5,93,True,"8,10",0.8399072463582962,0.1828365509568869,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+6,112,False,,37.253234117078584,-0.1298789351925797,False,0,t1_not_event_conditioned_after_local_affine,T1 local signal is not stronger than matched non-event windows.
+7,33,True,"8,10",1.0966575617582541,0.17230700726278259,False,0,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+8,84,False,,1.605223127920028,-0.09128070425288762,True,2,t1_not_event_conditioned_after_local_affine,T1 local signal is not stronger than matched non-event windows.
+9,36,True,"8,10",2.1000030105475997,0.4660869183335864,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+10,36,True,"8,10",1.2016592501472534,0.36302200715232236,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+11,119,True,"8,10",1.7236640449872536,0.6009139099098415,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+12,91,True,"8,10",2.8147048513187034,0.3150058626963127,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+13,102,True,"8,10",1.506262646370737,0.5170077474316798,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+14,47,True,"8,10",0.98397196375796,0.3732196081556981,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+15,96,True,"8,10",1.5299957823112518,0.6945112791469481,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+16,84,True,"8,10",2.2766898770440473,0.5399288387509131,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+17,122,True,"8,10",2.002995583746951,0.22873311117246137,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+18,103,True,"8,10",0.6995143632483813,0.280231417505976,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.
+19,143,True,"8,10",1.5296422486565038,0.641998161148287,True,4,t1_local_nonaffine_survives_both_k,T1 survives local-affine residualization for both k values.

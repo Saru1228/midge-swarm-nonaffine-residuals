@@ -1,0 +1,9 @@
+node: 4082b_early_failure_condition_or_artifact_audit
+date: 2026-08-25
+node_type: artifact-control
+input_nodes:
+  - 4081d_explain_observation_heterogeneity_before_4082
+  - 4082_scale_robustness_on_surviving_observation_class
+failure_observations: 1,3,6,8
+survivor_observations: 2,4,5,7,9,10,11,12,13,14,15,16,17,18,19
+sample_frames_for_radius_quality: 2500

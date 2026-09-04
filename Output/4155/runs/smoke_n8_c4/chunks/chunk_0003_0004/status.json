@@ -1,0 +1,13 @@
+{
+  "node": "4155_parallel_highB_omnibus_null",
+  "run_name": "smoke_n8_c4",
+  "status": "complete",
+  "started_at": "2026-09-02T16:27:27",
+  "finished_at": "2026-09-02T16:27:42",
+  "rep_start": 3,
+  "rep_end": 4,
+  "n_replicates": 2,
+  "elapsed_sec": 15.34115481376648,
+  "aggregate_csv": "Output/4155/runs/smoke_n8_c4/chunks/chunk_0003_0004/omnibus_replicates.csv",
+  "observation_csv": "Output/4155/runs/smoke_n8_c4/chunks/chunk_0003_0004/observation_replicate_passes.csv"
+}

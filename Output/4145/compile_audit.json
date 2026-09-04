@@ -1,0 +1,10 @@
+{
+  "log_file": "mypaper2/Latex/main.log",
+  "pdf_file": "mypaper2/Latex/main.pdf",
+  "pdf_exists": true,
+  "pdf_size_bytes": 1275424,
+  "pages": 10,
+  "n_latex_errors": 0,
+  "n_unresolved_reference_or_citation_warnings": 0,
+  "underfull_warnings_present": true
+}

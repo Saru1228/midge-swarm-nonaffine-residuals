@@ -1,0 +1,7 @@
+variable,taxonomy_class,family,n_ob_valid,directional_consistency,median_real_abs_direction_contrast_z,median_null_abs_direction_contrast_z,median_real_minus_null_abs_direction_contrast_z,n_ob_effect_gt_null,effect_gt_null_fraction,metric_passes_gate
+resid_velocity_cov_trace,V_covariance_anisotropy,residual_intensity,3,0.6666666666666666,0.3412984026143536,0.32735423143427167,0.013944171180081955,2,0.6666666666666666,True
+resid_speed_rms,I_magnitude_energy,residual_intensity,3,0.6666666666666666,0.34344330472717777,0.3101100493057697,0.03333325542140808,2,0.6666666666666666,True
+resid_tangential_speed_mean,III_tangential,tangential_swirl,3,0.6666666666666666,0.6134503946892399,0.2709881205975882,0.30404594724067846,3,1.0,True
+resid_radial_abs_mean,II_radial,radial,3,0.6666666666666666,0.16319587137498887,0.3178065353235226,-0.15461066394853373,0,0.0,False
+edge_minus_core_resid_speed,VII_core_edge_contrast,edge_core,3,0.6666666666666666,0.29770654162698396,0.3065487813701749,-0.008842239743190927,1,0.3333333333333333,False
+edge_minus_core_resid_tangential,VII_core_edge_contrast,edge_core,3,0.6666666666666666,0.4035845679646365,0.31785859948025186,0.08572596848438463,2,0.6666666666666666,True

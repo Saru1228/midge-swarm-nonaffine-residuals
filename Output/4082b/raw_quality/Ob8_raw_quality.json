@@ -1,0 +1,20 @@
+{
+  "ob": 8,
+  "dataset": "Ob8.txt",
+  "file_size_mb": 38.03726005554199,
+  "duration_sec": 189.88,
+  "n_frames": 18989,
+  "median_dt_sec": 0.00999999999999801,
+  "unique_ids": 2639,
+  "median_individuals_per_frame": 27.0,
+  "q10_individuals_per_frame": 24.0,
+  "q90_individuals_per_frame": 30.0,
+  "median_track_length_frames": 51.0,
+  "median_track_span_sec": 0.5,
+  "track_continuity_fraction": 1.0,
+  "median_raw_speed": 217.06662263112673,
+  "q95_raw_speed": 425.20933903540356,
+  "median_swarm_radius": 156.55892260978084,
+  "q90_swarm_radius": 279.58099901624144,
+  "swarm_radius_cv": 0.1149392821098194
+}

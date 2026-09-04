@@ -1,0 +1,48 @@
+\subsection{T1 Survived Local Affine Subtraction}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/Fig2_final.pdf}
+\caption{T1 survival across observations. The all-observation panel retains
+both survivor and failure observations. T1 survived local affine subtraction
+in most observations and remained robust to nearby scale/lag choices inside
+the survivor class, but the observation-class panel shows that the result was
+not universal.}
+\label{fig:t1_survival}
+\end{figure*}
+
+The first result was that local affine deformation did not fully absorb the
+T1 observable. Under the two-scale consistency requirement, T1 survived in 14
+of the 19 observations. Under the more permissive any-scale criterion, T1
+survived in 15 of the 19 observations (Fig.~\ref{fig:t1_survival}). The
+two-scale number is the main anchor because it shows that the survival
+decision was not limited to a single original neighborhood-scale setting.
+
+The all-observation support was also checked against a completed
+full-pipeline pseudo-event calibration. In the observed data,
+$N_{\mathrm{both}}=14$; across $B=1000$ null replicates, the null
+distribution had mean 4.38, q95 7, maximum 12, and a plus-one tail
+probability of 0.000999 for reaching or exceeding 14. No both-scale null
+replicate reached the observed count. The any-scale count was less specific
+but still above the upper tail of its null distribution
+($p_{\mathrm{any}}=0.02198$).
+
+The detrending challenge preserved majority-level support but exposed an
+important boundary. The frozen centered one-second detrending reproduced the
+main $14/19$ both-scale result. A past-only one-second detrending reduced the
+stricter both-scale count to $11/19$, while the no-rolling-detrending robust-z
+variant gave $13/19$. Thus, the T1 survival result was not erased by the
+challenge, but the exact $14/19$ count is strongest under the frozen centered
+detrending definition.
+
+Local affine conditioning quality control did not indicate that the result was
+driven by unstable local affine fits. Across all 38 observation-scale
+combinations, all combinations passed the predefined conditioning screen, all
+19 observations passed both $k$ values, the median condition number was 2.37,
+the largest q95 condition number across combinations was 6.28, and no sampled
+fit had condition number greater than 100.
+
+The all-observation display is important for interpretation. Several
+observations were fragile or failed under the predefined criteria. Thus, the
+result supports common survival after local affine subtraction, not a
+universal pattern across all observations.

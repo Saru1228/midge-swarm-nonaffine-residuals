@@ -1,0 +1,33 @@
+\subsection{Low-Dimensional State and Event-Locality Tests}
+
+After T1 survival was established as a candidate residual, we tested whether it
+could be reduced to a small set of state variables. Let $C(t)$ denote the
+compact-density coordinate, $\dot{C}(t)$ its temporal derivative, and $R(t)$ a
+swarm-size coordinate. A low-dimensional moment-closure test asked whether
+conditioning on $(C,\dot{C},R)$ improved first- or second-moment prediction of
+the T1-related residual under grouped out-of-sample validation. The baseline
+was a simpler radius-only model, and shifted-state controls were used to check
+whether any apparent improvement exceeded a temporal-null reference.
+
+We also tested whether true transition timestamps carried event-local
+information beyond continuous state. For this analysis, T1 activity in the
+near-pre window around true transition times was compared with
+same-observation non-event frames matched in $(C,\dot{C},R)$. A positive result
+would require true events to show robust excess activity beyond those matched
+controls.
+
+\subsection{Recent-History and Heterogeneity Tests}
+
+Finally, we asked whether recent state-path direction supplied information
+not contained in the current state. Frames were matched to have similar current
+state but different recent path directions. The resulting history-conditioned
+separation was compared with within-observation shuffled-history controls.
+Because the sign and order of the history effect varied across observations,
+this analysis was treated as an observation-specific boundary rather than a
+universal memory test.
+
+All cross-observation summaries retained the 19-observation structure. Small-n
+metadata associations were used descriptively only. In particular, recording
+condition and observation order were not used as causal explanations for
+failure or survivor classes.
+

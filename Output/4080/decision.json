@@ -1,0 +1,39 @@
+{
+  "node": "4080_local_affine_feasibility",
+  "question": "Are local affine fits numerically identifiable and stable enough to support a 4081 geometry ladder?",
+  "result": "pass_local_affine_feasible",
+  "n_combo_passes": 15,
+  "n_restricted_robust_combo_passes": 12,
+  "meta": {
+    "ob": 1,
+    "dataset": "Ob1.txt",
+    "n_frames_total": 10989,
+    "n_frames_sampled": 500,
+    "median_dt": 0.009999999999999787,
+    "ks": [
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "lag_secs": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "lag_steps_by_sec": {
+      "0.05": 5,
+      "0.1": 10,
+      "0.2": 20
+    },
+    "frame_stride": 10,
+    "max_focals_per_frame": 24
+  },
+  "gate": "pass if multiple k>=6 and multiple lags pass valid-fit, rank, condition, and retention gates",
+  "interpretation": "Local affine fitting is numerically feasible for Route A, with multiple k/lag combinations passing.",
+  "next": [
+    "4081_global_vs_local_geometry_ladder"
+  ],
+  "target_policy_from_4075": "split_targets"
+}

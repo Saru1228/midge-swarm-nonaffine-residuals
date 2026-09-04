@@ -1,0 +1,105 @@
+{
+  "node": "4142_detrending_challenge",
+  "date": "2026-09-02",
+  "question": "Does the T1 survival result depend on centered detrending or future-window information?",
+  "gate_result": "boundary_causal_detrending_reduces_core_survival",
+  "interpretation": "Past-only detrending reduces the core T1 survival count; keep the T1 result but soften robustness language and inspect which observations flip.",
+  "primary_metrics": {
+    "baseline_4081c_n_both": 14,
+    "baseline_4081c_n_any": 15,
+    "centered_1s_n_both": 14,
+    "past_1s_n_both": 11,
+    "none_z_n_both": 13,
+    "past_1s_near_pre_phase_gate_count": 8
+  },
+  "variant_summary": [
+    {
+      "variant": "centered_1s",
+      "n_observations": 19,
+      "n_both": 14,
+      "n_any": 15,
+      "n_k8": 14,
+      "n_k10": 15,
+      "both_fraction": 0.7368421052631579,
+      "any_fraction": 0.7894736842105263,
+      "delta_both_vs_4081c": 0,
+      "delta_any_vs_4081c": 0,
+      "both_observations": "2,5,7,9,10,11,12,13,14,15,16,17,18,19",
+      "any_observations": "2,4,5,7,9,10,11,12,13,14,15,16,17,18,19"
+    },
+    {
+      "variant": "past_1s",
+      "n_observations": 19,
+      "n_both": 11,
+      "n_any": 16,
+      "n_k8": 12,
+      "n_k10": 15,
+      "both_fraction": 0.5789473684210527,
+      "any_fraction": 0.8421052631578947,
+      "delta_both_vs_4081c": -3,
+      "delta_any_vs_4081c": 1,
+      "both_observations": "2,7,9,10,11,12,13,14,15,16,19",
+      "any_observations": "1,2,4,7,8,9,10,11,12,13,14,15,16,17,18,19"
+    },
+    {
+      "variant": "none_z",
+      "n_observations": 19,
+      "n_both": 13,
+      "n_any": 16,
+      "n_k8": 16,
+      "n_k10": 13,
+      "both_fraction": 0.6842105263157895,
+      "any_fraction": 0.8421052631578947,
+      "delta_both_vs_4081c": -1,
+      "delta_any_vs_4081c": 1,
+      "both_observations": "2,4,9,10,11,12,13,14,15,16,17,18,19",
+      "any_observations": "2,4,5,7,8,9,10,11,12,13,14,15,16,17,18,19"
+    }
+  ],
+  "phase_near_pre_summary": [
+    {
+      "variant": "centered_1s",
+      "variable": "all_tangential",
+      "phase": "near_pre",
+      "n_observations": 14,
+      "phase_gate_count": 11,
+      "phase_gate_fraction": 0.7857142857142857,
+      "median_abs_event_minus_abs_null_z": 0.1499508146449261,
+      "median_event_minus_null_phase_z": -0.1918738917439032,
+      "majority_gate": true
+    },
+    {
+      "variant": "past_1s",
+      "variable": "all_tangential",
+      "phase": "near_pre",
+      "n_observations": 14,
+      "phase_gate_count": 8,
+      "phase_gate_fraction": 0.5714285714285714,
+      "median_abs_event_minus_abs_null_z": 0.12204958344448588,
+      "median_event_minus_null_phase_z": -0.17895335548163357,
+      "majority_gate": true
+    },
+    {
+      "variant": "none_z",
+      "variable": "all_tangential",
+      "phase": "near_pre",
+      "n_observations": 14,
+      "phase_gate_count": 12,
+      "phase_gate_fraction": 0.8571428571428571,
+      "median_abs_event_minus_abs_null_z": 0.16753322305260573,
+      "median_event_minus_null_phase_z": -0.21840675365542828,
+      "majority_gate": true
+    }
+  ],
+  "does_not_prove": [
+    "biological mechanism",
+    "online prediction",
+    "universal T1 law",
+    "formal p-value for 4141",
+    "local affine conditioning robustness"
+  ],
+  "next": [
+    "4142_flip_audit",
+    "4143_local_affine_conditioning_QC"
+  ]
+}

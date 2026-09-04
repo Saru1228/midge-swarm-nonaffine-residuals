@@ -1,0 +1,53 @@
+{
+  "node_id": "3032c_smooth_null_audit",
+  "series": "303x",
+  "node_type": "artifact-control",
+  "parent_node": "3032b_state_meaning_residence_audit",
+  "question": "Is the compact-density partition retention stronger than smooth autocorrelation nulls?",
+  "competing_interpretations": [
+    "true metastable compact-density state",
+    "smooth autocorrelation and linear cross-correlation",
+    "occupancy-only label persistence artifact"
+  ],
+  "method": [
+    "label-shuffle null preserving only spectral-set occupancy",
+    "independent phase-rank null preserving each slow variable's marginal distribution and power spectrum",
+    "coupled phase-rank null preserving common linear smooth structure across slow variables",
+    "24 replicates per null",
+    "primary metric: q25 retention lift at 0.5s, median over low/high sets"
+  ],
+  "pass_gate": {
+    "real_above_coupled_q95": true,
+    "real_minus_coupled_median": ">= 0.05",
+    "p_null_ge_real": "<= 0.1"
+  },
+  "next_if_pass": "3032d local transition mechanism audit",
+  "next_if_fail": "synthesis: compact-density slow mode, not strong metastable attractor",
+  "outputs": [
+    "Output/3032c/tables/null_comparison_summary.csv",
+    "Output/3032c/tables/surrogate_metric_summary.csv",
+    "Output/3032c/tables/egrt_decision_summary.csv",
+    "Output/3032c/3032c_summary.md"
+  ],
+  "provenance": {
+    "script": "Experiment/run_3032c_smooth_null_audit.py",
+    "decision": {
+      "node_id": "3032c_smooth_null_audit",
+      "parent_node": "3032b_state_meaning_residence_audit",
+      "parent_decision": "boundary_shallow_but_persistent_organization",
+      "metric": "long_lag_q25_lift_median_sets",
+      "real_long_lag_q25_lift": 0.17190991861797122,
+      "coupled_phase_null_median_gap": 0.015120431380551747,
+      "coupled_phase_null_q75": 0.1604057222953237,
+      "coupled_phase_null_q95": 0.16217694443652986,
+      "coupled_phase_p_null_ge_real": 0.04,
+      "independent_phase_null_median_gap": 0.035618344227439036,
+      "label_shuffle_null_median_gap": 0.17393880719116606,
+      "survives_coupled_phase_gate": false,
+      "explained_by_coupled_phase": true,
+      "eg_rt_decision": "stop_strong_metastability_claim_smooth_null_sufficient",
+      "recommended_next_node": "return to synthesis: compact-density slow mode, not strong metastable attractor",
+      "boundary_reading": "The retention of the compact-density partition is explainable by smooth autocorrelation/cross-correlation nulls; do not claim a strong metastable attractor."
+    }
+  }
+}

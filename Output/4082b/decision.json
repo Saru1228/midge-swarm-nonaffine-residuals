@@ -1,0 +1,58 @@
+{
+  "node": "4082b_early_failure_condition_or_artifact_audit",
+  "date": "2026-08-25",
+  "result": "boundary_early_failure_not_explained_by_basic_quality_or_event_counts",
+  "failure_observations": [
+    1,
+    3,
+    6,
+    8
+  ],
+  "survivor_observations": [
+    2,
+    4,
+    5,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "robust_survivor_observations": [
+    2,
+    5,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "raw_quality_strong_clues": [],
+  "event_structure_strong_clues": [],
+  "interpretation": "The audit separates independent condition/artifact clues from the T1 gate variables that define the failure outcome itself.",
+  "boundary": "If raw/event features do not strongly separate the failure group, the early concentration remains an unexplained batch/condition boundary rather than a resolved artifact.",
+  "next": [
+    "bounded_408x_synthesis_or_metadata_deep_audit"
+  ],
+  "artifacts": [
+    "Output/4082b/failure_audit_features.csv",
+    "Output/4082b/failure_audit_feature_contrasts.csv",
+    "Output/4082b/figures/4082b_failure_audit_overview.png",
+    "Output/4082b/figures/4082b_raw_event_feature_contrasts.png",
+    "Output/4082b/figures/4082b_event_rate_vs_group_size.png"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "node": "4135_manuscript_style_technical_synthesis",
+  "date": "2026-08-28",
+  "node_type": "terminal_synthesis",
+  "upstream_node": "4134_figure_ready_evidence_panels",
+  "data_scope": "all_19_observations_as_synthesized_in_4130_4134",
+  "new_experiment_run": false,
+  "new_target_or_mechanism_introduced": false,
+  "counts": {
+    "title_candidates": 5,
+    "main_claim_rows": 8,
+    "evidence_to_claim_rows": 7,
+    "section_to_figure_rows": 7,
+    "writing_boundary_rows": 7,
+    "missing_input_sources": 0
+  },
+  "quality_checks": {
+    "upstream_4134_passed": true,
+    "source_inputs_present": true,
+    "manuscript_story_written": true,
+    "abstract_skeleton_written": true,
+    "results_outline_written": true,
+    "discussion_outline_written": true,
+    "limitations_written": true,
+    "evidence_to_claim_map_written": true,
+    "output_files_nonempty": true,
+    "propagation_kept_not_tested": true,
+    "metadata_kept_descriptive": true,
+    "history_kept_observation_specific": true,
+    "terminal_413x_no_auto_mechanism_search": true
+  },
+  "gate_result": "pass_4135_manuscript_synthesis_complete_terminal_413x",
+  "interpretation": "The 413x route now has a paper/report-ready technical story: a bounded local non-affine T1 observable, positive evidence with explicit observation boundaries, and tested reduction failures without overclaiming.",
+  "does_not_prove": [
+    "new mechanism",
+    "universal T1 law",
+    "causal metadata explanation",
+    "propagation absence",
+    "universal history mechanism",
+    "camera-ready paper"
+  ],
+  "next": [
+    "paper_or_report_development_from_4134_4135",
+    "optional_final_figure_redesign",
+    "optional_new_branch_outside_413x_if_user_explicitly_chooses"
+  ],
+  "artifacts": [
+    "Output/4135/title_candidates.csv",
+    "Output/4135/main_claim_registry.csv",
+    "Output/4135/evidence_to_claim_map.csv",
+    "Output/4135/section_to_figure_map.csv",
+    "Output/4135/writing_boundary_checklist.csv",
+    "Output/4135/limitations_table.csv",
+    "Output/4135/title_candidates.md",
+    "Output/4135/abstract_skeleton.md",
+    "Output/4135/results_outline.md",
+    "Output/4135/discussion_outline.md",
+    "Output/4135/limitations.md",
+    "Output/4135/manuscript_story.md",
+    "Output/4135/source_map.csv",
+    "Output/4135/decision.json",
+    "Output/4135/4135_summary.md"
+  ]
+}

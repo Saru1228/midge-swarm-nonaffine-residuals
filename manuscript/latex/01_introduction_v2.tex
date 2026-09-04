@@ -1,0 +1,148 @@
+\section{Introduction}
+
+Collective motion is often studied through systems that display visible global
+order, such as polarized schools, flocks, or moving groups. Laboratory midge
+swarms provide a different test case. The insects move in a disordered
+three-dimensional cloud and do not exhibit a strong global orientational order,
+yet the swarm remains spatially cohesive and shows reproducible internal
+structure. This combination raises a basic question: at what level should the
+organization of such a weakly ordered group be described?
+
+The question is not trivial because position-dependent velocity differences
+are expected even in the absence of a new behavioral mechanism. Translation of
+the swarm center, local rotation, expansion, compression, shear, and density
+gradients can all make insects at different positions move differently. Thus,
+observing that local velocities differ across the swarm is not by itself a
+strong result. A more informative test is to ask whether any stable component
+of motion remains after ordinary local kinematic explanations have been given
+a clear baseline.
+
+\subsection{Existing Descriptions of Midge Swarms}
+
+Previous work has shown that laboratory midge swarms are not uniform random
+particle clouds. Time-resolved three-dimensional trajectory data provide the
+basis for measuring individual motion, local neighborhoods, and global swarm
+geometry \cite{sinhuber2019_dataset}. Individuals also sample the swarm volume
+non-uniformly, so spatial position and local density must be treated as
+potential contributors to any local motion pattern
+\cite{feng2023_sampling}.
+
+A second line of work has described swarms using macroscopic and
+statistical-physics variables. Swarm size, radius, density, compactness, and
+layer structure provide compact summaries of the full trajectory data, and
+equation-of-state and thermodynamic descriptions show that weakly ordered
+swarms can nevertheless possess reproducible collective states
+\cite{sinhuber2021_eos,reynolds2021_thermodynamic}. These studies make
+low-dimensional state variables natural explanatory candidates for local
+motion, but they do not by themselves determine whether a local residual can
+be accounted for by those variables.
+
+A third line of work treats midge motion in stochastic dynamical terms.
+Restoring-force descriptions, Langevin-type models, and intrinsic
+stochasticity have been used to connect microscopic fluctuations with
+macroscopic swarm organization
+\cite{reynolds2017_velocity_gravity,reynolds2018_langevin,reynolds2021_intrinsic}.
+This perspective is important for the present study because a residual signal
+need not imply a deterministic rule. It may reflect incomplete geometric
+subtraction, a compact stochastic state description, or local organization that
+is not captured by the tested variables.
+
+Finally, perturbation and correlation analyses show that midge swarms contain
+measurable spatiotemporal structure. Environmental perturbations can induce
+correlated responses, and spatial correlations have been reported in
+laboratory insect swarms
+\cite{vandervaart2020_perturbations,reynolds2024_spatial}. Such correlations
+motivate a local analysis, but they do not distinguish local coordination from
+ordinary geometric deformation, sampling structure, or density-dependent
+motion. This leaves open the specific residual question addressed here.
+
+\subsection{Non-Affine Residuals as a Methodological Reference Point}
+
+A useful methodological precedent comes from non-affine analysis in complex
+many-body systems. In amorphous solids and colloidal glasses, local affine
+motion is often fitted first, and the remaining non-affine displacement is then
+used to characterize local rearrangement
+\cite{falk1998_viscoplastic,chikkadi2012_nonaffine}. Related decompositions
+have also been adapted to biological collective motion, including epithelial
+sheet migration and cell assemblies, where large-scale collective motion must
+be separated from local rearrangements
+\cite{lee2013_epithelial,cerbino2021_disentangling}.
+
+The role of this literature in the present paper is methodological rather than
+ontological. We do not treat a midge swarm as a glass, granular material, or
+elastic continuum. Instead, we borrow a more general diagnostic logic: first
+allow a local neighborhood to explain as much relative motion as possible
+through a smooth affine deformation field, and then analyze only the part that remains. This
+choice makes the baseline conservative. Local rotation, extension,
+compression, and shear are not immediately interpreted as new collective
+organization; they are first absorbed by the affine fit.
+
+\subsection{From Candidate Explanations to T1}
+
+The present analysis was motivated by a sequence of candidate explanations.
+First, we asked whether the transition-linked tangential signal could be
+absorbed by ordinary geometry, including global motion and local affine
+deformation. If local affine geometry removed the signal, no additional local
+residual object would be needed. Second, when a residual remained, we asked
+whether it was stable to nearby choices of local scale and temporal lag. Third,
+we examined whether the residual had a repeated spatial or temporal form, such
+as an edge-localized contrast, a sharp event precursor, or a signed transition
+pattern. Finally, we tested whether a small set of state variables, true event
+timing, or recent state-path history was sufficient to account for it.
+
+This paper therefore does not start from a proposed complete mechanism. It
+starts from a residual object that survives several natural explanations. For
+a focal individual \(i\) at time \(t\), we describe each retained neighbor
+\(j\in N_i(t)\) by the focal-centered relative vector
+\(\mathbf{r}_{ij}(t)=\mathbf{x}_j(t)-\mathbf{x}_i(t)\). Over a finite lag
+\(\ell\), the neighborhood deformation is summarized by
+\(\Delta\mathbf{r}_{ij}(t,\ell)=\mathbf{r}_{ij}(t+\ell)-\mathbf{r}_{ij}(t)\).
+The local affine fit is written conceptually as
+\begin{equation}
+\hat{\mathbf{J}}_i(t)
+=
+\arg\min_{\mathbf{J}}
+\sum_{j\in N_i(t)}
+\left\|
+\Delta\mathbf{r}_{ij}(t,\ell)
+-
+\mathbf{J}\mathbf{r}_{ij}(t)
+\right\|^2 .
+\end{equation}
+The non-affine residual is the part of neighbor relative motion not explained
+by this local affine deformation,
+\begin{equation}
+\mathbf{u}^{NA}_{ij}(t)=
+\frac{
+\Delta\mathbf{r}_{ij}(t,\ell)
+-
+\hat{\mathbf{J}}_i(t)\mathbf{r}_{ij}(t)
+}{\Delta t_{\ell}}.
+\end{equation}
+T1 denotes the tangential activity of this focal-neighborhood residual around
+compact-density transition windows. When the analysis uses unsigned activity,
+T1 is summarized by the magnitude or squared magnitude of the tangential
+residual. The essential point is that T1 is not a raw speed, an inferred force,
+or an individual behavioral rule. It is a local tangential non-affine residual
+measured after local affine deformation has been removed.
+
+\subsection{Aim and Contribution}
+
+This study asks four questions. First, does T1 remain detectable in most
+observations after local affine subtraction? Second, is that survival stable to
+nearby choices of local scale and temporal lag? Third, what spatial and
+temporal form does the surviving residual take? Fourth, are compact state
+variables, true transition timing, or recent path history sufficient to
+account for it?
+
+The contribution is deliberately bounded. We do not claim to identify a
+universal mechanism for midge swarming, nor do we reject existing stochastic or
+statistical-physics descriptions of these systems. Instead, we define and test
+a local tangential non-affine residual across 19 laboratory midge-swarm
+observations. T1 survives local affine subtraction in most observations and is
+robust within the survivor class, with diffuse tangential activity as the most
+stable repeated form. At the same time, the tested compact state-variable,
+event-timing, and recent-history explanations do not account for it
+consistently across observations. The resulting picture is a reproducible
+local collective observable with explicit observation-level boundaries, rather
+than a completed mechanism model.

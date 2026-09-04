@@ -1,0 +1,14 @@
+{
+  "node": "4149_highB_full_pipeline_omnibus_null",
+  "date": "2026-09-02",
+  "status": "boundary_stopped",
+  "started_at": "2026-09-02T14:10:46",
+  "stopped_at": "2026-09-02T14:41:30+09:00",
+  "elapsed_limit_sec": 1800,
+  "n_null_replicates": 1000,
+  "n_controls_per_replicate_observation": 40,
+  "cache_source": "Output/4141/cache",
+  "completed_inference_outputs": false,
+  "boundary_reason": "The B=1000 all-19 full-pipeline omnibus null did not reach p-value output within a 30-minute interactive timeout. The residual Python process was stopped by Codex.",
+  "interpretation": "This is a compute boundary, not a statistical negative result. The existing B=100 smoke result remains the only completed full-pipeline omnibus null estimate."
+}

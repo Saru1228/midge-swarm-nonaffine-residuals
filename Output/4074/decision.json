@@ -1,0 +1,25 @@
+{
+  "node": "4074_event_free_vs_event_conditioned_audit",
+  "question": "Is the frozen residual organization specific to compact-density transition events, or also present in matched non-event windows?",
+  "result": "boundary_mixed_event_conditioning",
+  "stable_core_metrics": [
+    "edge_minus_core_resid_tangential",
+    "resid_speed_rms",
+    "resid_tangential_speed_mean",
+    "resid_velocity_cov_trace"
+  ],
+  "stable_core_event_conditioned_count": 1,
+  "stable_core_activity_gate_count": 2,
+  "n_stable_core_metrics": 4,
+  "gate": "pass if >=3 stable-core metrics pass event-conditioned direction gate; boundary if mixed or if activity is event-free/general",
+  "observations": [
+    1,
+    2,
+    3
+  ],
+  "n_non_event_replicates": 80,
+  "interpretation": "Some stable-core metrics are event-conditioned, but the evidence is mixed.",
+  "next": [
+    "M0_review_before_4080"
+  ]
+}

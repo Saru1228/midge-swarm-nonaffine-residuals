@@ -1,0 +1,13 @@
+node: 4074_event_free_vs_event_conditioned_audit
+date: 2026-08-25
+node_type: event_selection_artifact_control
+source_primary_metrics: Output/4072/primary_metrics.csv
+source_stable_core: Output/4071/metric_replication_summary.csv
+baseline: B3_global_affine
+null_or_control: N5_matched_non_event_window
+observations: 1,2,3
+n_non_event_replicates: 80
+exclusion_sec: 0.8
+next_if_pass: 4080_local_affine_feasibility
+next_if_boundary: M0_review_or_4080_with_caveat
+next_if_fail: M0_boundary_review

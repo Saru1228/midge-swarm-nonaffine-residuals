@@ -1,0 +1,17 @@
+node: 4090A_observation_regime_boundary_audit
+date: 2026-08-26
+node_type: artifact-control
+input_nodes:
+  - 4081c_full_observation_adjudication
+  - 4082_scale_robustness_on_surviving_observation_class
+  - 4082b_early_failure_condition_or_artifact_audit
+  - 4087_failure_boundary_sensitivity
+  - 4088_bounded_408x_synthesis_with_failure_boundary
+primary_target: t1_median_local_event_minus_non_event_z
+data_scope: all_19_observations
+grouped_inference_unit: observation
+metadata_policy: metadata_unavailable_do_not_guess
+gate:
+  R0: no strong observation-level regime association
+  R1: strong known or proxy regime clue; condition/stratify in 4090
+  R2: T1 nearly explained by known acquisition/batch artifact; pause biological interpretation

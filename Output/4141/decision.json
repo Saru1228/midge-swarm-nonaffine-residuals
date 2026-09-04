@@ -1,0 +1,58 @@
+{
+  "node": "4141_full_pipeline_omnibus_survival_null",
+  "date": "2026-09-01",
+  "purpose": "Calibrate the observed both-scale T1 survival count against a full pseudo-event pipeline null.",
+  "analysis_scope": "all_19_observations",
+  "primary_metrics": {
+    "n_null_replicates": 100,
+    "n_controls_per_replicate_observation": 40,
+    "smoke_only": true,
+    "observed_n_both": 14,
+    "observed_n_any": 15,
+    "p_omnibus_both_ge_14": 0.009900990099009901,
+    "p_omnibus_any_ge_15": 0.039603960396039604,
+    "n_both_null_mean": 4.49,
+    "n_both_null_median": 4.0,
+    "n_both_null_q90": 7.0,
+    "n_both_null_q95": 8.0,
+    "n_both_null_q99": 10.010000000000005,
+    "n_both_null_max": 11.0,
+    "n_any_null_mean": 10.36,
+    "n_any_null_median": 10.5,
+    "n_any_null_q90": 13.0,
+    "n_any_null_q95": 14.0,
+    "n_any_null_q99": 16.0,
+    "n_any_null_max": 16.0
+  },
+  "nulls": [
+    "same_observation_pseudo_event_times_avoiding_true_transition_windows",
+    "same_observation_non_event_controls_preserving_event_type_counts"
+  ],
+  "predefined_thresholds": {
+    "local_event_minus_non_event_direction_z": "> 0.03",
+    "p_non_event_direction_ge_event": "<= 0.35",
+    "local_to_b3_direction_ratio": ">= 0.30",
+    "strong_pass": "p_both <= 0.01",
+    "pass": "0.01 < p_both <= 0.05",
+    "boundary": "0.05 < p_both <= 0.10",
+    "fail": "p_both > 0.10"
+  },
+  "main_result": {
+    "gate_result": "smoke_complete_do_not_use_for_manuscript_p_value",
+    "manuscript_consequence": "Use this run to validate runtime and output structure; run B>=1000 before manuscript inference."
+  },
+  "observation_heterogeneity": {
+    "max_null_both_pass_rate": 0.41,
+    "max_null_any_pass_rate": 0.69
+  },
+  "does_not_prove": [
+    "mechanism",
+    "prediction",
+    "universal T1 law",
+    "detrending robustness",
+    "affine-fit conditioning robustness"
+  ],
+  "next": [
+    "4141_full_B_ge_1000"
+  ]
+}

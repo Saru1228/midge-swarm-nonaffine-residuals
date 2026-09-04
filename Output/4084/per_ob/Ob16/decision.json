@@ -1,0 +1,22 @@
+{
+  "node": "4084_spatial_taxonomy_of_t1_local_nonaffine_signal",
+  "ob": 16,
+  "result": "level_specific_but_no_direct_contrast",
+  "classification": {
+    "ob": 16,
+    "n_events": 84,
+    "diffuse_baseline_gate": true,
+    "n_spatial_contrast_gates": 0,
+    "best_spatial_variable": "shell_middle_minus_core",
+    "best_spatial_family": "radial_contrast",
+    "best_spatial_gap_z": -0.11268772090151702,
+    "best_level_variable": "shell_edge_tangential",
+    "best_level_family": "radial_level",
+    "best_level_gap_z": 0.8115319805249848,
+    "ob_spatial_class": "level_specific_but_no_direct_contrast",
+    "interpretation": "Some spatial levels pass, but direct contrast/gradient variables do not pass."
+  },
+  "next": [
+    "aggregate_4084"
+  ]
+}

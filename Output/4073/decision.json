@@ -1,0 +1,34 @@
+{
+  "node": "4073_null_and_baseline_registry",
+  "question": "Which baselines and nulls are allowed for each future 407x-411x branch?",
+  "result": "pass",
+  "baseline_ids": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "null_ids": [
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5"
+  ],
+  "future_node_rules": [
+    "4071_cross_dataset_baseline_audit",
+    "4074_event_free_vs_event_conditioned_audit",
+    "4080_local_affine_feasibility",
+    "4081_global_vs_local_geometry_ladder",
+    "4090_conditional_mean_vs_variance",
+    "410x_transient_propagation",
+    "411x_network_organization"
+  ],
+  "gate": "Registry must define what each baseline/null preserves and destroys, and must map future nodes to allowed controls.",
+  "gate_evaluation": "baselines=5, nulls=5, future_node_rules=7",
+  "interpretation": "Future replication and mechanism tests now have a frozen baseline/null vocabulary.",
+  "next": [
+    "4071_cross_dataset_baseline_audit"
+  ]
+}

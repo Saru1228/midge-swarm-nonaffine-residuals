@@ -1,0 +1,25 @@
+{
+  "node": "4141_full_pipeline_omnibus_survival_null",
+  "date": "2026-09-01",
+  "status": "implementation_ready_cache_batch_required",
+  "attempted_command": "python Experiment\\run_4141_full_pipeline_omnibus_survival_null.py --smoke --n-null 100",
+  "completed_artifacts": [
+    "Output/4141/cache/Ob1_k8_lag0p100_stride2_focals24.csv",
+    "Output/4141/4141_smoke_stdout.log",
+    "Output/4141/4141_smoke_stderr.log"
+  ],
+  "not_completed": [
+    "omnibus_replicates.csv",
+    "observation_null_pass_rates.csv",
+    "p_omnibus.json",
+    "decision.json"
+  ],
+  "boundary": "Strict 4141 requires all-observation k=8/k=10 local T1 caches; this is a batch compute step.",
+  "manuscript_consequence": "No 4141 p-value is available yet. Do not use this partial run for manuscript inference.",
+  "next": [
+    "build 4141 caches in batches with --cache-only",
+    "then run --smoke --n-null 100",
+    "then run --n-null 1000 if feasible"
+  ]
+}
+

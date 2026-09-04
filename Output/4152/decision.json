@@ -1,0 +1,13 @@
+{
+  "node": "4152_supplement_build",
+  "date": "2026-09-02",
+  "gate_result": "pass_4152_technical_supplement_draft_built",
+  "primary_metrics": {
+    "n_sections": 8,
+    "readme_present": true,
+    "n_audit_failures": 0,
+    "pdf_compiled": false
+  },
+  "boundary": "The supplement is a technical traceable draft with project source paths. A fully sanitized journal supplement can be produced at 4154 if internal Output path labels should be removed.",
+  "next": "4153_final_consistency_audit"
+}

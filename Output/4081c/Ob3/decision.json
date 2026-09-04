@@ -1,0 +1,20 @@
+{
+  "node": "4081c_full_observation_adjudication_before_4082",
+  "ob": 3,
+  "result": "t1_not_event_conditioned_after_local_affine",
+  "classification": {
+    "ob": 3,
+    "n_events": 40,
+    "t1_gate_any": false,
+    "t1_gate_k_values": "",
+    "t1_median_local_to_b3_ratio": 0.4611895505491381,
+    "t1_median_local_event_minus_non_event_z": -0.17750164187049727,
+    "t2_gate_any": true,
+    "t2_gate_count": 2,
+    "ob_route_a_class": "t1_not_event_conditioned_after_local_affine",
+    "interpretation": "T1 local signal is not stronger than matched non-event windows."
+  },
+  "next": [
+    "aggregate_4081c"
+  ]
+}

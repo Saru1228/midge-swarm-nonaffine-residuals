@@ -1,0 +1,41 @@
+{
+  "node": "4155_parallel_highB_omnibus_null",
+  "date": "2026-09-02",
+  "run_name": "benchmark_n8_c40_fast",
+  "gate_result": "operational_smoke_complete_not_inference",
+  "requested_replicates": 8,
+  "completed_replicates": 8,
+  "chunk_size": 2,
+  "workers": 2,
+  "n_controls_per_replicate_observation": 40,
+  "complete": true,
+  "operational_smoke": true,
+  "missing_chunks": [],
+  "primary_metrics": {
+    "n_null_replicates": 8,
+    "n_controls_per_replicate_observation": 40,
+    "smoke_only": false,
+    "observed_n_both": 14,
+    "observed_n_any": 15,
+    "p_omnibus_both_ge_14": 0.1111111111111111,
+    "p_omnibus_any_ge_15": 0.1111111111111111,
+    "n_both_null_mean": 3.875,
+    "n_both_null_median": 4.0,
+    "n_both_null_q90": 5.0,
+    "n_both_null_q95": 5.0,
+    "n_both_null_q99": 5.0,
+    "n_both_null_max": 5.0,
+    "n_any_null_mean": 10.625,
+    "n_any_null_median": 12.0,
+    "n_any_null_q90": 13.3,
+    "n_any_null_q95": 13.649999999999999,
+    "n_any_null_q99": 13.93,
+    "n_any_null_max": 14.0
+  },
+  "main_result": {
+    "gate_result": "fail_omnibus_null",
+    "manuscript_consequence": "Do not claim 14/19 is globally surprising; retain only common descriptive survival if other gates remain valid."
+  },
+  "boundary": "operational smoke only; replicate/control counts are too small for inference",
+  "next": "optional manuscript wording update if accepted"
+}

@@ -1,0 +1,14 @@
+item,label,status,evidence
+cited_label,cerbino2021_disentangling,pass,found in bibitems
+cited_label,chikkadi2012_nonaffine,pass,found in bibitems
+cited_label,falk1998_viscoplastic,pass,found in bibitems
+cited_label,feng2023_sampling,pass,found in bibitems
+cited_label,lee2013_epithelial,pass,found in bibitems
+cited_label,reynolds2017_velocity_gravity,pass,found in bibitems
+cited_label,reynolds2018_langevin,pass,found in bibitems
+cited_label,reynolds2021_intrinsic,pass,found in bibitems
+cited_label,reynolds2021_thermodynamic,pass,found in bibitems
+cited_label,reynolds2024_spatial,pass,found in bibitems
+cited_label,sinhuber2019_dataset,pass,found in bibitems
+cited_label,sinhuber2021_eos,pass,found in bibitems
+cited_label,vandervaart2020_perturbations,pass,found in bibitems

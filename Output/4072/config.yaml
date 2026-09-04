@@ -1,0 +1,8 @@
+node: 4072_residual_observable_taxonomy
+date: 2026-08-25
+node_type: foundation_metric_freeze
+source_table: Output/4002A/tables/residual_structure_direction_null_comparison.csv
+parent_node: 4070_bounded_result_and_negative_mechanism_map
+primary_metric_limit: 6
+secondary_diagnostic_limit: 12
+next_node: 4073_null_and_baseline_registry

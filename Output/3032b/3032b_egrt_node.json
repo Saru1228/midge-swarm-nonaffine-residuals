@@ -1,0 +1,58 @@
+{
+  "node_id": "3032b_state_meaning_residence_audit",
+  "series": "303x",
+  "node_type": "mechanism",
+  "parent_node": "3032_transfer_operator_metastability",
+  "question": "Does the 3032 almost-invariant partition have clear physical meaning and residence depth?",
+  "competing_interpretations": [
+    "interpretable metastable macroscopic state",
+    "smooth compactness fluctuation with short residence",
+    "coarse-state relabeling of 3013 quiet/mobile states"
+  ],
+  "method": [
+    "assign 3032 best spectral labels to every frame",
+    "compare low/high emissions with within-Ob robust-z effect sizes",
+    "measure residence-run distributions",
+    "measure retention decay from 0.05s to 1.00s",
+    "compare spectral labels to the 3013 coarse-state classifier"
+  ],
+  "pass_gate": {
+    "meaning": "strongest state-space median delta >= 0.5 z and sign consistency >= 0.7",
+    "residence": "median residence >= 0.2s and q75 residence >= 0.5s",
+    "long_lag": "q25 retention at 0.5s >= 0.6 and lift >= 0.1"
+  },
+  "next_if_pass": "3032c robustness against smooth-autocorrelation nulls",
+  "next_if_fail": "pause or retire this metastability branch",
+  "outputs": [
+    "Output/3032b/tables/emission_effect_summary.csv",
+    "Output/3032b/tables/residence_summary.csv",
+    "Output/3032b/tables/lag_retention_summary.csv",
+    "Output/3032b/tables/egrt_decision_summary.csv",
+    "Output/3032b/3032b_summary.md"
+  ],
+  "provenance": {
+    "script": "Experiment/run_3032b_state_meaning_residence_audit.py",
+    "decision": {
+      "node_id": "3032b_state_meaning_residence_audit",
+      "parent_node": "3032_transfer_operator_metastability",
+      "parent_decision": "support_stochastic_metastability_branch",
+      "best_partition_id": "eig2",
+      "strongest_state_space_variable": "density_rms",
+      "strongest_delta_high_minus_low_z": 1.341105624678564,
+      "strongest_variable_sign_consistency": 1.0,
+      "meaning_pass": true,
+      "median_residence_sec": 0.1299999999999961,
+      "q75_residence_sec": 0.539999999999892,
+      "residence_pass": false,
+      "long_lag_sec": 0.5,
+      "long_lag_median_q25_retention": 0.672134061723948,
+      "long_lag_median_q25_retention_lift": 0.17190991861797122,
+      "long_lag_pass": true,
+      "coarse_state_nmi": 0.001152372273950722,
+      "coarse_state_independent": true,
+      "eg_rt_decision": "boundary_shallow_but_persistent_organization",
+      "recommended_next_node": "3032c smooth-autocorrelation/null-model audit",
+      "boundary_reading": "The partition is interpretable and remains above baseline at longer lags, but individual residence runs are short; test whether smooth autocorrelation explains the result."
+    }
+  }
+}

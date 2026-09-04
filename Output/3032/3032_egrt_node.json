@@ -1,0 +1,72 @@
+{
+  "node_id": "3032_transfer_operator_metastability",
+  "series": "303x",
+  "node_type": "mechanism",
+  "parent_node": "3030_attractor_evidence_screen",
+  "question": "Do the 3030 slow-variable candidates form reproducible almost-invariant sets under an empirical transfer operator?",
+  "competing_interpretations": [
+    "stochastic/metastable macroscopic organization",
+    "coarse discretization artifact",
+    "Ob-specific persistence without cross-sample support"
+  ],
+  "input_artifacts": [
+    "Output/3001/processed/geometric_center_observables_all.csv",
+    "Output/3030/tables/egrt_decision_summary.csv",
+    "Output/3030/tables/variable_evidence_summary.csv"
+  ],
+  "method": [
+    "within-Ob robust standardization of 3030 slow-variable candidates",
+    "4-bin quantile Ulam discretization",
+    "pooled empirical transition operator at lag 0.1s",
+    "dominant right-eigenvector spectral partitions",
+    "retention-lift comparison against occupancy baseline",
+    "cross-Ob retention and residence diagnostics",
+    "interpretive overlap with the 3013 quiet/outward/mobile/other classifier"
+  ],
+  "pass_gate": {
+    "active_coverage": ">= 0.98",
+    "top_nontrivial_eigenvalue_real": ">= 0.85",
+    "min_pooled_retention": ">= 0.8",
+    "min_retention_lift": ">= 0.2",
+    "q25_ob_retention": ">= 0.65",
+    "frac_ob_set_lift_positive": ">= 0.7"
+  },
+  "next_if_pass": "3032b state-meaning and residence audit",
+  "next_if_fail": "pause 303x attractor narrative or revise observable basis",
+  "next_if_boundary": "3032b robustness or variable revision",
+  "outputs": [
+    "Output/3032/tables/ulam_state_summary.csv",
+    "Output/3032/tables/eigenvalue_spectrum.csv",
+    "Output/3032/tables/spectral_partition_summary.csv",
+    "Output/3032/tables/partition_retention_by_ob.csv",
+    "Output/3032/tables/egrt_decision_summary.csv",
+    "Output/3032/3032_summary.md"
+  ],
+  "provenance": {
+    "script": "Experiment/run_3032_transfer_operator_metastability.py",
+    "decision": {
+      "node_id": "3032_transfer_operator_metastability",
+      "candidate_variables": "r_rms, density_rms, anisotropy",
+      "lag_sec": 0.1,
+      "n_bins": 4,
+      "n_total_cells": 64,
+      "n_active_cells": 60,
+      "active_coverage": 1.0,
+      "top_nontrivial_eigenvalue_real": 0.8564307275942583,
+      "top_nontrivial_implied_timescale_sec": 0.6452368748089752,
+      "best_partition_id": "eig2",
+      "best_partition_eigen_rank": 2,
+      "best_partition_min_pooled_retention": 0.8751650955023956,
+      "best_partition_min_retention_lift": 0.3750263483202336,
+      "best_partition_q25_ob_retention": 0.8698154999849252,
+      "best_partition_frac_ob_set_lift_positive": 1.0,
+      "best_partition_median_residence_sec": 0.1299999999999961,
+      "pass_gate": true,
+      "pooled_only_boundary": false,
+      "eg_rt_decision": "support_stochastic_metastability_branch",
+      "recommended_next_node": "3032b state-meaning and residence audit",
+      "boundary_reading": "Almost-invariant slow-variable sets are reproducible enough to extend, but this supports stochastic macroscopic organization rather than deterministic center-speed attractor geometry.",
+      "spectrum_top5_real": "1, 0.8564, 0.7981, 0.6957, 0.6573"
+    }
+  }
+}

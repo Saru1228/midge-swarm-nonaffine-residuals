@@ -1,0 +1,42 @@
+\subsection{Limitations and Future Work}
+
+Several limitations define the interpretation of this study. First, the
+dataset contains 19 laboratory observations, which support common-survival and
+observation-boundary claims but not a universal mechanism claim. These
+observations are separate experimental recordings rather than independent
+biological populations. Second, T1 is a constructed residual depending on
+neighborhood selection, finite lag, local affine fitting, and tangential
+projection. It is not a directly observed force, intention, or individual
+decision variable. Third, the analysis is observational and cannot establish
+individual-level causality.
+
+The negative tests are also definition-bound. Failure of the tested
+$(C,\dot{C},R)$ closure does not rule out higher-dimensional, delayed,
+network-based, or observation-specific stochastic descriptions. Failure of the
+state-matched near-pre test does not imply that transitions have no special
+dynamics. Propagation was not tested in a confirmatory route and therefore
+remains outside the current supported claim.
+
+The submission-hardening checks sharpened these limitations rather than
+removing them. The completed full-pipeline pseudo-event calibration supported
+the survival result: the observed both-scale count of 14 exceeded the null
+maximum of 12 across $B=1000$ replicates, giving a plus-one tail probability
+of 0.000999. This strengthens the observation-level null calibration, but it
+does not remove the other boundaries. The detrending challenge showed that
+the signal was not erased, but the exact both-scale count depended on the
+preprocessing choice: centered detrending gave $14/19$, past-only detrending
+gave $11/19$, and no rolling detrending gave $13/19$. The local affine
+conditioning quality control was reassuring, with all 38 observation-scale
+combinations passing and no sampled condition number above 100, but this is a
+numerical QC result rather than a biological mechanism result.
+
+Future work should proceed along broad rather than overly specific directions.
+The most direct extension is comparative application of the
+local-affine-subtraction framework to other collective-motion data. Another is
+observation stratification, asking why some swarms were robust survivors
+whereas others were fragile or stable failures. A fourth is mechanistic
+validation through perturbation experiments, richer environmental variables,
+or more direct measurements of interaction structure. Code and pseudocode can
+support reproducibility in an appendix or repository release, but the main
+scientific claim is the measurable residual layer and its reduction
+boundaries.

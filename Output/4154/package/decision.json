@@ -1,0 +1,19 @@
+{
+  "node": "4154_submission_package_freeze",
+  "date": "2026-09-02",
+  "gate_result": "pass_4154_submission_package_frozen_and_compiled",
+  "primary_metrics": {
+    "pdf_pages": 10,
+    "latex_errors": 0,
+    "undefined_control_sequence": 0,
+    "citation_warnings": 0,
+    "reference_warnings": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 16,
+    "final_pdf_bytes": 393356,
+    "package_file_count": 37,
+    "archive_bytes": 500772
+  },
+  "boundary": "Only underfull-box layout warnings remain. The high-replicate omnibus null remains a compute-boundary item rather than an integrated formal p-value.",
+  "next": "manual visual inspection, journal formatting, and optional staged high-B batch calibration if required"
+}
