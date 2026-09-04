@@ -14,6 +14,7 @@ python tools/verify_release.py
 Expected key outputs:
 
 ```text
+availability_gate_result = pass_4157_repository_availability_integrated_and_compiled
 gate_result = pass_4156_highB_integrated_submission_package_refrozen
 B = 1000
 observed N_both = 14
@@ -31,7 +32,8 @@ pdflatex -interaction=nonstopmode main_final.tex
 pdflatex -interaction=nonstopmode main_final.tex
 ```
 
-The node-4156 freeze produced a 10-page PDF.
+The node-4157 manuscript produced a 10-page PDF with the public repository
+availability section included before the references.
 
 ## Level 2: Reaudit the Completed High-B Run
 
@@ -105,3 +107,12 @@ The exact plus-one value for the both-scale omnibus tail is
 `0.000999000999000999`. In manuscript prose, it should be rounded to
 approximately `p_emp = 0.001`, together with the more informative statement that
 `0/1000` null replicates reached `N_both = 14`.
+
+## Repository Citation
+
+For code and derived outputs, cite the release tag used by the manuscript:
+
+```text
+https://github.com/Saru1228/midge-swarm-nonaffine-residuals
+release tag: v4157-availability
+```

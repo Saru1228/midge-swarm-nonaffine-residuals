@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lightweight verification for the node-4156 release package."""
+"""Lightweight verification for the node-4157 release package."""
 from __future__ import annotations
 
 import json
@@ -18,10 +18,15 @@ def load_json(path: Path) -> dict:
 
 def main() -> int:
     decision_4156 = load_json(ROOT / "Output" / "4156" / "decision.json")
+    decision_4157 = load_json(ROOT / "Output" / "4157" / "decision.json")
+    compile_4157 = load_json(ROOT / "Output" / "4157" / "compile_log_audit.json")
     p_omnibus = load_json(ROOT / "Output" / "4155" / "p_omnibus.json")
+    availability_tex = ROOT / "manuscript" / "latex" / "06_data_code_availability.tex"
     zip_path = ROOT / "Output" / "4156" / "mypaper2_4156_submission_package.zip"
     if not zip_path.exists():
         raise FileNotFoundError(zip_path)
+    if not availability_tex.exists():
+        raise FileNotFoundError(availability_tex)
 
     with zipfile.ZipFile(zip_path, "r") as zf:
         bad = zf.testzip()
@@ -38,6 +43,13 @@ def main() -> int:
         "observed_n_both": p_omnibus.get("observed_n_both"),
         "n_both_null_max": p_omnibus.get("n_both_null_max"),
         "p_both_ge_14": p_omnibus.get("p_omnibus_both_ge_14"),
+        "availability_gate_result": decision_4157.get("gate_result"),
+        "availability_pdf_pages": compile_4157.get("pdf_pages"),
+        "availability_overfull_boxes": compile_4157.get("overfull_boxes"),
+        "availability_tex_contains_url": "https://github.com/Saru1228/midge-swarm-nonaffine-residuals"
+        in availability_tex.read_text(encoding="utf-8"),
+        "availability_tex_contains_tag": "v4157-availability"
+        in availability_tex.read_text(encoding="utf-8"),
     }
 
     expected = [
@@ -49,6 +61,12 @@ def main() -> int:
         checks["B"] == 1000,
         checks["observed_n_both"] == 14,
         checks["n_both_null_max"] == 12.0,
+        checks["availability_gate_result"]
+        == "pass_4157_repository_availability_integrated_and_compiled",
+        checks["availability_pdf_pages"] == 10,
+        checks["availability_overfull_boxes"] == 0,
+        checks["availability_tex_contains_url"] is True,
+        checks["availability_tex_contains_tag"] is True,
     ]
 
     print(json.dumps(checks, indent=2))

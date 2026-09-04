@@ -6,7 +6,7 @@ Reproducible analysis package for the manuscript:
 
 This repository contains the curated code, frozen manuscript artifacts, selected
 summary outputs, and high-replicate null-calibration results used for the
-submission-facing version frozen at node `4156`. It is intentionally smaller
+submission-facing version frozen at node `4157`. It is intentionally smaller
 than the full working directory: raw trajectory data, large intermediate frame
 tables, temporary caches, and exploratory dead-end artifacts are not bundled.
 
@@ -41,6 +41,7 @@ trigger, universal law, or preprocessing-invariant claim.
 Experiment/              Selected Python scripts for the manuscript-facing analysis
 Output/4155/             Completed B=1000 high-B omnibus null run
 Output/4156/             Final integrated manuscript freeze and package audit
+Output/4157/             Manuscript availability-section polish and compile audit
 Output/<other ids>/      Curated summaries and small tables from upstream nodes
 Supplement/              Technical and submission-facing supplement drafts
 manuscript/              Convenience copy of final PDF and active LaTeX source
@@ -58,8 +59,9 @@ From the repository root:
 python tools/verify_release.py
 ```
 
-This checks the frozen `4155` and `4156` metrics, verifies the packaged zip, and
-confirms that the final package contains the expected high-B evidence files.
+This checks the frozen `4155`, `4156`, and `4157` metrics, verifies the packaged
+zip, and confirms that the manuscript contains the repository availability
+statement.
 
 ## Rebuilding the Manuscript PDF
 
@@ -71,7 +73,7 @@ pdflatex -interaction=nonstopmode main_final.tex
 pdflatex -interaction=nonstopmode main_final.tex
 ```
 
-The submitted freeze compiled as a 10-page PDF with no LaTeX errors, unresolved
+The node-4157 manuscript compiled as a 10-page PDF with no LaTeX errors, unresolved
 citations, unresolved references, rerun warnings, or overfull boxes.
 
 ## Full Computational Rerun

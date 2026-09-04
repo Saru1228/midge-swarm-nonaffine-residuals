@@ -1,0 +1,27 @@
+{
+  "node": "4157_repository_availability_manuscript_polish",
+  "date": "2026-09-04",
+  "gate_result": "pass_4157_repository_availability_integrated_and_compiled",
+  "source_release_node": "4156_highB_manuscript_integration_and_refreeze",
+  "repository_url": "https://github.com/Saru1228/midge-swarm-nonaffine-residuals",
+  "repository_release_tag": "v4157-availability",
+  "primary_metrics": {
+    "pdf_pages": 10,
+    "latex_errors": 0,
+    "undefined_control_sequence": 0,
+    "citation_warnings": 0,
+    "reference_warnings": 0,
+    "rerun_warnings": 0,
+    "overfull_boxes": 0,
+    "underfull_boxes": 16,
+    "final_pdf_bytes": 396241
+  },
+  "manuscript_changes": [
+    "added unnumbered Data and Code Availability section before references",
+    "added url package to active LaTeX entry points",
+    "condensed Future Work into comparative application and richer-measurement directions",
+    "synchronized English and Chinese Discussion/Conclusion working drafts"
+  ],
+  "boundary": "The public repository is a curated reproducibility package and does not redistribute the external raw trajectory data. The manuscript still claims a diagnostic residual layer, not a completed mechanism, causal trigger, universal law, or preprocessing-invariant result.",
+  "next": "manual PDF visual inspection, journal-specific formatting, optional DOI archive; scientific continuation should prioritize comparative application or observation-class stratification"
+}
