@@ -24,7 +24,7 @@ OUT = ROOT / "Output" / "4134"
 DATE = "2026-08-28"
 NODE = "4134_figure_ready_evidence_panels"
 M5 = ROOT / "Output" / "4133_M5_review_before_4134"
-RAW_DATA_DIR = Path(os.environ.get("MIDGE_DATA_ROOT", os.environ.get("MIDGE_DATA_ROOT", os.environ.get("FISH_3D_DATASET_DIR", "data/raw"))))
+RAW_DATA_DIR = Path(os.environ.get("FISH_3D_DATASET_DIR", r"D:\3Ddataset"))
 
 
 CLASS_COLORS = {
@@ -37,19 +37,19 @@ CLASS_COLORS = {
 }
 
 CLASS_LABELS = {
-    "robust_survivor_diffuse_positive": "robust survivor + diffuse",
-    "robust_survivor_without_diffuse_gate": "robust survivor, diffuse weak",
+    "robust_survivor_diffuse_positive": "robust survivor with diffuse support",
+    "robust_survivor_without_diffuse_gate": "robust survivor without diffuse support",
     "fragile_survivor": "one-scale survivor",
-    "fragile_408x_boundary": "narrow-setting rescue",
+    "fragile_408x_boundary": "fragile boundary",
     "stable_408x_failure": "stable non-survivor",
     "unclassified_boundary": "unclassified boundary",
 }
 
 CLASS_SHORT_LABELS = {
     "robust_survivor_diffuse_positive": "robust\n+ diffuse",
-    "robust_survivor_without_diffuse_gate": "robust,\ndiffuse weak",
+    "robust_survivor_without_diffuse_gate": "robust\nwithout diffuse",
     "fragile_survivor": "one-scale\nsurvivor",
-    "fragile_408x_boundary": "narrow\nrescue",
+    "fragile_408x_boundary": "fragile\nboundary",
     "stable_408x_failure": "stable\nnon-survivor",
     "unclassified_boundary": "unclassified",
 }
@@ -514,7 +514,7 @@ def make_figures(inputs: dict[str, object]) -> list[str]:
         ("diffuse_gate_binary", "diffuse"),
         ("history_beats_median_binary", "history"),
         ("stable_408x_failure", "stable\nnon-survivor"),
-        ("fragile_408x_boundary", "narrow\nrescue"),
+        ("fragile_408x_boundary", "fragile\nboundary"),
     ]
     mat = master_sorted[[name for name, _ in heat_features]].copy()
     for col in mat.columns:

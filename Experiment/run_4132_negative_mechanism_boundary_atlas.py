@@ -266,7 +266,7 @@ def build_negative_atlas(data: dict[str, object]) -> pd.DataFrame:
             "null": "not applicable",
             "failure_mode": f"metadata explanation remains {daytime_status}; failure labels are real but not causally explained",
             "replication": (
-                f"stable failures {d4087['stable_failure_count']}/4; fragile narrow rescues "
+                f"stable failures {d4087['stable_failure_count']}/4; fragile boundary cases "
                 f"{d4087['fragile_narrow_rescue_count']}/4"
             ),
             "what_is_ruled_out": "quietly treating failure observations as artifacts or metadata regimes",

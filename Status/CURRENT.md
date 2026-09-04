@@ -67,6 +67,9 @@ Latest 2026-09-04 4158 status:
   neutral labels such as one-scale survivor and fragile boundary,
   active-source/notation scans passed, and the abstract was shortened by
   removing secondary counts.
+- A follow-up figure-label check corrected the remaining Fig.5 Panel C/D label
+  mismatch. The regenerated Fig.5 now uses `fragile boundary` in the panel
+  labels, matching the manuscript text.
 - `mypaper2/Latex/main_final.tex` was recompiled twice after the review-010
   polish. The updated PDF is `11` pages, with `0` LaTeX errors, `0` undefined
   control sequences, `0` citation warnings, `0` reference warnings, `0` rerun
@@ -985,6 +988,7 @@ The latest 414x outputs are:
 - `Output/4158/4158_figure_summary.md`
 - `Output/4158/decision.json`
 - `Output/4158/compile_log_audit.csv`
+- `Output/4158/final_confirmation_audit.csv`
 - `Output/4158/figures/Fig2_final.pdf`
 - `Output/4158/figures/Fig3_final.pdf`
 - `idea/4158_review010_pre_submission_polish_result.md`

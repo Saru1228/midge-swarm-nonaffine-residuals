@@ -14,6 +14,9 @@ definitions, change screening gates, or open a new mechanism route.
   and the detrending survivor-count boundary.
 - Figure 3 now keeps the phenotype focus and removes the radius
   correlation and sparse-dense profiles from the active main figure.
+- Figure 5 class labels are kept consistent with the current manuscript
+  wording: one-scale survivor, fragile boundary, stable non-survivor,
+  and robust survivor with/without diffuse support.
 
 ## Active Figure Decisions
 
@@ -23,11 +26,14 @@ definitions, change screening gates, or open a new mechanism route.
 - Observation classes use neutral labels: robust survivor with diffuse
   support, robust survivor without diffuse support, one-scale survivor,
   fragile boundary, and stable non-survivor.
+- The older boundary-label wording was removed from active figure
+  sources and from the compiled PDF text layer.
 
 ## Active Figure Outputs
 
 - Fig2: Output/4158/figures/Fig2_final.png; Output/4158/figures/Fig2_final.pdf; mypaper2/Latex/figures/Fig2_final.png; mypaper2/Latex/figures/Fig2_final.pdf
 - Fig3: Output/4158/figures/Fig3_final.png; Output/4158/figures/Fig3_final.pdf; mypaper2/Latex/figures/Fig3_final.png; mypaper2/Latex/figures/Fig3_final.pdf
+- Fig5: mypaper2/Latex/figures/Fig5_final.png; mypaper2/Latex/figures/Fig5_final.pdf
 
 ## Review Gate
 
@@ -38,15 +44,17 @@ definitions, change screening gates, or open a new mechanism route.
 | point | decision | result |
 | --- | --- | --- |
 | sparse-dense | Remove from the main Figure 3 profile panel | The contrast remains available in upstream source data, but it is not shown as a main result because the manuscript does not develop a stable sparse-dense claim. |
-| narrow rescue | Rename in reader-facing text | Active labels now use one-scale survivor, fragile boundary, stable non-survivor, robust survivor with diffuse support, and robust survivor without diffuse support. |
+| old boundary label | Rename in reader-facing figures | Active labels use one-scale survivor, fragile boundary, stable non-survivor, robust survivor with diffuse support, and robust survivor without diffuse support. |
 | notation/source audit | Pass after cleanup | Active text and Supplement use reader-facing $C(t)$, $\dot C(t)$, $R(t)$ / $S(t)$ notation; old terms and old release tags were not found in active paths. |
 | Abstract numeric density | Reduced | The abstract keeps the primary 14/19 result, B=1000 omnibus calibration, p approximately 0.001, and detrending-boundary counts, but removes secondary 15/19, 14/15, and 13/14 counts. |
+| Figure 5 labels | Pass after regeneration | Panel C and Panel D now use fragile boundary wording consistent with the text. |
 
 ## Compile Audit
 
 - Entry point: `mypaper2/Latex/main_final.tex`
 - Output PDF: `mypaper2/Latex/main_final.pdf`
 - PDF pages: 11
+- PDF bytes: 415120
 - LaTeX errors: 0
 - Undefined control sequences: 0
 - Citation warnings: 0

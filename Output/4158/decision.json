@@ -14,7 +14,7 @@
     "rerun_warnings": 0,
     "overfull_boxes": 0,
     "underfull_boxes": 16,
-    "final_pdf_bytes": 414914
+    "final_pdf_bytes": 415120
   },
   "manuscript_changes": [
     "replaced the long working title with a shorter JRSI-facing title",
@@ -25,11 +25,13 @@
     "rewrote Table I columns as Test, Evidence, Supported inference, and Interpretive boundary",
     "added reproducibility details to the supplement and synchronized title/abstract discussion drafts",
     "reduced abstract numeric density by removing secondary counts from the abstract",
-    "completed a final active-source scan for sparse-dense, narrow-rescue, old p-value precision, old release tag, and notation/source consistency"
+    "completed a final active-source scan for sparse-dense, obsolete boundary-label wording, old p-value precision, old release tag, and notation/source consistency"
+    ,
+    "corrected Figure 5 panel labels so the active figure uses fragile boundary rather than the obsolete boundary-label wording"
   ],
   "final_confirmation_points": {
     "sparse_dense": "removed from active Figure 3; retained only as upstream secondary diagnostic",
-    "narrow_rescue": "reader-facing labels use one-scale survivor and fragile boundary; no narrow-rescue wording remains in active paths",
+    "old_boundary_label": "reader-facing labels use one-scale survivor and fragile boundary; obsolete boundary-label wording does not remain in active paths",
     "notation_source_audit": "passed active-source scan after S(t), C(t), dot C(t), R(t) cleanup",
     "abstract_numeric_density": "reduced; abstract retains only primary and boundary-critical numbers"
   },

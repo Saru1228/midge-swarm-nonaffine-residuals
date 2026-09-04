@@ -60,10 +60,10 @@
 | output_figure | Output/4150/figures/Fig1_final.pdf | True | 21052 |
 | output_figure | mypaper2/Latex/figures/Fig1_final.png | True | 438699 |
 | output_figure | mypaper2/Latex/figures/Fig1_final.pdf | True | 21052 |
-| output_figure | Output/4150/figures/Fig2_final.png | True | 195424 |
-| output_figure | Output/4150/figures/Fig2_final.pdf | True | 16847 |
-| output_figure | mypaper2/Latex/figures/Fig2_final.png | True | 195424 |
-| output_figure | mypaper2/Latex/figures/Fig2_final.pdf | True | 16847 |
+| output_figure | Output/4150/figures/Fig2_final.png | True | 201038 |
+| output_figure | Output/4150/figures/Fig2_final.pdf | True | 16445 |
+| output_figure | mypaper2/Latex/figures/Fig2_final.png | True | 201038 |
+| output_figure | mypaper2/Latex/figures/Fig2_final.pdf | True | 16445 |
 | output_figure | Output/4150/figures/Fig3_final.png | True | 295978 |
 | output_figure | Output/4150/figures/Fig3_final.pdf | True | 17061 |
 | output_figure | mypaper2/Latex/figures/Fig3_final.png | True | 295978 |
@@ -72,10 +72,10 @@
 | output_figure | Output/4150/figures/Fig4_final.pdf | True | 26298 |
 | output_figure | mypaper2/Latex/figures/Fig4_final.png | True | 314996 |
 | output_figure | mypaper2/Latex/figures/Fig4_final.pdf | True | 26298 |
-| output_figure | Output/4150/figures/Fig5_final.png | True | 349408 |
-| output_figure | Output/4150/figures/Fig5_final.pdf | True | 28400 |
-| output_figure | mypaper2/Latex/figures/Fig5_final.png | True | 349408 |
-| output_figure | mypaper2/Latex/figures/Fig5_final.pdf | True | 28400 |
+| output_figure | Output/4150/figures/Fig5_final.png | True | 350753 |
+| output_figure | Output/4150/figures/Fig5_final.pdf | True | 28541 |
+| output_figure | mypaper2/Latex/figures/Fig5_final.png | True | 350753 |
+| output_figure | mypaper2/Latex/figures/Fig5_final.pdf | True | 28541 |
 | output_caption | Output/4150/figure_caption_final.md | True | 2094 |
 
         ## Next

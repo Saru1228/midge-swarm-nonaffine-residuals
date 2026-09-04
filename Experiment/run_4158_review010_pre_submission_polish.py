@@ -419,6 +419,9 @@ def write_summary(paths2: list[str], paths3: list[str], sources: pd.DataFrame) -
           and the detrending survivor-count boundary.
         - Figure 3 now keeps the phenotype focus and removes the radius
           correlation and sparse-dense profiles from the active main figure.
+        - Figure 5 class labels are kept consistent with the current manuscript
+          wording: one-scale survivor, fragile boundary, stable non-survivor,
+          and robust survivor with/without diffuse support.
 
         ## Active Figure Decisions
 
@@ -428,11 +431,14 @@ def write_summary(paths2: list[str], paths3: list[str], sources: pd.DataFrame) -
         - Observation classes use neutral labels: robust survivor with diffuse
           support, robust survivor without diffuse support, one-scale survivor,
           fragile boundary, and stable non-survivor.
+        - The older boundary-label wording was removed from active figure
+          sources and from the compiled PDF text layer.
 
         ## Active Figure Outputs
 
         - Fig2: {'; '.join(paths2)}
         - Fig3: {'; '.join(paths3)}
+        - Fig5: mypaper2/Latex/figures/Fig5_final.png; mypaper2/Latex/figures/Fig5_final.pdf
 
         ## Review Gate
 

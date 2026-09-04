@@ -30,7 +30,7 @@ Only three predefined sensitivity families are tested:
 
 ```text
 stable failure observations = 2 / 4
-fragile narrow-setting rescues = 2 / 4
+fragile boundary cases = 2 / 4
 definition-sensitive rescues = 0 / 4
 ```
 
@@ -38,8 +38,8 @@ definition-sensitive rescues = 0 / 4
 
 | ob | baseline_pass_count | baseline_total | scale_timing_pass_count | scale_timing_total | window_pass_count | window_total | state_definition_pass_count | state_definition_total | any_rescue | rescue_settings | median_nonbaseline_gap | failure_boundary_class | interpretation |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 0 | 2 | 2 | 7 | 0 | 3 | 0 | 3 | True | scale_k6_lag0p100_window0p200_minrun0p200, timing_k8_lag0p150_window0p200_minrun0p200 | 0.009982 | fragile_narrow_setting_rescue | The observation has only sparse narrow-setting rescues and remains a boundary case. |
-| 3 | 0 | 2 | 1 | 7 | 0 | 3 | 1 | 3 | True | scale_k6_lag0p100_window0p200_minrun0p200, state_k8_lag0p100_window0p200_minrun0p150 | -0.1545 | fragile_narrow_setting_rescue | The observation has only sparse narrow-setting rescues and remains a boundary case. |
+| 1 | 0 | 2 | 2 | 7 | 0 | 3 | 0 | 3 | True | scale_k6_lag0p100_window0p200_minrun0p200, timing_k8_lag0p150_window0p200_minrun0p200 | 0.009982 | fragile_narrow_setting_rescue | The observation has only sparse fragile boundary cases and remains a boundary case. |
+| 3 | 0 | 2 | 1 | 7 | 0 | 3 | 1 | 3 | True | scale_k6_lag0p100_window0p200_minrun0p200, state_k8_lag0p100_window0p200_minrun0p150 | -0.1545 | fragile_narrow_setting_rescue | The observation has only sparse fragile boundary cases and remains a boundary case. |
 | 6 | 0 | 2 | 0 | 7 | 0 | 3 | 0 | 3 | False |  | -0.1252 | stable_failure_under_predefined_sensitivity | The observation remains negative across the predefined sensitivity checks. |
 | 8 | 0 | 2 | 0 | 7 | 0 | 3 | 0 | 3 | False |  | 0.003604 | stable_failure_under_predefined_sensitivity | The observation remains negative across the predefined sensitivity checks. |
 

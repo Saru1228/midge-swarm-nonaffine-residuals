@@ -60,7 +60,7 @@
     "rescue_settings": "scale_k6_lag0p100_window0p200_minrun0p200, timing_k8_lag0p150_window0p200_minrun0p200",
     "median_nonbaseline_gap": 0.0099820015206076,
     "failure_boundary_class": "fragile_narrow_setting_rescue",
-    "interpretation": "The observation has only sparse narrow-setting rescues and remains a boundary case.",
+    "interpretation": "The observation has only sparse fragile boundary cases and remains a boundary case.",
     "t1_predefined_pass_fraction": 0.15384615384615385,
     "t1_4088_class": "fragile_narrow_setting_rescue"
   },
@@ -190,7 +190,7 @@
     "rescue_settings": "scale_k6_lag0p100_window0p200_minrun0p200, state_k8_lag0p100_window0p200_minrun0p150",
     "median_nonbaseline_gap": -0.1545024788176184,
     "failure_boundary_class": "fragile_narrow_setting_rescue",
-    "interpretation": "The observation has only sparse narrow-setting rescues and remains a boundary case.",
+    "interpretation": "The observation has only sparse fragile boundary cases and remains a boundary case.",
     "t1_predefined_pass_fraction": 0.15384615384615385,
     "t1_4088_class": "fragile_narrow_setting_rescue"
   },

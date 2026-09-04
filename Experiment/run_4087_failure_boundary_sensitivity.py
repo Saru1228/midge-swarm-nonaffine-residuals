@@ -593,7 +593,7 @@ def classify_ob(ob: int, rows: list[dict[str, object]]) -> dict[str, object]:
         interp = "The observation becomes positive under multiple compact-state persistence choices."
     else:
         cls = "fragile_narrow_setting_rescue"
-        interp = "The observation has only sparse narrow-setting rescues and remains a boundary case."
+        interp = "The observation has only sparse fragile boundary cases and remains a boundary case."
 
     return {
         "ob": ob,
@@ -723,7 +723,7 @@ Only three predefined sensitivity families are tested:
 
 ```text
 stable failure observations = {decision["stable_failure_count"]} / {decision["n_observations"]}
-fragile narrow-setting rescues = {decision["fragile_narrow_rescue_count"]} / {decision["n_observations"]}
+fragile boundary cases = {decision["fragile_narrow_rescue_count"]} / {decision["n_observations"]}
 definition-sensitive rescues = {decision["definition_sensitive_rescue_count"]} / {decision["n_observations"]}
 ```
 

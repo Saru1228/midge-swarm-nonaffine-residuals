@@ -263,7 +263,7 @@ def build_final_figures(inputs: dict[str, object], raw_data_dir: Path) -> list[d
         ("diffuse_gate_binary", "diffuse"),
         ("history_beats_median_binary", "history"),
         ("stable_408x_failure", "stable\nfailure"),
-        ("fragile_408x_boundary", "narrow\nrescue"),
+        ("fragile_408x_boundary", "fragile\nboundary"),
     ]
     encoded = bool_matrix(master_sorted[[name for name, _ in heat_features]])
     axes[1].imshow(encoded, aspect="auto", cmap=cmap, vmin=0, vmax=2)
@@ -721,7 +721,7 @@ def write_summary(
 
 def main() -> None:
     ensure_dirs()
-    raw_data_dir = Path(os.environ.get("MIDGE_DATA_ROOT", os.environ.get("MIDGE_DATA_ROOT", os.environ.get("FISH_3D_DATASET_DIR", "data/raw"))))
+    raw_data_dir = Path(os.environ.get("FISH_3D_DATASET_DIR", r"D:\3Ddataset"))
     inputs = r4134.load_inputs()
     figure_rows = build_final_figures(inputs, raw_data_dir)
     captions = build_captions()

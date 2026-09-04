@@ -258,7 +258,7 @@
     "data_scope": "4 non-survival observations",
     "baseline": "predefined sensitivity families",
     "null": "definition/window artifact audit",
-    "primary_metric": "Ob1/Ob3 fragile narrow rescues; Ob6/Ob8 stable failures",
+    "primary_metric": "Ob1/Ob3 fragile boundary cases; Ob6/Ob8 stable failures",
     "gate": "robust rescue or stable failure",
     "result": "boundary_failure_group_mostly_stable_with_fragile_rescues",
     "claim_class": "BOUNDARY",

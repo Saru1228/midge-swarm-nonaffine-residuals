@@ -30,9 +30,13 @@ mechanism experiment.
 - The title/abstract working drafts in `mypaper2/01_title_abstract/` were
   synchronized with the active LaTeX manuscript.
 - A final confirmation pass handled four remaining review-010 checks:
-  sparse-dense was removed from the main figure, narrow-rescue wording was
-  replaced by neutral reader-facing labels, notation/source scans passed, and
-  the abstract was shortened by removing secondary counts.
+  sparse-dense was removed from the main figure, obsolete boundary-label
+  wording was replaced by neutral reader-facing labels, notation/source scans
+  passed, and the abstract was shortened by removing secondary counts.
+- A follow-up visual check found that Fig.5 Panel C/D still showed obsolete
+  boundary-label wording. The Fig.5 generation source was corrected and Fig.5
+  was regenerated so Panel C/D now use `fragile boundary` wording consistent
+  with the manuscript.
 
 ## Compile Audit
 
@@ -40,6 +44,7 @@ mechanism experiment.
 
 ```text
 pdf_pages = 11
+pdf_bytes = 415120
 latex_errors = 0
 undefined_control_sequence = 0
 citation_warnings = 0
