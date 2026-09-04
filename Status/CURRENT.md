@@ -1,6 +1,6 @@
 # Current Project Status
 
-Last updated: 2026-09-02
+Last updated: 2026-09-04
 
 ## 1. Current role of this file
 
@@ -17,8 +17,49 @@ The `413x` phenomenon-and-boundary synthesis route for the midge swarm
 exploratory experiments is complete. The `4146-4154` submission-hardening route
 for the `mypaper2` manuscript after review `mypaper2/00_review/008.md` closed
 at package-freeze level. The optional post-freeze `4155` high-B calibration has
-completed, and `4156` has integrated that result into the manuscript and
-refrozen the submission package.
+completed, `4156` integrated that result into the manuscript and refroze the
+submission package, and `4157` has now linked the manuscript to the public
+GitHub reproducibility repository.
+
+Latest reproducibility repository release:
+
+- GitHub repository:
+  `https://github.com/Saru1228/midge-swarm-nonaffine-residuals`
+- Local release checkout:
+  `C:\Users\Saru\Desktop\TUAT\ResearchSampleCode\midge-swarm-nonaffine-residuals`
+- Release commit:
+  current `v4157-availability` tag target
+- Release tag:
+  `v4157-availability`
+- Contents:
+  selected manuscript-facing scripts, final `4156` manuscript package,
+  completed `4155` high-B omnibus output, `4157` manuscript availability
+  integration, curated upstream summaries/tables, supplement drafts, final
+  PDF/LaTeX source, and `tools/verify_release.py`.
+
+Latest 2026-09-04 4157 status:
+
+- `4157` added an unnumbered `Data and Code Availability` section to the
+  active `mypaper2` LaTeX manuscript immediately before the references.
+- The manuscript now cites the public reproducibility repository:
+  `https://github.com/Saru1228/midge-swarm-nonaffine-residuals`, release tag
+  `v4157-availability`.
+- The section states that the raw three-dimensional midge-swarm trajectories are
+  external published data and are not redistributed in the code repository.
+- The open-ended Future Work wording in the Discussion was replaced by two
+  bounded directions: comparative application to other weakly ordered
+  collectives, and perturbation/richer-measurement experiments to identify what
+  generates T1.
+- `mypaper2/Latex/main_final.tex` was recompiled twice after the availability
+  integration. The updated PDF remains `10` pages, with `0` LaTeX errors, `0`
+  undefined control sequences, `0` citation warnings, `0` reference warnings,
+  `0` rerun warnings, and `0` overfull boxes. Only `16` underfull-box layout
+  warnings remain.
+- The curated GitHub reproducibility repository was updated and pushed with tag
+  `v4157-availability`. Its lightweight
+  `python tools/verify_release.py` check passed after the update.
+- `4157` is a manuscript and reproducibility-linking node, not a new scientific
+  experiment. The scientific claim boundary from `4156` remains unchanged.
 
 Latest 2026-09-02 414x status:
 
@@ -792,21 +833,25 @@ The 413x route should keep four boundaries explicit:
 
 ## 7. Current recommended next step
 
-If no new direction is specified, continue from the completed 4156 freeze in
+If no new direction is specified, continue from the completed 4157 manuscript
+availability integration in
 this order:
 
 1. manually inspect `mypaper2/Latex/main_final.pdf` for figure placement,
    column breaks, table readability, and last-page balance;
-2. apply journal-specific formatting once a target venue is chosen;
-3. keep new mechanism search paused until the manuscript claim boundary is
+2. optionally archive the GitHub release with a DOI after GitHub-Zenodo
+   archiving is enabled;
+3. apply journal-specific formatting once a target venue is chosen;
+4. keep new mechanism search paused until the manuscript claim boundary is
    stable;
-4. if continuing the research program rather than preparing submission, move to
+5. if continuing the research program rather than preparing submission, move to
    comparative application or observation-class stratification.
 
 ## 8. Detailed latest snapshot
 
 The latest detailed snapshot is:
 
+- `Status/history/2026-09-04_4157_repository_availability_manuscript_polish.md`
 - `Status/history/2026-09-02_4156_highB_manuscript_integration_and_refreeze.md`
 
 The latest 414x outputs are:
@@ -890,6 +935,15 @@ The latest 414x outputs are:
 - `Output/4156/package/`
 - `Output/4156/mypaper2_4156_submission_package.zip`
 - `idea/4156_highB_manuscript_integration_and_refreeze_result.md`
+- `Output/4157/4157_summary.md`
+- `Output/4157/decision.json`
+- `Output/4157/compile_log_audit.csv`
+- `Output/4157/code_data_availability_statement.md`
+- `mypaper2/Latex/06_data_code_availability.tex`
+- GitHub release checkout:
+  `C:\Users\Saru\Desktop\TUAT\ResearchSampleCode\midge-swarm-nonaffine-residuals`
+- GitHub release tag:
+  `v4157-availability`
 
 The previous 414x detailed snapshot is:
 
@@ -932,15 +986,16 @@ diagnostic empirical paper:
 - observation identity is the grouping and replication unit, with 19 separate
   recordings rather than 19 independent biological populations.
 
-After the 4156 refreeze, the remaining pre-submission additions are now
-narrower:
+After the 4157 availability integration, the remaining pre-submission additions
+are now narrower:
 
 1. review the integrated 10-page draft for prose length, figure placement,
    table readability, and final-page balance;
-2. apply journal-specific formatting once a target venue is chosen;
-3. keep new mechanism search paused until the manuscript claim boundary is
+2. optionally create a DOI archive for the GitHub release;
+3. apply journal-specific formatting once a target venue is chosen;
+4. keep new mechanism search paused until the manuscript claim boundary is
    stable;
-4. treat another omnibus-null rerun as optional, not as the current bottleneck.
+5. treat another omnibus-null rerun as optional, not as the current bottleneck.
 
 ## 10. Legacy 413x pointers
 
