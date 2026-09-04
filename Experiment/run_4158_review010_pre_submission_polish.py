@@ -319,7 +319,6 @@ def build_fig3(master: pd.DataFrame, profiles: pd.DataFrame, metrics: dict[str, 
     profile_specs = [
         ("all_tangential", "#19765f", "all tangential"),
         ("shell_edge_minus_core", "#b6423c", "edge - core"),
-        ("density_sparse_minus_dense", "#2b6f9f", "sparse - dense"),
     ]
     for variable, color, label in profile_specs:
         prof = profiles[profiles["variable"].astype(str).eq(variable)].copy()
@@ -389,6 +388,11 @@ def write_summary(paths2: list[str], paths3: list[str], sources: pd.DataFrame) -
                 "action": "Removed shell-radius correlation from the active Figure 3 event-aligned profile panel.",
             },
             {
+                "review_item": "Figure 3 sparse-dense decision",
+                "status": "pass",
+                "action": "Removed sparse-dense contrast from the active Figure 3 profile panel; retained it only as a secondary source-level diagnostic.",
+            },
+            {
                 "review_item": "Observation class labels",
                 "status": "pass",
                 "action": "Used neutral labels: robust survivor with/without diffuse support, one-scale survivor, fragile boundary, stable non-survivor.",
@@ -399,13 +403,14 @@ def write_summary(paths2: list[str], paths3: list[str], sources: pd.DataFrame) -
     write_csv_pair(sources, "figure_source_map.csv")
     md = dedent(
         f"""\
-        # 4158 Review-010 Figure Polish
+        # 4158 Review-010 Pre-Submission Polish
 
         Date: {DATE}
 
-        This node reorganized existing evidence for the final pre-submission
-        review. It did not recompute T1, change event definitions, change
-        screening gates, or open a new mechanism route.
+        This node implemented the high-priority items from
+        `mypaper2/00_review/010.md`. It reorganized existing evidence for the
+        final pre-submission review and did not recompute T1, change event
+        definitions, change screening gates, or open a new mechanism route.
 
         ## Updated Figures
 
@@ -413,7 +418,16 @@ def write_summary(paths2: list[str], paths3: list[str], sources: pd.DataFrame) -
           frozen two-scale support matrix, the completed B=1000 omnibus null,
           and the detrending survivor-count boundary.
         - Figure 3 now keeps the phenotype focus and removes the radius
-          correlation profile from the active main figure.
+          correlation and sparse-dense profiles from the active main figure.
+
+        ## Active Figure Decisions
+
+        - Sparse-dense was removed from the main Figure 3 profile panel because
+          the current manuscript does not develop it as an independent result.
+          The diagnostic remains available in the upstream profile source.
+        - Observation classes use neutral labels: robust survivor with diffuse
+          support, robust survivor without diffuse support, one-scale survivor,
+          fragile boundary, and stable non-survivor.
 
         ## Active Figure Outputs
 
@@ -422,7 +436,7 @@ def write_summary(paths2: list[str], paths3: list[str], sources: pd.DataFrame) -
 
         ## Review Gate
 
-        `pass_4158_review010_figure_polish`
+        `pass_4158_review010_pre_submission_polish_compiled`
         """
     )
     (OUT / "4158_figure_summary.md").write_text(md, encoding="utf-8")
@@ -459,7 +473,7 @@ def main() -> None:
         json.dumps(
             {
                 "node": NODE,
-                "gate_result": "pass_4158_review010_figure_polish",
+                "gate_result": "pass_4158_review010_pre_submission_polish_compiled",
                 "fig2": paths2,
                 "fig3": paths3,
             },

@@ -76,7 +76,7 @@ Here, `B3` denotes the upstream global-affine residual baseline.
 ## State-Matched Event-Locality Parameters
 
 ```text
-state variables = (C, dC/dt, R)
+state variables = (C(t), dot C(t), R(t))
 matches per event = up to 5
 maximum state-match distance = 0.75
 minimum total acceptable event fraction = 0.75
@@ -86,7 +86,7 @@ shifted-event null replicates = 80
 ## Recent-History Parameters
 
 ```text
-current state = (C, dC/dt, R)
+current state = (C(t), dot C(t), R(t))
 history window = 0.50 s
 state distance threshold = 0.50
 history angle contrast threshold = 90 degrees

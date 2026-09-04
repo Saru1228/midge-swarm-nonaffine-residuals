@@ -47,7 +47,7 @@ Latest 2026-09-04 4158 status:
   the frozen two-scale support matrix, the completed `B=1000` omnibus null
   histogram, and the detrending survivor-count boundary.
 - Figure 3 was cleaned so the active phenotype figure no longer carries the
-  unused radius-correlation profile.
+  unused radius-correlation profile or the secondary sparse-dense contrast.
 - The manuscript title now uses the shorter JRSI-facing form:
   `Local Affine Subtraction Reveals Persistent Tangential Non-Affine Activity
   in Laboratory Midge Swarms`.
@@ -62,6 +62,11 @@ Latest 2026-09-04 4158 status:
 - The supplement now contains the key reproducibility details for pseudo-event
   construction, non-event controls, cross-scale sharing, deterministic seeds,
   detrending variants, state matching, and recent-history matching.
+- A final confirmation pass handled four remaining review-010 checks:
+  sparse-dense was removed from the main figure, reader-facing class names use
+  neutral labels such as one-scale survivor and fragile boundary,
+  active-source/notation scans passed, and the abstract was shortened by
+  removing secondary counts.
 - `mypaper2/Latex/main_final.tex` was recompiled twice after the review-010
   polish. The updated PDF is `11` pages, with `0` LaTeX errors, `0` undefined
   control sequences, `0` citation warnings, `0` reference warnings, `0` rerun

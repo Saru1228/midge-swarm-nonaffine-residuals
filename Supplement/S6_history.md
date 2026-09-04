@@ -21,7 +21,7 @@ Output/4150/figures/Fig5_final.pdf
 ## Primary Matching Design
 
 ```text
-current state = (C, dC/dt, R)
+current state = (C(t), dot C(t), R(t))
 history feature = h500_theta_h
 history window = 0.50 s
 state distance threshold = 0.50

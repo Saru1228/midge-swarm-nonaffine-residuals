@@ -98,9 +98,9 @@ should not be generalized to all observations.
 ## S5. Compact-State and Event-Locality Tests
 
 The compact-state reduction tested whether T1 could be stably summarized by
-the low-dimensional state vector `(C, dC/dt, R)`, where `C` is the
-compact-density coordinate, `dC/dt` is its smoothed temporal gradient, and `R`
-is the swarm-scale radius coordinate.
+the low-dimensional state vector $(C(t), \dot C(t), R(t))$, where $C(t)$ is
+the compact-density coordinate, $\dot C(t)$ is its smoothed temporal gradient,
+and $R(t)$ is the swarm-scale radius coordinate.
 
 Grouped out-of-sample moment-closure tests did not support a stable reduction.
 For the first-moment target, the median incremental `R2` was
@@ -111,14 +111,15 @@ positive-observation fraction was `0.1578947368`, and the median
 real-minus-shift increment was `-0.0006586480`.
 
 The event-locality test matched true transition frames to non-event frames in
-the same observation with similar `(C, dC/dt, R)` state. The median
+the same observation with similar $(C(t), \dot C(t), R(t))$ state. The median
 event-minus-control near-pre effect was `-0.03288737643286521`, the
 same-direction observation fraction was `0.42105263157894735`, and the real
 effect exceeded the shifted-event null in `0.275` of tested comparisons. The
 total acceptable event fraction was `0.9796057104010877`, with median best
 match distance `0.17630717293908968`.
 
-Matching used Euclidean distance in robust-standardized `(C, dC/dt, R)` space.
+Matching used Euclidean distance in robust-standardized
+$(C(t), \dot C(t), R(t))$ space.
 Candidate controls were ranked by distance, up to five nearest matches were
 retained, and an event was accepted only when the best match distance was at
 most `0.75`. Controls were not removed after use, so a non-event frame could in
@@ -133,7 +134,7 @@ or transition dynamics in general.
 
 The recent-history test asked whether frames with similar current state but
 different recent paths showed different T1. Current state was matched within
-observation using `(C, dC/dt, R)`. The primary history feature was the recent
+observation using $(C(t), \dot C(t), R(t))$. The primary history feature was the recent
 path direction over `0.50 s`; paired frames required a history-angle contrast
 of at least `90` degrees and temporal separation of at least `1.0 s`.
 
@@ -193,8 +194,8 @@ to each transition. Non-event control centers were required to be at least
 `0.80 s` away from true transitions, and 40 non-event replicates were used.
 Event-aligned profiles covered `[-0.50,0.50]` s in `0.05 s` steps.
 
-The state-matched event-locality test used `(C, dC/dt, R)`, up to five matches
-per event, maximum state-match distance `0.75`, and 80 shifted-event null
+The state-matched event-locality test used $(C(t), \dot C(t), R(t))$, up to
+five matches per event, maximum state-match distance `0.75`, and 80 shifted-event null
 replicates. The recent-history test used current-state distance threshold
 `0.50`, history window `0.50 s`, history-angle contrast threshold `90`
 degrees, minimum temporal separation `1.0 s`, and within-observation history

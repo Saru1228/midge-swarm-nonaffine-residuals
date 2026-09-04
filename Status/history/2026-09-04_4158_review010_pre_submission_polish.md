@@ -12,8 +12,8 @@ mechanism experiment.
 - Figure 2 was redesigned to foreground the all-observation T1 survival result,
   the frozen two-scale support matrix, the completed `B=1000` omnibus null
   histogram, and the detrending survivor-count boundary.
-- Figure 3 was cleaned by removing the unused radius-correlation profile from
-  the active phenotype figure.
+- Figure 3 was cleaned by removing the unused radius-correlation profile and
+  the secondary sparse-dense contrast from the active phenotype figure.
 - The title was shortened to:
   `Local Affine Subtraction Reveals Persistent Tangential Non-Affine Activity
   in Laboratory Midge Swarms`.
@@ -29,6 +29,10 @@ mechanism experiment.
   detrending variants, state matching, and recent-history matching.
 - The title/abstract working drafts in `mypaper2/01_title_abstract/` were
   synchronized with the active LaTeX manuscript.
+- A final confirmation pass handled four remaining review-010 checks:
+  sparse-dense was removed from the main figure, narrow-rescue wording was
+  replaced by neutral reader-facing labels, notation/source scans passed, and
+  the abstract was shortened by removing secondary counts.
 
 ## Compile Audit
 
@@ -44,6 +48,10 @@ rerun_warnings = 0
 overfull_boxes = 0
 underfull_boxes = 16
 ```
+
+The final abstract keeps only the primary and boundary-critical numbers:
+`14/19`, `B=1000`, `p≈0.001`, `11/19`, and `13/19`. It no longer carries the
+secondary `15/19`, `14/15`, or `13/14` counts.
 
 The active compiled PDF is:
 

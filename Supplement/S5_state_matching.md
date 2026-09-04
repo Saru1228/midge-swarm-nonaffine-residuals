@@ -23,12 +23,12 @@ Output/4150/figures/Fig4_final.pdf
 The tested compact state was:
 
 ```text
-S(t) = (C(t), dC/dt, R(t))
+S(t) = (C(t), dot C(t), R(t))
 ```
 
-where `C(t)` is the compact-density coordinate, `dC/dt` its smoothed temporal
-gradient, and `R(t)` the swarm-scale radius coordinate used in the frozen
-state-matching route.
+where `C(t)` is the compact-density coordinate, `dot C(t)` its smoothed
+temporal gradient, and `R(t)` the swarm-scale radius coordinate used in the
+frozen state-matching route.
 
 ## Moment-Closure Result
 
@@ -43,10 +43,11 @@ rather than only the aggregate bars.
 ## State-Matched Event-Locality Result
 
 The event-locality test matched true transition frames to same-observation
-non-event frames in `(C, dC/dt, R)` space and asked whether true transition
+non-event frames in `(C(t), dot C(t), R(t))` space and asked whether true transition
 timestamps showed additional near-pre T1 activity.
 
-Matching used Euclidean distance in robust-standardized `(C, dC/dt, R)` space.
+Matching used Euclidean distance in robust-standardized
+`(C(t), dot C(t), R(t))` space.
 Candidate non-event controls were excluded if they occurred within `0.75 s` of
 a true transition, ranked by state distance, and retained up to the five nearest
 matches. An event was accepted only when its best match distance was at most

@@ -19,12 +19,20 @@
   "manuscript_changes": [
     "replaced the long working title with a shorter JRSI-facing title",
     "redesigned Figure 2 around survival evidence, B=1000 omnibus calibration, and detrending sensitivity",
-    "cleaned Figure 3 by removing the unused radius-correlation profile",
+    "cleaned Figure 3 by removing the unused radius-correlation profile and the secondary sparse-dense contrast from the active main figure",
     "clarified that the 0.35 per-scale tail rule is a frozen screening component rather than a conventional single-observation significance threshold",
     "rounded the main-text omnibus statement to plus-one empirical p approximately 0.001 while preserving 0/1000 null-replicate wording",
     "rewrote Table I columns as Test, Evidence, Supported inference, and Interpretive boundary",
-    "added reproducibility details to the supplement and synchronized title/abstract discussion drafts"
+    "added reproducibility details to the supplement and synchronized title/abstract discussion drafts",
+    "reduced abstract numeric density by removing secondary counts from the abstract",
+    "completed a final active-source scan for sparse-dense, narrow-rescue, old p-value precision, old release tag, and notation/source consistency"
   ],
+  "final_confirmation_points": {
+    "sparse_dense": "removed from active Figure 3; retained only as upstream secondary diagnostic",
+    "narrow_rescue": "reader-facing labels use one-scale survivor and fragile boundary; no narrow-rescue wording remains in active paths",
+    "notation_source_audit": "passed active-source scan after S(t), C(t), dot C(t), R(t) cleanup",
+    "abstract_numeric_density": "reduced; abstract retains only primary and boundary-critical numbers"
+  },
   "boundary": "No new mechanism experiment was opened. The manuscript remains a calibrated diagnostic-residual paper with explicit observation-level and preprocessing boundaries.",
   "next": "manual PDF layout inspection, optional DOI archive, and journal-specific formatting"
 }

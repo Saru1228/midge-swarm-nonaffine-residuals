@@ -2,4 +2,5 @@ review_item,status,action
 Figure 2 omnibus calibration visibility,pass,Added B=1000 N_both null histogram and detrending survivor-count inset.
 Figure 2 and Figure 5 role separation,pass,"Reduced Figure 2 support matrix to k=8, k=10, both-scale, and scale/lag columns."
 Figure 3 radius-correlation cleanup,pass,Removed shell-radius correlation from the active Figure 3 event-aligned profile panel.
+Figure 3 sparse-dense decision,pass,Removed sparse-dense contrast from the active Figure 3 profile panel; retained it only as a secondary source-level diagnostic.
 Observation class labels,pass,"Used neutral labels: robust survivor with/without diffuse support, one-scale survivor, fragile boundary, stable non-survivor."
