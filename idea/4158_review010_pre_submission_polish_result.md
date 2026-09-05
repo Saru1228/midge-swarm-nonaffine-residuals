@@ -34,14 +34,19 @@ hardening rather than new mechanism experiments.
 
 ```text
 pdf_pages = 11
+pdf_bytes = 414538
 latex_errors = 0
 undefined_control_sequence = 0
 citation_warnings = 0
 reference_warnings = 0
 rerun_warnings = 0
 overfull_boxes = 0
-underfull_boxes = 16
+underfull_boxes = 15
 ```
+
+2026-09-05 follow-up: the JRSI/Royal Society submission-guide check found that
+the previous abstract exceeded the 200-word limit. The active abstract was
+shortened to 177 words and recompiled without errors.
 
 ## Gate Result
 

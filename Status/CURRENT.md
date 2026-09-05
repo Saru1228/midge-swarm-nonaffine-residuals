@@ -1,6 +1,6 @@
 # Current Project Status
 
-Last updated: 2026-09-04
+Last updated: 2026-09-05
 
 ## 1. Current role of this file
 
@@ -19,8 +19,9 @@ for the `mypaper2` manuscript after review `mypaper2/00_review/008.md` closed
 at package-freeze level. The optional post-freeze `4155` high-B calibration has
 completed, `4156` integrated that result into the manuscript and refroze the
 submission package, `4157` linked the manuscript to the public GitHub
-reproducibility repository, and `4158` implemented the review-010
-pre-submission figure/text polish.
+reproducibility repository, `4158` implemented the review-010 pre-submission
+figure/text polish, and the 2026-09-05 JRSI guide check resolved the abstract
+word-count issue.
 
 Latest reproducibility repository release:
 
@@ -70,10 +71,14 @@ Latest 2026-09-04 4158 status:
 - A follow-up figure-label check corrected the remaining Fig.5 Panel C/D label
   mismatch. The regenerated Fig.5 now uses `fragile boundary` in the panel
   labels, matching the manuscript text.
+- The 2026-09-05 JRSI pre-submission guide check found that the previous
+  abstract exceeded the 200-word limit. The active abstract was shortened to
+  177 words and synchronized between `mypaper2/Latex/00_abstract.tex` and
+  `mypaper2/01_title_abstract/draft_en.md`.
 - `mypaper2/Latex/main_final.tex` was recompiled twice after the review-010
   polish. The updated PDF is `11` pages, with `0` LaTeX errors, `0` undefined
   control sequences, `0` citation warnings, `0` reference warnings, `0` rerun
-  warnings, and `0` overfull boxes. Only `16` underfull-box layout warnings
+  warnings, and `0` overfull boxes. Only `15` underfull-box layout warnings
   remain.
 - The curated GitHub reproducibility repository was updated and pushed with tag
   `v4158-review010-polish`. Its lightweight `python tools/verify_release.py`
@@ -895,6 +900,7 @@ pre-submission polish in this order:
 
 The latest detailed snapshot is:
 
+- `Status/history/2026-09-05_jrsi_pre_submission_abstract_check.md`
 - `Status/history/2026-09-04_4158_review010_pre_submission_polish.md`
 - `Status/history/2026-09-04_4157_repository_availability_manuscript_polish.md`
 - `Status/history/2026-09-02_4156_highB_manuscript_integration_and_refreeze.md`
@@ -992,6 +998,7 @@ The latest 414x outputs are:
 - `Output/4158/figures/Fig2_final.pdf`
 - `Output/4158/figures/Fig3_final.pdf`
 - `idea/4158_review010_pre_submission_polish_result.md`
+- `mypaper2/00_subscription/JRSI_pre_submission_audit_2026-09-05.md`
 - `mypaper2/Latex/06_data_code_availability.tex`
 - GitHub release checkout:
   `C:\Users\Saru\Desktop\TUAT\ResearchSampleCode\midge-swarm-nonaffine-residuals`
@@ -1039,16 +1046,20 @@ diagnostic empirical paper:
 - observation identity is the grouping and replication unit, with 19 separate
   recordings rather than 19 independent biological populations.
 
-After the 4158 review-010 polish, the remaining pre-submission additions are
-now narrower:
+After the 2026-09-05 JRSI guide check, the abstract-length issue is resolved.
+The remaining pre-submission additions are now portal and packaging items:
 
-1. review the integrated 11-page draft for prose length, figure placement,
-   table readability, and final-page balance;
-2. optionally create a DOI archive for the GitHub release;
-3. apply journal-specific formatting once a target venue is chosen;
-4. keep new mechanism search paused until the manuscript claim boundary is
+1. prepare the cover letter;
+2. prepare a portal metadata sheet with title, abstract, keywords, author
+   details, ORCID, word count, figure/table count, funding, ethics, competing
+   interests, CRediT, AI declaration, data accessibility, and supplement
+   title/caption;
+3. manually inspect the integrated 11-page draft for figure placement, table
+   readability, and final-page balance;
+4. optionally create a DOI archive for the GitHub release;
+5. keep new mechanism search paused until the manuscript claim boundary is
    stable;
-5. treat another omnibus-null rerun as optional, not as the current bottleneck.
+6. treat another omnibus-null rerun as optional, not as the current bottleneck.
 
 ## 10. Legacy 413x pointers
 

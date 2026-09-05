@@ -13,8 +13,9 @@
     "reference_warnings": 0,
     "rerun_warnings": 0,
     "overfull_boxes": 0,
-    "underfull_boxes": 16,
-    "final_pdf_bytes": 415120
+    "underfull_boxes": 15,
+    "final_pdf_bytes": 414538,
+    "abstract_words": 177
   },
   "manuscript_changes": [
     "replaced the long working title with a shorter JRSI-facing title",
@@ -25,15 +26,16 @@
     "rewrote Table I columns as Test, Evidence, Supported inference, and Interpretive boundary",
     "added reproducibility details to the supplement and synchronized title/abstract discussion drafts",
     "reduced abstract numeric density by removing secondary counts from the abstract",
-    "completed a final active-source scan for sparse-dense, obsolete boundary-label wording, old p-value precision, old release tag, and notation/source consistency"
-    ,
-    "corrected Figure 5 panel labels so the active figure uses fragile boundary rather than the obsolete boundary-label wording"
+    "completed a final active-source scan for sparse-dense, obsolete boundary-label wording, old p-value precision, old release tag, and notation/source consistency",
+    "corrected Figure 5 panel labels so the active figure uses fragile boundary rather than the obsolete boundary-label wording",
+    "shortened the abstract to 177 words for JRSI/Royal Society 200-word compliance"
   ],
   "final_confirmation_points": {
     "sparse_dense": "removed from active Figure 3; retained only as upstream secondary diagnostic",
     "old_boundary_label": "reader-facing labels use one-scale survivor and fragile boundary; obsolete boundary-label wording does not remain in active paths",
     "notation_source_audit": "passed active-source scan after S(t), C(t), dot C(t), R(t) cleanup",
-    "abstract_numeric_density": "reduced; abstract retains only primary and boundary-critical numbers"
+    "abstract_numeric_density": "reduced; abstract retains only primary and boundary-critical numbers",
+    "abstract_word_count": "passed JRSI/Royal Society 200-word limit at 177 words"
   },
   "boundary": "No new mechanism experiment was opened. The manuscript remains a calibrated diagnostic-residual paper with explicit observation-level and preprocessing boundaries.",
   "next": "manual PDF layout inspection, optional DOI archive, and journal-specific formatting"

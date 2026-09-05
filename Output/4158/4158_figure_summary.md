@@ -46,7 +46,7 @@ definitions, change screening gates, or open a new mechanism route.
 | sparse-dense | Remove from the main Figure 3 profile panel | The contrast remains available in upstream source data, but it is not shown as a main result because the manuscript does not develop a stable sparse-dense claim. |
 | old boundary label | Rename in reader-facing figures | Active labels use one-scale survivor, fragile boundary, stable non-survivor, robust survivor with diffuse support, and robust survivor without diffuse support. |
 | notation/source audit | Pass after cleanup | Active text and Supplement use reader-facing $C(t)$, $\dot C(t)$, $R(t)$ / $S(t)$ notation; old terms and old release tags were not found in active paths. |
-| Abstract numeric density | Reduced | The abstract keeps the primary 14/19 result, B=1000 omnibus calibration, p approximately 0.001, and detrending-boundary counts, but removes secondary 15/19, 14/15, and 13/14 counts. |
+| Abstract numeric density and length | Pass | The abstract keeps the primary 14/19 result, B=1000 omnibus calibration, p approximately 0.001, and detrending-boundary counts, removes secondary counts, and is now 177 words. |
 | Figure 5 labels | Pass after regeneration | Panel C and Panel D now use fragile boundary wording consistent with the text. |
 
 ## Compile Audit
@@ -54,14 +54,14 @@ definitions, change screening gates, or open a new mechanism route.
 - Entry point: `mypaper2/Latex/main_final.tex`
 - Output PDF: `mypaper2/Latex/main_final.pdf`
 - PDF pages: 11
-- PDF bytes: 415120
+- PDF bytes: 414538
 - LaTeX errors: 0
 - Undefined control sequences: 0
 - Citation warnings: 0
 - Reference warnings: 0
 - Rerun warnings: 0
 - Overfull boxes: 0
-- Underfull boxes: 16
+- Underfull boxes: 15
 
 ## Repository Release
 

@@ -37,6 +37,10 @@ mechanism experiment.
   boundary-label wording. The Fig.5 generation source was corrected and Fig.5
   was regenerated so Panel C/D now use `fragile boundary` wording consistent
   with the manuscript.
+- On 2026-09-05, the abstract was further shortened for JRSI/Royal Society
+  submission compliance. The active abstract is now 177 words, below the
+  200-word limit, while preserving the main 14/19, B=1000, p approximately
+  0.001, 11/19, and 13/19 results.
 
 ## Compile Audit
 
@@ -44,19 +48,19 @@ mechanism experiment.
 
 ```text
 pdf_pages = 11
-pdf_bytes = 415120
+pdf_bytes = 414538
 latex_errors = 0
 undefined_control_sequence = 0
 citation_warnings = 0
 reference_warnings = 0
 rerun_warnings = 0
 overfull_boxes = 0
-underfull_boxes = 16
+underfull_boxes = 15
 ```
 
 The final abstract keeps only the primary and boundary-critical numbers:
-`14/19`, `B=1000`, `p≈0.001`, `11/19`, and `13/19`. It no longer carries the
-secondary `15/19`, `14/15`, or `13/14` counts.
+`14/19`, `B=1000`, `p approximately 0.001`, `11/19`, and `13/19`. It is now
+177 words, below the JRSI/Royal Society 200-word limit.
 
 The active compiled PDF is:
 
